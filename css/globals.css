@@ -2,11 +2,11 @@
 
 
 :root {
-    --advancedlevel-color-chat-surface: #E5AE99;
+    --color-chat-surface: #E5AE99;
 
-    --advancedlevel-static-frame-width: 100vw;
-    --advancedlevel-static-frame-height: 100dvh;
-    --advancedlevel-static-sidebar-width: 35rem;
+    --static-frame-width: 100vw;
+    --static-frame-height: 100dvh;
+    --static-sidebar-width: 35rem;
 }
 
 * {
@@ -35,15 +35,15 @@ input {
     color: inherit;
 }
 
-.advancedlevel-generic-body {
-    min-width: var(--advancedlevel-static-frame-width);
-    min-height: var(--advancedlevel-static-frame-height);
-    background: var(--advancedlevel-color-chat-surface);
+.generic-body {
+    min-width: var(--static-frame-width);
+    min-height: var(--static-frame-height);
+    background: var(--color-chat-surface);
 }
 
-.advancedlevel-generic-canvas {
-    width: var(--advancedlevel-static-frame-width);
-    min-height: var(--advancedlevel-static-frame-height);
+.generic-canvas {
+    width: var(--static-frame-width);
+    min-height: var(--static-frame-height);
     margin-inline: auto;
     display: flex;
     justify-content: flex-start;
@@ -51,26 +51,25 @@ input {
     overflow-x: hidden;
 }
 
-.advancedlevel-generic-list-reset {
+.generic-list-reset {
     list-style: none;
 }
 
-.advancedlevel-generic-button-reset {
+.generic-button-reset {
     cursor: pointer;
     border: 0;
     background: transparent;
     padding: 0;
 }
 
-.advancedlevel-generic-input-reset {
+.generic-input-reset {
     border: 0;
     background: transparent;
     outline: none;
 }
 
-
 @media screen and (max-width: 1440px) {
     html {
-    font-size: calc(100vw / (1440/10));
-}
+        font-size: calc(100vw / (1440/10));
+    }
 }

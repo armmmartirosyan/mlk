@@ -1,14 +1,14 @@
-.advancedlevel-page__sidebar {
+.page__sidebar {
     position: relative;
-    width: var(--advancedlevel-static-sidebar-width);
-    flex: 0 0 var(--advancedlevel-static-sidebar-width);
+    width: var(--static-sidebar-width);
+    flex: 0 0 var(--static-sidebar-width);
     background-image: url('../images/sidebar-texture.png');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.advancedlevel-navigation {
+.navigation {
     position: absolute;
     height: fit-content;
     top: 0;
@@ -16,59 +16,73 @@
     margin: auto 2.5rem;
 }
 
-.advancedlevel-navigation__item + .advancedlevel-navigation__item {
+.navigation__item + .navigation__item {
     margin-top: 1rem;
 }
 
-.advancedlevel-navigation__link {
+.navigation__link {
     display: inline-block;
     text-decoration: none;
     font-size: 3.4rem;
     font-weight: 550;
     letter-spacing: 0;
     font-family: 'Plus Jakarta Sans';
-}
-
-.advancedlevel-navigation__item_group_1 .advancedlevel-navigation__link {
     color: white;
 }
 
-.advancedlevel-navigation__item_group_2 .advancedlevel-navigation__link {
+.navigation__item_group_1 {
+    color: white;
+}
+
+.navigation__item_group_2{
     color: #464646;
     opacity: .4;
 }
 
-.advancedlevel-navigation__link.advancedlevel-navigation__link_state_active {
-    color: var(--advancedlevel-color-chat-surface);
+.navigation__link, .navigation__link:visited {
+    color: inherit;
+}   
+
+.navigation__link.navigation__link_state_active {
+    color: var(--color-chat-surface);
 }
-.advancedlevel-page__workspace {
+.page__workspace {
     position: relative;
-    width: calc(var(--advancedlevel-static-frame-width) - var(--advancedlevel-static-sidebar-width));
+    width: calc(var(--static-frame-width) - var(--static-sidebar-width));
     height: 100dvh;
     flex: 1;
     display: flex;
     flex-direction: column;
 }
 
-.advancedlevel-navigation__divider {
+.navigation__divider {
     height: 2rem;
 }
 
-.advancedlevel-page__logo {
+.page__logo {
     height: 1.9rem;
 }
 
-.advancedlevel-page__droplet-icon {
+.page__droplet-icon {
     width: 2.1rem;
     height: 2.8rem;
 }
 
-.advancedlevel-page__header {
+.page__header {
     padding: 1.6rem 2.7rem;
     display: flex;
     justify-content: space-between;
 }
 
-.advancedlevel-page__content{
+.page__content{
     padding-top: 3.6rem;
+}
+
+.page {
+    position: relative;
+    width: var(--static-frame-width);
+    height: var(--static-frame-height);
+    display: flex;
+    overflow: hidden;
+    background: var(--color-chat-surface);
 }
