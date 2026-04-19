@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/globals.css" />
+    <link rel="stylesheet" href="css/sidebar-layout.css" />
     <link rel="stylesheet" href="css/chat.css" />
     <title>Chat</title>
 </head>
@@ -58,45 +59,53 @@
                     <div></div>
                     <img src="./images/mlk.png" alt="MLK" class="advancedlevel-page__logo" />
 
-                    <button class="advancedlevel-generic-button-reset"
-                        type="button" aria-label="Profile indicator">
-                        <img class="advancedlevel-page__droplet-icon"
-                            src="images/droplet-icon.png" alt="Droplet" />
+                    <button class="advancedlevel-generic-button-reset" type="button" aria-label="Profile indicator">
+                        <img class="advancedlevel-page__droplet-icon" src="images/droplet-icon.png" alt="Droplet" />
                     </button>
                 </header>
 
-                <section class="advancedlevel-chat-toolbar" aria-label="Search and chat filters">
-                    <label class="advancedlevel-chat-search" for="advancedlevel-chat-search-input">
-                        <img class="advancedlevel-chat-search__icon" src="images/advancedlevel-chat-search-icon.svg"
-                            alt="" />
-                        <input id="advancedlevel-chat-search-input"
-                            class="advancedlevel-generic-input-reset advancedlevel-chat-search__input" type="text"
-                            placeholder="Search" />
-                    </label>
+                <div class="advancedlevel-page__content advancedlevel-chat-page__content">
+                    <section class="advancedlevel-chat-toolbar" aria-label="Search and chat filters">
+                        <div class="advancedlevel-chat-tool__wrapper">
+                            <label class="advancedlevel-chat-search" for="advancedlevel-chat-search-input">
+                                <img class="advancedlevel-chat-search__icon" src="images/search-icon.png" alt="" />
+                                <input id="advancedlevel-chat-search-input"
+                                    class="advancedlevel-generic-input-reset advancedlevel-chat-search__input"
+                                    type="text" placeholder="Search" />
+                            </label>
+                        </div>
 
-                    <ul class="advancedlevel-generic-list-reset advancedlevel-chat-filters"
-                        aria-label="Chat categories">
-                        <li class="advancedlevel-chat-filters__item">All</li>
-                        <li class="advancedlevel-chat-filters__item">Unread</li>
-                        <li class="advancedlevel-chat-filters__item">A+</li>
-                        <li class="advancedlevel-chat-filters__item">A</li>
-                        <li class="advancedlevel-chat-filters__item">B</li>
-                        <li class="advancedlevel-chat-filters__item">C</li>
-                    </ul>
+                        <ul class="advancedlevel-generic-list-reset advancedlevel-chat-filters"
+                            aria-label="Chat categories">
+                            <li class="advancedlevel-chat-filters__item advancedlevel-chat-filters__active-item">All
+                            </li>
+                            <li class="advancedlevel-chat-filters__item">Unread</li>
+                            <li class="advancedlevel-chat-filters__item">A+</li>
+                            <li class="advancedlevel-chat-filters__item">A</li>
+                            <li class="advancedlevel-chat-filters__item">B</li>
+                            <li class="advancedlevel-chat-filters__item">C</li>
 
-                    <div class="advancedlevel-generic-divider advancedlevel-chat-toolbar__divider" aria-hidden="true">
-                    </div>
-                    <p class="advancedlevel-chat-toolbar__status">No chats found</p>
-                </section>
 
-                <section class="advancedlevel-chat-empty-state" aria-live="polite">
-                    <p class="advancedlevel-chat-empty-state__line">
-                        Hello, kjhkjhkjhjkhkjh!
-                    </p>
-                    <p class="advancedlevel-chat-empty-state__line">
-                        You don't have any chats.
-                    </p>
-                </section>
+                            <div class="advancedlevel-chat-filters__line"></div>
+
+                        </ul>
+
+                        <div class="advancedlevel-chat-tool__wrapper">
+                            <p class="advancedlevel-chat-toolbar__status">No chats found</p>
+                        </div>
+                    </section>
+
+                    <section class="advancedlevel-chat-content" aria-label="Chat content">
+                        <div class="advancedlevel-chat-empty-state" aria-live="polite">
+                            <p class="advancedlevel-chat-empty-state__line">
+                                Hello, Someone!
+                            </p>
+                            <p class="advancedlevel-chat-empty-state__line">
+                                You don't have any chats.
+                            </p>
+                        </div>
+                    </section>
+                </div>
             </section>
         </section>
     </main>

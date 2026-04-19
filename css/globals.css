@@ -8,13 +8,7 @@
     --advancedlevel-color-sidebar-separator: rgb(255 240 231 / 24%);
     --advancedlevel-color-sidebar-nav-active: #E5AE99;
     --advancedlevel-color-logo: #f1dfd7;
-    --advancedlevel-color-search-background: rgb(244 221 211 / 40%);
-    --advancedlevel-color-search-placeholder: rgb(247 234 227 / 78%);
-    --advancedlevel-color-search-text: #f6ebe5;
-    --advancedlevel-color-filter-text: rgb(249 237 230 / 74%);
     --advancedlevel-color-divider: rgb(249 237 230 / 40%);
-    --advancedlevel-color-status-text: rgb(247 236 230 / 74%);
-    --advancedlevel-color-empty-state-text: rgb(248 236 230 / 74%);
 
     --advancedlevel-static-frame-width: 100vw;
     --advancedlevel-static-frame-height: 100dvh;
@@ -27,13 +21,7 @@
 
     --advancedlevel-static-toolbar-top: 7.8rem;
     --advancedlevel-static-toolbar-left: 1.6rem;
-    --advancedlevel-static-toolbar-width: 40.5rem;
-    --advancedlevel-static-search-height: 4.6rem;
-    --advancedlevel-static-search-gap: 1rem;
-    --advancedlevel-static-search-padding-x: 1.3rem;
     --advancedlevel-static-search-icon-size: 1.8rem;
-    --advancedlevel-static-filters-top-margin: 2.5rem;
-    --advancedlevel-static-filters-gap: 2rem;
     --advancedlevel-static-filters-divider-top-margin: 1.4rem;
     --advancedlevel-static-toolbar-status-top-margin: 1.3rem;
 
@@ -41,21 +29,13 @@
     --advancedlevel-static-empty-state-right: 17rem;
 
     --advancedlevel-font-size-logo: 5.5rem;
-    --advancedlevel-font-size-search: 3.1rem;
-    --advancedlevel-font-size-filter: 2.3rem;
-    --advancedlevel-font-size-status: 2.7rem;
-    --advancedlevel-font-size-empty-state: 5rem;
 
-    --advancedlevel-font-line-height-empty-state: 1.12;
     --advancedlevel-font-letter-spacing-logo: -0.03em;
     --advancedlevel-font-letter-spacing-empty-state: -0.018em;
 
     --advancedlevel-font-weight-regular: 400;
-    --advancedlevel-font-weight-medium: 500;
     --advancedlevel-font-weight-semibold: 600;
     --advancedlevel-font-weight-bold: 700;
-
-    --advancedlevel-radius-search: 1.2rem;
 }
 
 * {
@@ -117,11 +97,6 @@ input {
     outline: none;
 }
 
-.advancedlevel-generic-divider {
-    height: 0.1rem;
-    width: 100%;
-    background: var(--advancedlevel-color-divider);
-}
 
 @media screen and (max-width: 1440px) {
     html {
