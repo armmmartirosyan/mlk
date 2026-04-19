@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/globals.css">
+    <link rel="stylesheet" href="css/chat.css">
+    <title>Chat</title>
+</head>
+<body class="advancedlevel-generic-body">
+    <main class="advancedlevel-generic-canvas">
+        <section class="advancedlevel-chat-page" aria-label="Chat page">
+            <aside class="advancedlevel-chat-page__sidebar" aria-label="Sidebar navigation">
+                <nav class="advancedlevel-chat-navigation" aria-label="Main sections">
+                    <ul class="advancedlevel-generic-list-reset">
+                        <li class="advancedlevel-chat-navigation__item">
+                            <a class="advancedlevel-chat-navigation__link advancedlevel-chat-navigation__link_state_active" href="#">chat</a>
+                        </li>
+                        <li class="advancedlevel-chat-navigation__item">
+                            <a class="advancedlevel-chat-navigation__link" href="#">to-do</a>
+                        </li>
+                        <li class="advancedlevel-chat-navigation__item">
+                            <a class="advancedlevel-chat-navigation__link" href="#">lots</a>
+                        </li>
+                        <li class="advancedlevel-chat-navigation__item">
+                            <a class="advancedlevel-chat-navigation__link" href="#">store</a>
+                        </li>
+                        <li class="advancedlevel-chat-navigation__item">
+                            <a class="advancedlevel-chat-navigation__link" href="#">vault</a>
+                        </li>
+                        <li class="advancedlevel-chat-navigation__item">
+                            <a class="advancedlevel-chat-navigation__link" href="#">money</a>
+                        </li>
+                        <li class="advancedlevel-chat-navigation__item advancedlevel-chat-navigation__item_space_before-secondary">
+                            <a class="advancedlevel-chat-navigation__link" href="#">feed</a>
+                        </li>
+                        <li class="advancedlevel-chat-navigation__item">
+                            <a class="advancedlevel-chat-navigation__link" href="#">trophies</a>
+                        </li>
+                        <li class="advancedlevel-chat-navigation__item">
+                            <a class="advancedlevel-chat-navigation__link" href="#">settings</a>
+                        </li>
+                        <li class="advancedlevel-chat-navigation__item">
+                            <a class="advancedlevel-chat-navigation__link" href="#">help</a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <section class="advancedlevel-chat-page__workspace" aria-label="Chat workspace">
+                <h1 class="advancedlevel-chat-page__logo">MLK</h1>
+
+                <button class="advancedlevel-generic-button-reset advancedlevel-chat-page__droplet-button" type="button" aria-label="Profile indicator">
+                    <img class="advancedlevel-chat-page__droplet-icon" src="images/advancedlevel-chat-droplet-icon.svg" alt="">
+                </button>
+
+                <section class="advancedlevel-chat-toolbar" aria-label="Search and chat filters">
+                    <label class="advancedlevel-chat-search" for="advancedlevel-chat-search-input">
+                        <img class="advancedlevel-chat-search__icon" src="images/advancedlevel-chat-search-icon.svg" alt="">
+                        <input
+                            id="advancedlevel-chat-search-input"
+                            class="advancedlevel-generic-input-reset advancedlevel-chat-search__input"
+                            type="text"
+                            placeholder="Search"
+                        >
+                    </label>
+
+                    <ul class="advancedlevel-generic-list-reset advancedlevel-chat-filters" aria-label="Chat categories">
+                        <li class="advancedlevel-chat-filters__item">All</li>
+                        <li class="advancedlevel-chat-filters__item">Unread</li>
+                        <li class="advancedlevel-chat-filters__item">A+</li>
+                        <li class="advancedlevel-chat-filters__item">A</li>
+                        <li class="advancedlevel-chat-filters__item">B</li>
+                        <li class="advancedlevel-chat-filters__item">C</li>
+                    </ul>
+
+                    <div class="advancedlevel-generic-divider advancedlevel-chat-toolbar__divider" aria-hidden="true"></div>
+                    <p class="advancedlevel-chat-toolbar__status">No chats found</p>
+                </section>
+
+                <section class="advancedlevel-chat-empty-state" aria-live="polite">
+                    <p class="advancedlevel-chat-empty-state__line">Hello, kjhkjhkjhjkhkjh!</p>
+                    <p class="advancedlevel-chat-empty-state__line">You don't have any chats.</p>
+                </section>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

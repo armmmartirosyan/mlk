@@ -1,0 +1,161 @@
+@font-face {
+    font-family: 'AdvancedLevel Inter';
+    src: url('../fonts/Inter-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AdvancedLevel Inter';
+    src: url('../fonts/Inter-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AdvancedLevel Inter';
+    src: url('../fonts/Inter-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AdvancedLevel Inter';
+    src: url('../fonts/Inter-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --advancedlevel-color-canvas: #1f2025;
+    --advancedlevel-color-chat-surface: #d7a18f;
+    --advancedlevel-color-sidebar-tint: rgb(255 231 219 / 42%);
+    --advancedlevel-color-sidebar-separator: rgb(255 240 231 / 24%);
+    --advancedlevel-color-sidebar-nav-idle: #66686e;
+    --advancedlevel-color-sidebar-nav-active: #df958d;
+    --advancedlevel-color-logo: #f1dfd7;
+    --advancedlevel-color-search-background: rgb(244 221 211 / 40%);
+    --advancedlevel-color-search-placeholder: rgb(247 234 227 / 78%);
+    --advancedlevel-color-search-text: #f6ebe5;
+    --advancedlevel-color-filter-text: rgb(249 237 230 / 74%);
+    --advancedlevel-color-divider: rgb(249 237 230 / 40%);
+    --advancedlevel-color-status-text: rgb(247 236 230 / 74%);
+    --advancedlevel-color-empty-state-text: rgb(248 236 230 / 74%);
+
+    --advancedlevel-static-frame-width: 1512px;
+    --advancedlevel-static-frame-height: 805px;
+    --advancedlevel-static-sidebar-width: 255px;
+    --advancedlevel-static-sidebar-navigation-left: 56px;
+    --advancedlevel-static-sidebar-navigation-top: 94px;
+    --advancedlevel-static-sidebar-navigation-gap: 4px;
+    --advancedlevel-static-sidebar-navigation-group-gap: 22px;
+
+    --advancedlevel-static-logo-top: 14px;
+    --advancedlevel-static-droplet-top: 14px;
+    --advancedlevel-static-droplet-right: 18px;
+    --advancedlevel-static-droplet-size: 22px;
+
+    --advancedlevel-static-toolbar-top: 78px;
+    --advancedlevel-static-toolbar-left: 16px;
+    --advancedlevel-static-toolbar-width: 405px;
+    --advancedlevel-static-search-height: 46px;
+    --advancedlevel-static-search-gap: 10px;
+    --advancedlevel-static-search-padding-x: 13px;
+    --advancedlevel-static-search-icon-size: 18px;
+    --advancedlevel-static-filters-top-margin: 25px;
+    --advancedlevel-static-filters-gap: 20px;
+    --advancedlevel-static-filters-divider-top-margin: 14px;
+    --advancedlevel-static-toolbar-status-top-margin: 13px;
+
+    --advancedlevel-static-empty-state-top: 410px;
+    --advancedlevel-static-empty-state-right: 170px;
+
+    --advancedlevel-font-size-logo: 55px;
+    --advancedlevel-font-size-sidebar-item: 44px;
+    --advancedlevel-font-size-search: 31px;
+    --advancedlevel-font-size-filter: 23px;
+    --advancedlevel-font-size-status: 27px;
+    --advancedlevel-font-size-empty-state: 50px;
+
+    --advancedlevel-font-line-height-sidebar-item: 1.04;
+    --advancedlevel-font-line-height-empty-state: 1.12;
+    --advancedlevel-font-letter-spacing-tight: -0.03em;
+    --advancedlevel-font-letter-spacing-logo: -0.03em;
+    --advancedlevel-font-letter-spacing-empty-state: -0.018em;
+
+    --advancedlevel-font-weight-regular: 400;
+    --advancedlevel-font-weight-medium: 500;
+    --advancedlevel-font-weight-semibold: 600;
+    --advancedlevel-font-weight-bold: 700;
+
+    --advancedlevel-radius-search: 12px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    font-family: 'AdvancedLevel Inter', 'Segoe UI', sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button,
+input {
+    border: 0;
+    font: inherit;
+    color: inherit;
+}
+
+.advancedlevel-generic-body {
+    min-width: var(--advancedlevel-static-frame-width);
+    min-height: var(--advancedlevel-static-frame-height);
+    background: var(--advancedlevel-color-chat-surface);
+}
+
+.advancedlevel-generic-canvas {
+    width: var(--advancedlevel-static-frame-width);
+    min-height: var(--advancedlevel-static-frame-height);
+    margin-inline: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.advancedlevel-generic-list-reset {
+    list-style: none;
+}
+
+.advancedlevel-generic-button-reset {
+    cursor: pointer;
+    border: 0;
+    background: transparent;
+    padding: 0;
+}
+
+.advancedlevel-generic-input-reset {
+    border: 0;
+    background: transparent;
+    outline: none;
+}
+
+.advancedlevel-generic-divider {
+    height: 1px;
+    width: 100%;
+    background: var(--advancedlevel-color-divider);
+}
