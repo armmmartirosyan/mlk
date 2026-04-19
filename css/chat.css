@@ -14,7 +14,7 @@
     background:
         linear-gradient(0deg, var(--advancedlevel-color-sidebar-tint), var(--advancedlevel-color-sidebar-tint)),
         url('../images/advancedlevel-chat-sidebar-texture.svg') center center / cover no-repeat;
-    border-right: 1px solid var(--advancedlevel-color-sidebar-separator);
+    border-right: 0.1rem solid var(--advancedlevel-color-sidebar-separator);
 }
 
 .advancedlevel-chat-navigation {
@@ -61,7 +61,7 @@
     line-height: 1;
     font-weight: var(--advancedlevel-font-weight-bold);
     color: var(--advancedlevel-color-logo);
-    text-shadow: 0 1px 0 rgb(255 255 255 / 16%);
+    text-shadow: 0 0.1rem 0 rgb(255 255 255 / 16%);
     letter-spacing: var(--advancedlevel-font-letter-spacing-logo);
 }
 
