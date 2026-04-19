@@ -1,0 +1,65 @@
+/* Inter */
+@font-face {
+    font-family: 'AdvancedLevel Inter';
+    src: url('../fonts/inter/Inter-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AdvancedLevel Inter';
+    src: url('../fonts/inter/Inter-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AdvancedLevel Inter';
+    src: url('../fonts/inter/Inter-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AdvancedLevel Inter';
+    src: url('../fonts/inter/Inter-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* PlusJakartaSans */
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('../fonts/plus_jakarta_sans/PlusJakartaSans-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('../fonts/plus_jakarta_sans/PlusJakartaSans-Medium.ttf') format('ttf');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('../fonts/plus_jakarta_sans/PlusJakartaSans-SemiBold.ttf') format('ttf');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('../fonts/plus_jakarta_sans/PlusJakartaSans-Bold.ttf') format('ttf');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}

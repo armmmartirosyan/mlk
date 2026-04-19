@@ -1,42 +1,12 @@
-@font-face {
-    font-family: 'AdvancedLevel Inter';
-    src: url('../fonts/Inter-Regular.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
+@import './fonts.css';
 
-@font-face {
-    font-family: 'AdvancedLevel Inter';
-    src: url('../fonts/Inter-Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'AdvancedLevel Inter';
-    src: url('../fonts/Inter-SemiBold.woff2') format('woff2');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'AdvancedLevel Inter';
-    src: url('../fonts/Inter-Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
 
 :root {
     --advancedlevel-color-canvas: #1f2025;
-    --advancedlevel-color-chat-surface: #d7a18f;
+    --advancedlevel-color-chat-surface: #E5AE99;
     --advancedlevel-color-sidebar-tint: rgb(255 231 219 / 42%);
     --advancedlevel-color-sidebar-separator: rgb(255 240 231 / 24%);
-    --advancedlevel-color-sidebar-nav-idle: #66686e;
-    --advancedlevel-color-sidebar-nav-active: #df958d;
+    --advancedlevel-color-sidebar-nav-active: #E5AE99;
     --advancedlevel-color-logo: #f1dfd7;
     --advancedlevel-color-search-background: rgb(244 221 211 / 40%);
     --advancedlevel-color-search-placeholder: rgb(247 234 227 / 78%);
@@ -46,13 +16,9 @@
     --advancedlevel-color-status-text: rgb(247 236 230 / 74%);
     --advancedlevel-color-empty-state-text: rgb(248 236 230 / 74%);
 
-    --advancedlevel-static-frame-width: 151.2rem;
-    --advancedlevel-static-frame-height: 80.5rem;
-    --advancedlevel-static-sidebar-width: 25.5rem;
-    --advancedlevel-static-sidebar-navigation-left: 5.6rem;
-    --advancedlevel-static-sidebar-navigation-top: 9.4rem;
-    --advancedlevel-static-sidebar-navigation-gap: 0.4rem;
-    --advancedlevel-static-sidebar-navigation-group-gap: 2.2rem;
+    --advancedlevel-static-frame-width: 100vw;
+    --advancedlevel-static-frame-height: 100dvh;
+    --advancedlevel-static-sidebar-width: 35rem;
 
     --advancedlevel-static-logo-top: 1.4rem;
     --advancedlevel-static-droplet-top: 1.4rem;
@@ -75,15 +41,12 @@
     --advancedlevel-static-empty-state-right: 17rem;
 
     --advancedlevel-font-size-logo: 5.5rem;
-    --advancedlevel-font-size-sidebar-item: 4.4rem;
     --advancedlevel-font-size-search: 3.1rem;
     --advancedlevel-font-size-filter: 2.3rem;
     --advancedlevel-font-size-status: 2.7rem;
     --advancedlevel-font-size-empty-state: 5rem;
 
-    --advancedlevel-font-line-height-sidebar-item: 1.04;
     --advancedlevel-font-line-height-empty-state: 1.12;
-    --advancedlevel-font-letter-spacing-tight: -0.03em;
     --advancedlevel-font-letter-spacing-logo: -0.03em;
     --advancedlevel-font-letter-spacing-empty-state: -0.018em;
 
@@ -99,11 +62,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-html,
-body {
-    min-height: 100%;
 }
 
 html {
@@ -139,6 +97,7 @@ input {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    overflow-x: hidden;
 }
 
 .advancedlevel-generic-list-reset {
@@ -162,4 +121,10 @@ input {
     height: 0.1rem;
     width: 100%;
     background: var(--advancedlevel-color-divider);
+}
+
+@media screen and (max-width: 1440px) {
+    html {
+    font-size: calc(100vw / (1440/10));
+}
 }
