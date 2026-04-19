@@ -1,0 +1,186 @@
+.lots-page__content {
+    padding: 7.7rem 2rem 7.7rem 15rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.lots-page__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.lots-page__title {
+    font-size: 7.4rem;
+    font-family: "Plus Jakarta Sans";
+    line-height: 6.4rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    color: #EADFD6;
+}
+
+.lots-page__reorder-button {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    cursor: pointer;
+}
+
+
+.lots-page__reorder-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.lots-page__reorder-text {
+    font-size: 1.5rem;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: rgb(255, 255, 255, 50%);
+}
+
+.lots-page__box {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    flex-wrap: wrap;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.lots-page__box::-webkit-scrollbar {
+    display: none;
+}
+
+.lots-page__box-item {
+    border-radius: 1.5rem;
+    width: 24.4rem;
+    height: 25.5rem;
+}
+
+.lots-page__create {
+    background-color: #A39187;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.lots-page__create-figure {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    background-color: #E5AE99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.lots-page__create-image {
+    width: 4rem;
+    height: 4rem;
+}
+
+.lots-page__create-text {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-family: "Plus Jakarta Sans";
+    color: #EADFD6;
+}
+
+.lots-page__lot-item {
+    background-color: #EADFD6;
+    padding: 1rem 1rem 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.lots-page__lot-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.lots-page__lot-image {
+    width: 8rem;
+    height: 9rem;
+    object-fit: contain;
+}
+
+.lots-page__lot-link-icon {
+    width: 2.8rem;
+    height: 2.8rem;
+}
+
+.lots-page__lot-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.lots-page__lot-type {
+    padding: .7rem 1rem;
+    background-color: #A39187;
+    color: #EADFD6;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    font-family: "Plus Jakarta Sans";
+    line-height: 1.5rem;
+    letter-spacing: 0;
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 1rem;
+}
+
+.lots-page__lot-title {
+    width: 100%;
+    font-size: 1.5rem;
+    font-family: "Plus Jakarta Sans";
+    line-height: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    color: #464646;
+    margin-bottom: .4rem;
+    align-self: flex-start;
+}
+
+.lots-page__lot-description {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    letter-spacing: 0;
+    color: #A39187;
+    font-family: "Plus Jakarta Sans";
+    width: 100%;
+    align-self: flex-start;
+}
+
+.lots-page__lot-price {
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    color: #E5AE99;
+    position: relative;
+}
+
+.lots-page__lot-price+.lots-page__lot-price::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0.1rem;
+    background: rgb(0, 0, 0, 20%);
+    top: 0;
+    left: -0.8rem;
+}
+
+.lots-page__lot-price-box {
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    column-gap: 1.7rem;
+}
