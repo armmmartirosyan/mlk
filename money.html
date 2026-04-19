@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/globals.css" />
+    <link rel="stylesheet" href="css/sidebar-layout.css" />
+    <link rel="stylesheet" href="css/money.css" />
+    <title>Money</title>
+</head>
+
+<body class="generic-body">
+    <main class="generic-canvas">
+        <section class="page" aria-label="Money page">
+            <aside class="page__sidebar" aria-label="Sidebar navigation">
+                <nav class="navigation" aria-label="Main sections">
+                    <ul class="generic-list-reset">
+                        <li class="navigation__item navigation__item_group_1">
+                            <a class="navigation__link" href="chat.html">chat</a>
+                        </li>
+                        <li class="navigation__item navigation__item_group_1">
+                            <a class="navigation__link" href="todo.html">to-do</a>
+                        </li>
+                        <li class="navigation__item navigation__item_group_1">
+                            <a class="navigation__link" href="lots.html">lots</a>
+                        </li>
+                        <li class="navigation__item navigation__item_group_1">
+                            <a class="navigation__link" href="store.html">store</a>
+                        </li>
+                        <li class="navigation__item navigation__item_group_1">
+                            <a class="navigation__link" href="vault.html">vault</a>
+                        </li>
+                        <li class="navigation__item navigation__item_group_1">
+                            <a class="navigation__link navigation__link_state_active" href="money.html">money</a>
+                        </li>
+
+                        <div class="navigation__divider"></div>
+
+                        <li class="navigation__item navigation__item_group_2">
+                            <a class="navigation__link" href="feed.html">feed</a>
+                        </li>
+                        <li class="navigation__item navigation__item_group_2">
+                            <a class="navigation__link" href="trophies.html">trophies</a>
+                        </li>
+                        <li class="navigation__item navigation__item_group_2">
+                            <a class="navigation__link" href="settings.html">settings</a>
+                        </li>
+                        <li class="navigation__item navigation__item_group_2">
+                            <a class="navigation__link" href="help.html">help</a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <section class="page__workspace" aria-label="Money workspace">
+                <header class="page__header">
+                    <div></div>
+                    <img src="./images/mlk.png" alt="MLK" class="page__logo" />
+
+                    <button class="generic-button-reset" type="button" aria-label="Profile indicator">
+                        <img class="page__droplet-icon" src="images/droplet-icon.png" alt="Droplet" />
+                    </button>
+                </header>
+
+                <div class="page__content money-page__content">
+                    <h1 class="money-page__title">
+                        Money
+                    </h1>
+                    <p class="money-page__earned">
+                        So far, you’ve earned <span class="money-page__earned-amount">$0</span>
+                    </p>
+                    <p class="money-page__balance-text">
+                        Balance
+                    </p>
+                    <div class="money-page__balance-block">
+                        <p class="money-page__balance-amount">
+                            $0
+                        </p>
+                        <button class="money-page__balance-withdraw generic-button-reset" type="button">
+                            Withdraw
+                        </button>
+                    </div>
+                    <div class="money-page__table">
+                        <div class="money-page__table-part">
+                            <h3 class="money-page__table-title">
+                                Payments history
+                            </h3>
+                        </div>
+                        <div class="money-page__table-part">
+                            <h3 class="money-page__table-title">
+                                Withdrawal methods
+                            </h3>
+                            <div class="money-page__withdraw-method">
+                                <img src="./images/paypal.png" alt="PayPal" class="money-page__withdraw-icon" />
+                                <div class="money-page__withdraw-info">
+                                    <p class="money-page__withdraw-name">
+                                        PayPal
+                                    </p>
+                                    <figure class="money-page__withdraw-plus-figure">
+                                        <img src="./images/plus.png" alt="Plus"
+                                            class="money-page__withdraw-plus-icon" />
+                                    </figure>
+
+                                </div>
+                            </div>
+                            <div class="money-page__withdraw-method">
+                                <img src="./images/crypto.png" alt="USDC" class="money-page__withdraw-icon" />
+                                <div class="money-page__withdraw-info">
+                                    <p class="money-page__withdraw-name">
+                                        Crypto <span class="money-page__withdraw-currency">USDC</span>
+                                    </p>
+                                    <figure class="money-page__withdraw-plus-figure">
+                                        <img src="./images/plus.png" alt="Plus"
+                                            class="money-page__withdraw-plus-icon" />
+                                    </figure>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>

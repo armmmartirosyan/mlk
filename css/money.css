@@ -1,0 +1,136 @@
+.money-page__content {
+    width: 100%;
+    height: 100%;
+    padding: 6.4rem 2rem 2rem 15rem;
+}
+
+.money-page__title {
+    font-size: 7rem;
+    line-height: 6.38rem;
+    font-weight: 500;
+    font-family: "Plus Jakarta Sans";
+    color: #EADFD6;
+    margin-bottom: 1.5rem;
+}
+
+.money-page__earned {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    font-family: "Plus Jakarta Sans";
+    color: #EADFD6;
+    margin-bottom: 5rem;
+}
+
+.money-page__earned-amount {
+    color: #A39187;
+}
+
+.money-page__balance-text {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    font-family: "Plus Jakarta Sans";
+    color: #EADFD6;
+    margin-bottom: .5rem;
+}
+
+.money-page__balance-block {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.money-page__balance-amount {
+    font-size: 4.8rem;
+    line-height: 4.5rem;
+    font-family: "Plus Jakarta Sans";
+    color: #EADFD6;
+}
+
+.money-page__balance-withdraw {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    font-family: "Plus Jakarta Sans";
+    color: #EADFD6;
+    padding: 2rem 2.6rem;
+    cursor: pointer;
+    border-radius: 3rem;
+    background-color: #A39187;
+}
+
+.money-page__table {
+    width: 100%;
+    display: flex;
+}
+
+.money-page__table-part {
+    width: 50%;
+}
+
+.money-page__table-title {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 400;
+    color: rgb(255, 255, 255, 50%);
+    margin-bottom: 3.5rem;
+}
+
+.money-page__withdraw-method {
+    max-width: 44.1rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    padding-block: 1.45rem;
+    position: relative;
+}
+
+.money-page__withdraw-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+.money-page__withdraw-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.money-page__withdraw-name {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    font-family: "Plus Jakarta Sans";
+    color: #EADFD6;
+    font-weight: 700;
+}
+
+.money-page__withdraw-currency {
+    font-weight: 400;
+}
+
+.money-page__withdraw-plus-figure {
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    background-color: #A39187;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.money-page__withdraw-plus-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.money-page__withdraw-method+.money-page__withdraw-method::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 0.1rem;
+    width: 90%;
+    background-color: rgb(255, 255, 255, 15%);
+}
