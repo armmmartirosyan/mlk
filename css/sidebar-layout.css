@@ -39,7 +39,7 @@
 }
 
 .advancedlevel-navigation__link.advancedlevel-navigation__link_state_active {
-    color: var(--advancedlevel-color-sidebar-nav-active);
+    color: var(--advancedlevel-color-chat-surface);
 }
 .advancedlevel-page__workspace {
     position: relative;
