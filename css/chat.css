@@ -1,3 +1,7 @@
+.chat-page__content {
+    padding: 2rem 2rem 2rem 0;
+}
+
 .chat-toolbar {
     width: 26rem;
 }

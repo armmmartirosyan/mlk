@@ -1,5 +1,4 @@
 .lots-page__content {
-    padding: 7.7rem 2rem 7.7rem 15rem;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -74,7 +73,7 @@
     width: 8rem;
     height: 8rem;
     border-radius: 50%;
-    background-color: #E5AE99;
+    background-color: var(--color-chat-surface);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -164,7 +163,7 @@
     line-height: 2rem;
     font-weight: 500;
     letter-spacing: 0;
-    color: #E5AE99;
+    color: var(--color-chat-surface);
     position: relative;
 }
 
