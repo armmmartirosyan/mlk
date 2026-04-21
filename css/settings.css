@@ -1,0 +1,152 @@
+.settings-page__image-figure {
+    width: 14rem;
+    height: 18rem;
+    border-radius: 3rem;
+    background-color: #A39187;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 1.3rem;
+}
+
+.settings-page__image-img {
+    width: 10.5rem;
+    height: 15rem;
+}
+
+.settings-page__image-figcaption {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    right: 0.7rem;
+    bottom: 0.7rem;
+    background-color: #EADFD6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.settings-page__image-figcaption-icon {
+    width: 2rem;
+    height: 1.6rem;
+}
+
+.settings-page__text-line {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 2rem;
+    max-width: 54rem;
+}
+
+.settings-page__text {
+    max-width: 100%;
+    width: fit-content;
+    height: auto;
+    font-size: 6.94rem;
+    line-height: 6.38rem;
+    color: #EADFD6;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 500;
+    letter-spacing: -0.075rem;
+    white-space: wrap;
+    word-break: break-all;
+}
+
+.settings-page__email {
+    max-width: 100%;
+    width: fit-content;
+    height: auto;
+    font-size: 2.3rem;
+    line-height: 2.5rem;
+    color: #EADFD6;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 500;
+    letter-spacing: -0.03rem;
+    white-space: wrap;
+    word-break: break-all;
+}
+
+.settings-page__pencil-div {
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.settings-page__pencil-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.settings-page__resend-line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.settings-page__resend-icon {
+    width: 2.8rem;
+    height: 2.8rem;
+    margin-right: .5rem;
+}
+
+.settings-page__resend-info {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    letter-spacing: 0;
+    color: #EADFD6;
+    font-family: "Plus Jakarta Sans";
+    margin-right: 1.5rem;
+}
+
+.settings-page__resend-button {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    letter-spacing: 0;
+    color: rgb(255, 255, 255, 50%);
+    font-family: "Plus Jakarta Sans";
+}
+
+.settings-page__set-password-btn {
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    letter-spacing: 0;
+    color: #EADFD6;
+    font-family: "Plus Jakarta Sans";
+    padding: 1.2rem 1.8rem;
+    border-radius: 1.5rem;
+    background-color: #A39187;
+    margin-bottom: 5rem;
+}
+
+.settings-page__social-line {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    max-width: 28.5rem;
+}
+
+.settings-page__social-icon {
+    width: 8rem;
+    height: 8rem;
+}
+
+.settings-page__social-info {
+    font-size: 2.3rem;
+    line-height: 2.5rem;
+    letter-spacing: 0;
+    color: #A39187;
+    font-family: "Plus Jakarta Sans";
+    max-width: 18.2rem;
+    height: auto;
+    white-space: wrap;
+    word-break: break-all;
+}
