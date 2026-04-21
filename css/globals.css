@@ -4,7 +4,7 @@
 :root {
     --color-chat-surface: #E5AE99;
 
-    --static-frame-width: 100vw;
+    --static-frame-width: 100%;
     --static-frame-height: 100dvh;
     --static-sidebar-width: 35rem;
 }
