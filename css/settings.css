@@ -150,3 +150,133 @@
     white-space: wrap;
     word-break: break-all;
 }
+
+
+/* Messages modal */
+.messages-modal {
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    width: 40rem;
+    height: 70.4rem;
+    border-radius: 2.4rem;
+    background-color: #EADFD6;
+    display: flex;
+    flex-direction: column;
+}
+
+.messages-modal__header {
+    width: 100%;
+    height: 5.3rem;
+    border-radius: 2.4rem 2.4rem 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2.3rem;
+}
+
+.messages-modal__title {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    letter-spacing: 0;
+    color: #A39187;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 500;
+}
+
+.messages-modal__close-btn {
+    cursor: pointer;
+}
+
+.messages-modal__close-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.messages-modal__body {
+    border-block: .1rem solid #EDEDED;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.messages-modal__body-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.messages-modal__body-icon {
+    width: 3.2rem;
+    height: 3.2rem;
+}
+
+.messages-modal__body-info {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    color: #A39187;
+    font-family: "Plus Jakarta Sans";
+}
+
+.messages-modal__body-description {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #A39187;
+    font-family: "Plus Jakarta Sans";
+}
+
+.messages-modal__body-button {
+    padding: 1.1rem 1.6rem;
+    border-radius: 1rem;
+    background-color: #E5AE99;
+    max-width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    font-size: 1.4rem;
+    color: #A39187;
+    cursor: pointer;
+}
+
+.messages-modal__body-button-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.messages-modal__footer {
+    height: 8rem;
+    display: flex;
+    border-radius: 0 0 2.4rem 2.4rem;
+}
+
+.messages-modal__footer-tab {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    cursor: pointer;
+}
+
+.messages-modal__footer-tab-img {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.messages-modal__footer-tab-text {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    letter-spacing: 0;
+    color: rgb(163 145 134);
+    font-family: "Plus Jakarta Sans";
+}
