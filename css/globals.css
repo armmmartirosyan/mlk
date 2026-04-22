@@ -69,6 +69,122 @@ input {
     outline: none;
 }
 
+/* Shared surface helpers */
+.ui-panel {
+    border-radius: 2rem;
+}
+
+.ui-panel_tone_glass {
+    background-color: rgb(255, 255, 255, 15%);
+}
+
+.ui-scrollbar_hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.ui-scrollbar_hidden::-webkit-scrollbar {
+    display: none;
+}
+
+.ui-pill-button {
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+/* Typography system */
+.typo {
+    font-family: 'Plus Jakarta Sans', 'AdvancedLevel Inter', sans-serif;
+    letter-spacing: 0;
+}
+
+.typo_family_inter {
+    font-family: 'AdvancedLevel Inter', 'Segoe UI', sans-serif;
+}
+
+.typo_size_12 {
+    font-size: 1.2rem;
+    line-height: 1.44rem;
+}
+
+.typo_size_15 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+}
+
+.typo_size_18 {
+    font-size: 1.8rem;
+    line-height: 2rem;
+}
+
+.typo_size_23 {
+    font-size: 2.3rem;
+    line-height: 2.5rem;
+}
+
+.typo_size_24 {
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+}
+
+.typo_size_32 {
+    font-size: 3.2rem;
+    line-height: 3.3rem;
+}
+
+.typo_size_46 {
+    font-size: 4.6rem;
+    line-height: 4.5rem;
+}
+
+.typo_size_48 {
+    font-size: 4.8rem;
+    line-height: 4.5rem;
+}
+
+.typo_size_68 {
+    font-size: 6.8rem;
+    line-height: 6.4rem;
+}
+
+.typo_size_70 {
+    font-size: 7rem;
+    line-height: 6.38rem;
+}
+
+.typo_size_74 {
+    font-size: 7.4rem;
+    line-height: 6.4rem;
+}
+
+.typo_weight_400 {
+    font-weight: 400;
+}
+
+.typo_weight_500 {
+    font-weight: 500;
+}
+
+.typo_weight_700 {
+    font-weight: 700;
+}
+
+.typo_color_primary {
+    color: #EADFD6;
+}
+
+.typo_color_secondary {
+    color: #A39187;
+}
+
+.typo_color_dark {
+    color: #464646;
+}
+
+.typo_color_white_muted {
+    color: rgb(255, 255, 255, 50%);
+}
+
 @media screen and (max-width: 1512px) {
     html {
         font-size: calc(100vw / (1512/10));

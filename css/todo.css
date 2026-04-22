@@ -1,11 +1,11 @@
-.to-do-page__content {
+.todo-page__content {
     position: relative;
     width: 100%;
     height: 100%;
     padding: 0;
 }
 
-.to-do-page__content_wrapper {
+.todo-page__content-wrapper {
     position: absolute;
     top: 0;
     left: 0;
@@ -16,15 +16,9 @@
     height: fit-content;
 }
 
-.to-do-page__title {
-    font-size: 7rem;
-    line-height: 6.38rem;
-    font-weight: 500;
-    font-family: "Plus Jakarta Sans";
-    color: #EADFD6;
-}
+.todo-page__title {}
 
-.to-do-page__description {
+.todo-page__description {
     font-size: 2.34rem;
     line-height: 2.5rem;
     font-family: "Plus Jakarta Sans";
@@ -32,32 +26,21 @@
     margin-block: 4rem 2.4rem;
 }
 
-.to-do-page__description_highlight {
-    color: #A39187;
-}
-
-.to-do-page__list {
+.todo-page__list {
     display: flex;
     align-items: center;
     gap: .5rem;
 }
 
-.to-do-page__list_item {
-    border-radius: 2rem;
-    background-color: rgb(255, 255, 255, 15%);
+.todo-page__list-item {
     width: 24.4rem;
     height: 22.2rem;
     padding: 1.6rem 2.6rem 1.6rem 1.6rem;
 }
 
-.to-do-page__list_item_icon {
+.todo-page__list-item-icon {
     height: 9rem;
     margin-bottom: 1.5rem;
 }
 
-.to-do-page__list_item_text {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
-    font-family: "Plus Jakarta Sans";
-    color: #EADFD6;
-}
+.todo-page__list-item-text {}

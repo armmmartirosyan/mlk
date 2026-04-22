@@ -65,7 +65,7 @@
 
                 <div class="page__content chat-page__content">
                     <section class="chat-toolbar" aria-label="Search and chat filters">
-                        <div class="chat-tool__wrapper">
+                        <div class="chat-toolbar__section">
                             <label class="chat-search" for="chat-search-input">
                                 <img class="chat-search__icon" src="images/search-icon.png" alt="" />
                                 <input id="chat-search-input" class="generic-input-reset chat-search__input" type="text"
@@ -74,7 +74,7 @@
                         </div>
 
                         <ul class="generic-list-reset chat-filters" aria-label="Chat categories">
-                            <li class="chat-filters__item chat-filters__active-item">All
+                            <li class="chat-filters__item chat-filters__item_state_active">All
                             </li>
                             <li class="chat-filters__item">Unread</li>
                             <li class="chat-filters__item">A+</li>
@@ -87,17 +87,17 @@
 
                         </ul>
 
-                        <div class="chat-tool__wrapper">
-                            <p class="chat-toolbar__status">No chats found</p>
+                        <div class="chat-toolbar__section">
+                            <p class="chat-toolbar__status typo typo_size_12 typo_color_primary">No chats found</p>
                         </div>
                     </section>
 
                     <section class="chat-content" aria-label="Chat content">
                         <div class="chat-empty-state" aria-live="polite">
-                            <p class="chat-empty-state__line">
+                            <p class="chat-empty-state__line typo typo_size_24 typo_weight_500 typo_color_primary">
                                 Hello, Someone!
                             </p>
-                            <p class="chat-empty-state__line">
+                            <p class="chat-empty-state__line typo typo_size_24 typo_weight_500 typo_color_primary">
                                 You don't have any chats.
                             </p>
                         </div>

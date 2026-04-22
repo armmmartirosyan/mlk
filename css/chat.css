@@ -43,7 +43,7 @@
     position: relative;
 }
 
-.chat-tool__wrapper {
+.chat-toolbar__section {
     margin-left: 1rem;
 }
 
@@ -67,7 +67,7 @@
     top: calc(100%);
 }
 
-.chat-filters__active-item::after {
+.chat-filters__item_state_active::after {
     content: "";
     position: absolute;
     height: 0.1rem;
@@ -78,9 +78,7 @@
 }
 
 .chat-toolbar__status {
-    font-size: 1.2rem;
     line-height: 1;
-    color: #EADFD6;
 }
 
 .chat-empty-state {
@@ -96,13 +94,7 @@
 
 .chat-empty-state__line {
     margin: 0;
-    font-size: 2.4rem;
-    line-height: 2.6rem;
-    font-weight: 500;
-    color: #EADFD6;
-    letter-spacing: 0;
     white-space: nowrap;
-    font-family: "Plus Jakarta Sans";
 }
 
 .chat-page__content {

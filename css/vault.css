@@ -10,22 +10,10 @@
 }
 
 .vault-page__section-title {
-    font-size: 4.6rem;
-    line-height: 4.5rem;
-    font-weight: 500;
-    color: #EADFD6;
-    letter-spacing: 0;
-    font-family: "Plus Jakarta Sans";
     margin-bottom: 1.5rem;
 }
 
-.vault-page__section-description {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
-    color: #EADFD6;
-    font-family: "Plus Jakarta Sans";
-    color: rgb(255, 255, 255, 50%);
-}
+.vault-page__section-description {}
 
 .vault-page__drop-area {
     width: 86.2rem;
@@ -50,19 +38,10 @@
 }
 
 .vault-page__drop-description {
-    font-size: 2.3rem;
-    line-height: 2.5rem;
-    color: #EADFD6;
-    font-family: "Plus Jakarta Sans";
     margin-bottom: 1.5rem;
 }
 
 .vault-page__browse-button {
-    font-size: 1.2rem;
-    line-height: 1.44rem;
-    color: rgb(255, 255, 255, 50%);
-    font-family: "Plus Jakarta Sans";
-    border-radius: 3rem;
     background-color: #A39187;
     padding: .9rem 1rem;
 }

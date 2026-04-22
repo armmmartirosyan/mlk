@@ -5,13 +5,7 @@
 }
 
 .feed-page__title {
-    font-size: 6.8rem;
-    line-height: 6.4rem;
-    font-weight: 500;
-    font-family: "Plus Jakarta Sans";
-    color: #EADFD6;
     margin-bottom: 5rem;
-    letter-spacing: 0;
 }
 
 .feed-page__list {
@@ -20,10 +14,6 @@
     gap: 3rem;
     height: 100%;
     overflow-y: auto;
-}
-
-.feed-page__list::-webkit-scrollbar {
-    display: none;
 }
 
 .feed-page__row {
@@ -39,19 +29,10 @@
 }
 
 .feed-page__row-date {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
-    font-family: "Plus Jakarta Sans";
-    color: rgb(255, 255, 255, 40%);
     margin-bottom: 1rem;
 }
 
 .feed-page__row-text {
-    font-size: 1.8rem;
-    line-height: 2rem;
-    font-family: "Plus Jakarta Sans";
-    color: #A39187;
-
     padding: 1.7rem 4rem 2.2rem 1.7rem;
     background-color: #EADFD6;
     border-radius: 2rem 2rem 2rem .5rem;

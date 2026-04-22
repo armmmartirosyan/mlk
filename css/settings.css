@@ -60,17 +60,12 @@
     max-width: 100%;
     width: fit-content;
     height: auto;
-    font-size: 2.3rem;
-    line-height: 2.5rem;
-    color: #EADFD6;
-    font-family: "Plus Jakarta Sans";
-    font-weight: 500;
     letter-spacing: -0.03rem;
     white-space: wrap;
     word-break: break-all;
 }
 
-.settings-page__pencil-div {
+.settings-page__pencil-button {
     width: 4rem;
     height: 4rem;
     cursor: pointer;
@@ -97,30 +92,20 @@
 }
 
 .settings-page__resend-info {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
     letter-spacing: 0;
-    color: #EADFD6;
-    font-family: "Plus Jakarta Sans";
     margin-right: 1.5rem;
 }
 
 .settings-page__resend-button {
-    font-size: 1.2rem;
     line-height: 1.2rem;
     letter-spacing: 0;
-    color: rgb(255, 255, 255, 50%);
-    font-family: "Plus Jakarta Sans";
 }
 
 .settings-page__set-password-btn {
     width: fit-content;
     height: fit-content;
-    font-size: 1.2rem;
     line-height: 1.2rem;
     letter-spacing: 0;
-    color: #EADFD6;
-    font-family: "Plus Jakarta Sans";
     padding: 1.2rem 1.8rem;
     border-radius: 1.5rem;
     background-color: #A39187;
@@ -140,11 +125,7 @@
 }
 
 .settings-page__social-info {
-    font-size: 2.3rem;
-    line-height: 2.5rem;
     letter-spacing: 0;
-    color: #A39187;
-    font-family: "Plus Jakarta Sans";
     max-width: 18.2rem;
     height: auto;
     white-space: wrap;
@@ -176,12 +157,7 @@
 }
 
 .messages-modal__title {
-    font-size: 1.8rem;
-    line-height: 1.8rem;
     letter-spacing: 0;
-    color: #A39187;
-    font-family: "Plus Jakarta Sans";
-    font-weight: 500;
 }
 
 .messages-modal__close-btn {
@@ -216,21 +192,12 @@
 }
 
 .messages-modal__body-info {
-    font-size: 1.6rem;
-    line-height: 1.8rem;
-    font-weight: 500;
     letter-spacing: 0;
-    color: #A39187;
-    font-family: "Plus Jakarta Sans";
 }
 
 .messages-modal__body-description {
-    font-size: 1.2rem;
     line-height: 2rem;
-    font-weight: 400;
     letter-spacing: 0;
-    color: #A39187;
-    font-family: "Plus Jakarta Sans";
 }
 
 .messages-modal__body-button {
@@ -241,8 +208,6 @@
     display: flex;
     align-items: center;
     gap: 1.6rem;
-    font-size: 1.4rem;
-    color: #A39187;
     cursor: pointer;
 }
 
@@ -274,9 +239,6 @@
 }
 
 .messages-modal__footer-tab-text {
-    font-size: 1.4rem;
     line-height: 2rem;
     letter-spacing: 0;
-    color: rgb(163 145 134);
-    font-family: "Plus Jakarta Sans";
 }
