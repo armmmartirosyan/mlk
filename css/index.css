@@ -1,0 +1,145 @@
+.signin-page {
+    justify-content: center;
+    align-items: center;
+    padding: 2.4rem;
+}
+
+.signin-page__surface {
+    width: min(151.2rem, 100%);
+    min-height: min(100dvh - 4.8rem, 88.2rem);
+    background: var(--color-chat-surface);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin-page__brand-pill {
+    position: absolute;
+    top: 1.6rem;
+    left: 1.2rem;
+    width: 12.7rem;
+    height: 4.8rem;
+    border-radius: 9.9rem;
+    background: #EADFD6;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    text-decoration: none;
+}
+
+.signin-page__brand-arrow {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-left: 0.22rem solid #A39187;
+    border-bottom: 0.22rem solid #A39187;
+    transform: rotate(45deg);
+    margin-top: 0.2rem;
+}
+
+.signin-page__brand-text {
+    line-height: 1;
+}
+
+.signin-form {
+    width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signin-form__title {
+    margin-bottom: 3.6rem;
+}
+
+.signin-form__field {
+    width: 100%;
+    min-height: 8.6rem;
+    padding: 0.8rem 1.8rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signin-form__field+.signin-form__field {
+    margin-top: 1rem;
+}
+
+.signin-form__field-label {
+    line-height: 1;
+    margin-bottom: 0.8rem;
+}
+
+.signin-form__input {
+    width: 100%;
+    line-height: 1;
+    color: #EADFD6;
+}
+
+.signin-form__input::placeholder {
+    color: #EADFD6;
+    opacity: 0.95;
+}
+
+.signin-form__input_type_password {
+    padding-right: 1.6rem;
+}
+
+.signin-form__password-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.signin-form__password-toggle {
+    width: 2.4rem;
+    height: 2.4rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.45;
+}
+
+.signin-form__password-icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    fill: none;
+    stroke: #A39187;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.signin-form__submit {
+    width: 100%;
+    min-height: 9.8rem;
+    margin-top: 3.6rem;
+    background: #EADFD6;
+    color: #DDAA94;
+}
+
+.signin-form__forgot {
+    margin-top: 5.2rem;
+    text-decoration: none;
+    opacity: 0.95;
+}
+
+@media screen and (max-width: 900px) {
+    .signin-page {
+        padding: 1.2rem;
+    }
+
+    .signin-page__surface {
+        width: 100%;
+        min-height: calc(100dvh - 2.4rem);
+    }
+
+    .signin-form {
+        width: min(90rem, 86%);
+    }
+
+    .signin-form__forgot {
+        margin-top: 4rem;
+    }
+}

@@ -1,14 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/globals.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Sign In</title>
 </head>
 
-<body>
+<body class="generic-body">
+    <main class="generic-canvas signin-page">
+        <section class="signin-page__surface" aria-label="Sign in page">
+            <a class="signin-page__brand-pill" href="feed.html" aria-label="Back to main pages">
+                <span class="signin-page__brand-arrow" aria-hidden="true"></span>
+                <span class="signin-page__brand-text typo typo_size_32 typo_weight_700 typo_color_secondary">MLK</span>
+            </a>
 
+            <form class="signin-form" action="#" method="post" novalidate>
+                <h1 class="signin-form__title typo typo_size_68 typo_weight_500 typo_color_primary">Sign In</h1>
+
+                <label class="signin-form__field ui-panel ui-panel_tone_glass" for="signin-email">
+                    <span class="signin-form__field-label typo typo_size_12 typo_color_secondary">Email</span>
+                    <input id="signin-email"
+                        class="signin-form__input generic-input-reset typo typo_size_32 typo_color_primary" type="email"
+                        name="email" placeholder="kagdgdkjahsj@gmail.com" autocomplete="email" required />
+                </label>
+
+                <label class="signin-form__field ui-panel ui-panel_tone_glass" for="signin-password">
+                    <span class="signin-form__field-label typo typo_size_12 typo_color_secondary">Password</span>
+                    <span class="signin-form__password-row">
+                        <input id="signin-password"
+                            class="signin-form__input signin-form__input_type_password generic-input-reset typo typo_size_32 typo_color_primary"
+                            type="password" name="password" placeholder="kjbkjbkjbjnlkjklj"
+                            autocomplete="current-password" required />
+                        <button id="signin-password-toggle" class="signin-form__password-toggle generic-button-reset"
+                            type="button" aria-label="Show password" aria-pressed="false">
+                            <svg viewBox="0 0 24 24" class="signin-form__password-icon" aria-hidden="true">
+                                <path
+                                    d="M2 12C4.2 8.1 7.7 6 12 6C16.3 6 19.8 8.1 22 12C19.8 15.9 16.3 18 12 18C7.7 18 4.2 15.9 2 12Z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                        </button>
+                    </span>
+                </label>
+
+                <button
+                    class="signin-form__submit generic-button-reset ui-pill-button typo typo_size_32 typo_weight_500"
+                    type="submit">
+                    Sign In
+                </button>
+
+                <a class="signin-form__forgot typo typo_size_32 typo_color_primary" href="#">Forgot password?</a>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        const signinPasswordInput = document.getElementById('signin-password');
+        const signinPasswordToggle = document.getElementById('signin-password-toggle');
+
+        if (signinPasswordInput && signinPasswordToggle) {
+            signinPasswordToggle.addEventListener('click', function () {
+                const isPassword = signinPasswordInput.type === 'password';
+                signinPasswordInput.type = isPassword ? 'text' : 'password';
+                signinPasswordToggle.setAttribute('aria-pressed', String(isPassword));
+                signinPasswordToggle.setAttribute('aria-label', isPassword ? 'Hide password' : 'Show password');
+            });
+        }
+    </script>
 </body>
 
 </html>
