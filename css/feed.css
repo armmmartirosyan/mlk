@@ -34,7 +34,7 @@
 
 .feed-page__row-text {
     padding: 1.7rem 4rem 2.2rem 1.7rem;
-    background-color: #EADFD6;
+    background-color: var(--color-surface-contrast);
     border-radius: 2rem 2rem 2rem .5rem;
     max-width: 35rem;
 }

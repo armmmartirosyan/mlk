@@ -21,7 +21,7 @@
     width: 12.7rem;
     height: 4.8rem;
     border-radius: 9.9rem;
-    background: #EADFD6;
+    background: var(--color-surface-contrast);
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -32,8 +32,8 @@
 .signin-page__brand-arrow {
     width: 0.8rem;
     height: 0.8rem;
-    border-left: 0.22rem solid #A39187;
-    border-bottom: 0.22rem solid #A39187;
+    border-left: 0.22rem solid var(--color-text-secondary);
+    border-bottom: 0.22rem solid var(--color-text-secondary);
     transform: rotate(45deg);
     margin-top: 0.2rem;
 }
@@ -74,11 +74,11 @@
 .signin-form__input {
     width: 100%;
     line-height: 1;
-    color: #EADFD6;
+    color: var(--color-text-primary);
 }
 
 .signin-form__input::placeholder {
-    color: #EADFD6;
+    color: var(--color-text-primary);
     opacity: 0.95;
 }
 
@@ -105,7 +105,7 @@
     width: 1.8rem;
     height: 1.8rem;
     fill: none;
-    stroke: #A39187;
+    stroke: var(--color-text-secondary);
     stroke-width: 1.8;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -115,8 +115,16 @@
     width: 100%;
     min-height: 9.8rem;
     margin-top: 3.6rem;
-    background: #EADFD6;
-    color: #DDAA94;
+    background: var(--color-surface-contrast);
+    color: var(--color-accent);
+}
+
+.signin-form__submit:hover {
+    filter: brightness(0.97);
+}
+
+.signin-form__submit:active {
+    filter: brightness(0.93);
 }
 
 .signin-form__forgot {

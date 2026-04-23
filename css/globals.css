@@ -2,7 +2,27 @@
 
 
 :root {
-    --color-chat-surface: #E5AE99;
+    /* Figma MLK tokens (node 395:5635) */
+    /* Primary: #2C2425 | Secondary: #1F1A1B | Accent: #E3B6A5 */
+    /* Text Primary: #F1EBE3 | Text Secondary: #A79A92 | Text Muted: #6B605D */
+    /* Surface Glass: rgba(255, 255, 255, 0.12) | Divider: rgba(255, 255, 255, 0.2) */
+    --color-primary: #2C2425;
+    --color-secondary: #1F1A1B;
+    --color-accent: #E3B6A5;
+    --color-chat-surface: var(--color-primary);
+    --color-bg-primary: var(--color-primary);
+    --color-bg-secondary: var(--color-secondary);
+    --color-surface-soft: #5D504B;
+    --color-surface-contrast: #EFE3D8;
+    --color-text-primary: #F1EBE3;
+    --color-text-secondary: #A79A92;
+    --color-text-muted: #6B605D;
+    --color-text-dark: #261F20;
+    --color-line-soft: rgba(255, 255, 255, 0.2);
+    --color-glass: rgba(255, 255, 255, 0.12);
+    --color-glass-strong: rgba(255, 255, 255, 0.2);
+    --color-overlay-dark: rgba(0, 0, 0, 0.18);
+    --shadow-soft: 0 1.2rem 3rem rgba(0, 0, 0, 0.25);
 
     --static-frame-width: 100%;
     --static-frame-height: 100dvh;
@@ -21,6 +41,7 @@ html {
 
 body {
     font-family: 'AdvancedLevel Inter', 'Segoe UI', sans-serif;
+    color: var(--color-text-primary);
 }
 
 img {
@@ -35,10 +56,19 @@ input {
     color: inherit;
 }
 
+button,
+a,
+input,
+textarea {
+    transition: color 180ms ease, background-color 180ms ease, opacity 180ms ease, box-shadow 180ms ease;
+}
+
 .generic-body {
     min-width: var(--static-frame-width);
     min-height: var(--static-frame-height);
-    background: var(--color-chat-surface);
+    background:
+        radial-gradient(100% 140% at 0% 0%, #3B3132 0%, transparent 58%),
+        linear-gradient(180deg, var(--color-bg-primary) 0%, var(--color-bg-secondary) 100%);
 }
 
 .generic-canvas {
@@ -63,6 +93,14 @@ input {
     padding: 0;
 }
 
+.generic-button-reset:hover {
+    opacity: 0.9;
+}
+
+.generic-button-reset:active {
+    opacity: 1;
+}
+
 .generic-input-reset {
     border: 0;
     background: transparent;
@@ -75,7 +113,7 @@ input {
 }
 
 .ui-panel_tone_glass {
-    background-color: rgb(255, 255, 255, 15%);
+    background-color: var(--color-glass);
 }
 
 .ui-scrollbar_hidden {
@@ -170,15 +208,15 @@ input {
 }
 
 .typo_color_primary {
-    color: #EADFD6;
+    color: var(--color-text-primary);
 }
 
 .typo_color_secondary {
-    color: #A39187;
+    color: var(--color-text-secondary);
 }
 
 .typo_color_dark {
-    color: #464646;
+    color: var(--color-text-dark);
 }
 
 .typo_color_white_muted {

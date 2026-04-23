@@ -26,7 +26,7 @@
 
 .money-page__balance-withdraw {
     padding: 2rem 2.6rem;
-    background-color: #A39187;
+    background-color: var(--color-surface-soft);
 }
 
 .money-page__table {
@@ -74,7 +74,7 @@
     width: 2.8rem;
     height: 2.8rem;
     border-radius: 50%;
-    background-color: #A39187;
+    background-color: var(--color-surface-soft);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,5 +93,5 @@
     top: 0;
     height: 0.1rem;
     width: 90%;
-    background-color: rgb(255, 255, 255, 15%);
+    background-color: var(--color-line-soft);
 }

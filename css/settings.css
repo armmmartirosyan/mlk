@@ -2,7 +2,7 @@
     width: 14rem;
     height: 18rem;
     border-radius: 3rem;
-    background-color: #A39187;
+    background-color: var(--color-surface-soft);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +22,7 @@
     border-radius: 50%;
     right: 0.7rem;
     bottom: 0.7rem;
-    background-color: #EADFD6;
+    background-color: var(--color-surface-contrast);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +48,7 @@
     height: auto;
     font-size: 6.94rem;
     line-height: 6.38rem;
-    color: #EADFD6;
+    color: var(--color-text-primary);
     font-family: "Plus Jakarta Sans";
     font-weight: 500;
     letter-spacing: -0.075rem;
@@ -108,7 +108,7 @@
     letter-spacing: 0;
     padding: 1.2rem 1.8rem;
     border-radius: 1.5rem;
-    background-color: #A39187;
+    background-color: var(--color-surface-soft);
     margin-bottom: 5rem;
 }
 
@@ -141,7 +141,7 @@
     width: 40rem;
     height: 70.4rem;
     border-radius: 2.4rem;
-    background-color: #EADFD6;
+    background-color: var(--color-surface-contrast);
     display: flex;
     flex-direction: column;
 }
@@ -170,7 +170,7 @@
 }
 
 .messages-modal__body {
-    border-block: .1rem solid #EDEDED;
+    border-block: .1rem solid rgba(0, 0, 0, 0.08);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -203,7 +203,7 @@
 .messages-modal__body-button {
     padding: 1.1rem 1.6rem;
     border-radius: 1rem;
-    background-color: #E5AE99;
+    background-color: var(--color-accent);
     max-width: fit-content;
     display: flex;
     align-items: center;
@@ -241,4 +241,42 @@
 .messages-modal__footer-tab-text {
     line-height: 2rem;
     letter-spacing: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .settings-page__text {
+        font-size: 5.2rem;
+        line-height: 4.8rem;
+    }
+
+    .messages-modal {
+        width: min(40rem, calc(100% - 3.2rem));
+        height: 64rem;
+        right: 1.6rem;
+        bottom: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .settings-page__text {
+        font-size: 4.1rem;
+        line-height: 3.9rem;
+    }
+
+    .settings-page__text-line {
+        gap: 1.5rem;
+    }
+
+    .settings-page__social-icon {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .messages-modal {
+        width: calc(100% - 2rem);
+        right: 1rem;
+        left: 1rem;
+        bottom: 1rem;
+        height: 58rem;
+    }
 }

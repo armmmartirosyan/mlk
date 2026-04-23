@@ -53,7 +53,7 @@
     font-size: 4.84rem;
     line-height: 4.5rem;
     font-weight: 500;
-    color: #464646;
+    color: var(--color-text-dark);
     display: flex;
     align-items: center;
     gap: .5rem;
@@ -91,7 +91,7 @@
     font-size: 2.2rem;
     line-height: 2.3rem;
     font-weight: 400;
-    color: #EADFD6;
+    color: var(--color-text-primary);
     margin-right: .4rem;
     width: 100%;
 }
@@ -100,17 +100,17 @@
     font-size: 2.2rem;
     line-height: 2.3rem;
     font-weight: 400;
-    color: #464646;
+    color: var(--color-text-dark);
 }
 
 .extra__body-list-item-amount {
     font-size: 2.2rem;
     line-height: 2.3rem;
     font-weight: 400;
-    color: #EADFD6;
+    color: var(--color-text-primary);
     padding: 0.7rem 1.5rem;
     border-radius: 3rem;
-    background-color: #A39187;
+    background-color: var(--color-surface-soft);
 }
 
 .extra__body-list-item-tip {
@@ -127,7 +127,7 @@
 .extra__body-list-item-tip-name {
     font-size: 3.2rem;
     line-height: 3.3rem;
-    color: white;
+    color: var(--color-text-primary);
     margin-bottom: 2rem;
 }
 
@@ -139,11 +139,11 @@
     font-size: 2rem;
     line-height: 2.2rem;
     font-weight: 400;
-    color: rgb(255, 255, 255, 50%);
+    color: rgba(255, 255, 255, 0.5);
     border: none;
     outline: none;
     resize: none;
-    background-color: rgb(255, 255, 255, 20%);
+    background-color: var(--color-glass-strong);
     margin-bottom: 1.6rem;
 }
 
@@ -151,7 +151,7 @@
     font-size: 2rem;
     line-height: 2.2rem;
     font-weight: 400;
-    color: rgb(255, 255, 255, 50%);
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .extra__body-list-item-tip-footer {
@@ -169,7 +169,7 @@
     justify-content: space-between;
     padding: .8rem .5rem .5rem 1.5rem;
     border-radius: 1.5rem;
-    background-color: #EADFD6;
+    background-color: var(--color-surface-contrast);
 }
 
 .extra__body-list-item-tip-sum-name {
@@ -192,12 +192,12 @@
     width: 3rem;
     height: 5rem;
     border-radius: 1rem;
-    background-color: rgb(0, 0, 0, 10%);
+    background-color: var(--color-overlay-dark);
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    color: #000;
+    color: var(--color-text-dark);
     font-size: 1.8rem;
 }
 
@@ -205,12 +205,55 @@
     width: 11.4rem;
     height: 6rem;
     border-radius: 3rem;
-    background-color: #EADFD6;
+    background-color: var(--color-surface-contrast);
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    color: #000;
+    color: var(--color-text-dark);
     font-family: "Plus Jakarta Sans";
     font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .extra__body {
+        padding: 1.6rem;
+    }
+
+    .extra__body-primary-name {
+        font-size: 3.8rem;
+        line-height: 3.6rem;
+    }
+
+    .extra__body-list {
+        justify-content: center;
+    }
+
+    .extra__body-list-item,
+    .extra__body-list-item-tip {
+        width: min(35.2rem, 100%);
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .extra__body-list-item,
+    .extra__body-list-item-tip {
+        height: auto;
+        min-height: 44rem;
+    }
+
+    .extra__body-list-item-img {
+        height: auto;
+        max-height: 36rem;
+    }
+
+    .extra__body-list-item-tip-textarea {
+        height: 24rem;
+    }
+
+    .extra__body-list-item-tip-footer {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
 }

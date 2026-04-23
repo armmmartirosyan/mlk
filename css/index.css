@@ -23,7 +23,7 @@
     width: 2.8rem;
     height: 4rem;
     border-radius: 1rem;
-    background: rgb(234, 223, 214, 55%);
+    background: var(--color-glass-strong);
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -40,7 +40,7 @@
 .username-page__menu-line {
     height: 0.1rem;
     width: 100%;
-    background: #A39187;
+    background: var(--color-text-secondary);
     border-radius: 99rem;
 }
 
@@ -92,17 +92,17 @@
 }
 
 .username-form__domain {
-    color: #9C918B;
+    color: var(--color-text-secondary);
 }
 
 .username-form__input {
     flex: 1;
     min-width: 12rem;
-    color: #EADFD6;
+    color: var(--color-text-primary);
 }
 
 .username-form__input::placeholder {
-    color: #EADFD6;
+    color: var(--color-text-primary);
     opacity: 1;
 }
 
@@ -111,9 +111,17 @@
     min-height: 5.6rem;
     padding: 0.8rem 2.4rem;
     border-radius: 4rem;
-    background: #EADFD6;
-    color: #DDAA94;
+    background: var(--color-surface-contrast);
+    color: var(--color-accent);
     line-height: 1;
+}
+
+.username-form__submit:hover {
+    filter: brightness(0.97);
+}
+
+.username-form__submit:active {
+    filter: brightness(0.93);
 }
 
 @media screen and (max-width: 1024px) {

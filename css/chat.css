@@ -14,7 +14,13 @@
     width: 25rem;
     padding: 1rem;
     border-radius: 1.2rem;
-    background-color: rgb(255, 255, 255, 10%);
+    background-color: var(--color-glass);
+    border: 0.1rem solid transparent;
+}
+
+.chat-search:focus-within {
+    border-color: var(--color-glass-strong);
+    box-shadow: var(--shadow-soft);
 }
 
 .chat-search__icon {
@@ -28,11 +34,11 @@
     font-size: 1.5rem;
     font-family: "AdvancedLevel Inter";
     line-height: 1;
-    color: #EADFD6;
+    color: var(--color-text-primary);
 }
 
 .chat-search__input::placeholder {
-    color: #EADFD6;
+    color: var(--color-text-primary);
 }
 
 .chat-filters {
@@ -50,19 +56,24 @@
 .chat-filters__item {
     font-size: 1.2rem;
     line-height: 1;
-    color: #EADFD6;
+    color: var(--color-text-primary);
     font-weight: 500;
     margin-inline: .7rem;
     margin-block: 1.3rem;
     position: relative;
     cursor: pointer;
+    opacity: 0.72;
+}
+
+.chat-filters__item:hover {
+    opacity: 1;
 }
 
 .chat-filters__line {
     position: absolute;
     height: 0.1rem;
     width: 100%;
-    background: rgb(255, 255, 255, 15%);
+    background: var(--color-line-soft);
     left: 0;
     top: calc(100%);
 }
@@ -72,13 +83,19 @@
     position: absolute;
     height: 0.1rem;
     width: 100%;
-    background: #EADFD6;
+    background: var(--color-accent);
     left: 0;
     top: calc(100% + 1.3rem);
 }
 
+.chat-filters__item_state_active {
+    color: var(--color-text-primary);
+    opacity: 1;
+}
+
 .chat-toolbar__status {
     line-height: 1;
+    color: var(--color-text-secondary);
 }
 
 .chat-empty-state {
@@ -95,6 +112,7 @@
 .chat-empty-state__line {
     margin: 0;
     white-space: nowrap;
+    text-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.25);
 }
 
 .chat-page__content {
@@ -106,4 +124,45 @@
     flex: 1;
     height: 100%;
     position: relative;
+}
+
+@media screen and (max-width: 900px) {
+    .chat-page__content {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .chat-toolbar {
+        width: 100%;
+        margin-bottom: 2.4rem;
+    }
+
+    .chat-toolbar__section {
+        margin-left: 0;
+    }
+
+    .chat-search {
+        width: 100%;
+    }
+
+    .chat-filters {
+        overflow-x: auto;
+        white-space: nowrap;
+        padding-bottom: 1.3rem;
+    }
+
+    .chat-filters__item {
+        flex: 0 0 auto;
+    }
+
+    .chat-content {
+        min-height: 34rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .chat-empty-state__line {
+        white-space: normal;
+        text-align: center;
+    }
 }
