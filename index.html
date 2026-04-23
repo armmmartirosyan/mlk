@@ -4,51 +4,211 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/globals.css" />
     <link rel="stylesheet" href="css/index.css" />
-    <title>Choose Username</title>
+    <title>Para</title>
 </head>
 
-<body class="generic-body">
-    <main class="generic-canvas username-page">
-        <section class="username-page__surface" aria-label="Username setup page">
-            <header class="username-page__header">
-                <button class="username-page__menu-button generic-button-reset" type="button" aria-label="Open menu">
-                    <span class="username-page__menu-icon" aria-hidden="true">
-                        <span class="username-page__menu-line"></span>
-                        <span class="username-page__menu-line"></span>
-                        <span class="username-page__menu-line"></span>
-                    </span>
-                </button>
+<body class="landing-body">
+    <header class="site-header">
+        <div class="container flex-between">
+            <a class="brand" href="index.html" aria-label="Para home">Para</a>
+            <a class="btn btn_pill btn_subtle" href="sign-in.html">Sign in</a>
+        </div>
+    </header>
 
-                <img src="images/mlk.png" alt="MLK" class="username-page__brand-logo" />
+    <main>
+        <section class="hero section-padding" aria-label="Main hero">
+            <div class="container hero__layout">
+                <div class="hero__letters" aria-hidden="true">
+                    <img src="assets/images/hero-a2.png" alt="" class="hero__letter hero__letter_a2" />
+                    <img src="assets/images/hero-r.png" alt="" class="hero__letter hero__letter_r" />
+                    <img src="assets/images/hero-a1.png" alt="" class="hero__letter hero__letter_a1" />
+                    <img src="assets/images/hero-p.png" alt="" class="hero__letter hero__letter_p" />
+                </div>
 
-                <button class="username-page__profile-button generic-button-reset" type="button"
-                    aria-label="Profile indicator">
-                    <img src="images/droplet-icon.png" alt="Droplet" class="username-page__profile-icon" />
-                </button>
-            </header>
+                <div class="hero__content reveal">
+                    <h1 class="display-title">A brand new way<br />to monetize your superfans</h1>
+                    <a class="btn btn_pill btn_primary" href="#username">Start earning</a>
+                </div>
+            </div>
+        </section>
 
-            <form class="username-form" action="#" method="post" novalidate>
-                <h1 class="username-form__title typo typo_size_74 typo_weight_500 typo_color_primary">Choose your
-                    <br />
-                    MLK username
-                </h1>
+        <section class="intro section-padding reveal" aria-label="Intro section">
+            <div class="container intro__layout">
+                <h2 class="title-xl">Para is the easiest way to earn money as a content creator.</h2>
+                <div class="intro__side">
+                    <p class="text-lg">Our AI manager and creative donation tools give you the support you need to make
+                        the most of your superfans.</p>
+                    <a class="btn btn_pill btn_dark" href="#username">Start earning</a>
+                </div>
+            </div>
+        </section>
 
-                <label class="username-form__line" for="username-input">
-                    <span class="username-form__domain typo typo_weight_500">mlk.com/</span>
-                    <input id="username-input" class="username-form__input generic-input-reset typo" type="text"
-                        name="username" placeholder="username" autocomplete="username" required />
-                </label>
+        <section class="showcase section-padding" aria-label="Creator showcase">
+            <div class="container showcase__layout">
+                <div class="showcase__media reveal">
+                    <img src="assets/images/slide-1.png" alt="Creator tools panel"
+                        class="showcase__slide showcase__slide_front" />
+                    <img src="assets/images/slide-2.png" alt="Donation tool panel"
+                        class="showcase__slide showcase__slide_back" />
+                    <img src="assets/images/macbook.png" alt="Macbook with Para dashboard" class="showcase__laptop" />
+                </div>
 
-                <button
-                    class="username-form__submit generic-button-reset ui-pill-button typo typo_size_46 typo_weight_500"
-                    type="submit">
-                    Start earning
-                </button>
-            </form>
+                <div class="showcase__statements">
+                    <p class="statement statement_content">Generate more more more more more <span>content</span></p>
+                    <p class="statement statement_money">Earn more more more more more <span>money</span></p>
+                    <p class="statement statement_superfans">Gain more more more more more <span>superfans</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="donations section-padding reveal" aria-label="Donation tools">
+            <div class="container donations__layout">
+                <div>
+                    <h2 class="title-lg">Bye-bye, boring donations</h2>
+                    <p class="text-lg">Para makes fan donations entertaining and engaging - so you'll earn more with
+                        less effort.</p>
+                </div>
+                <div class="donations__cta">
+                    <h3 class="title-md">Get started now by creating your Para page and share it with your fans. Easy!
+                    </h3>
+                    <a class="btn btn_pill btn_dark" href="#username">Create my para</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="earners section-padding reveal" aria-label="Top earners">
+            <div class="container text-center">
+                <h2 class="title-xl">Our top earners make up to <span class="accent-highlight">$30,000</span><br />per
+                    month</h2>
+                <p class="title-md">Can you beat them?</p>
+            </div>
+        </section>
+
+        <section class="faq section-padding reveal" aria-label="Frequently asked questions">
+            <div class="container faq__list">
+                <div class="faq__item">
+                    <h3 class="faq__question">Is it free?</h3>
+                    <p class="faq__answer">Yes, Para is 100% free to use. We only take a small cut to cover operational
+                        expenses and our processing costs.</p>
+                </div>
+                <div class="faq__item">
+                    <h3 class="faq__question">What is Para?</h3>
+                    <p class="faq__answer">It's a brand new AI-powered fan donation and engagement tool that can boost
+                        your earnings like never before.</p>
+                </div>
+                <div class="faq__item">
+                    <h3 class="faq__question">How does it work?</h3>
+                    <p class="faq__answer">It's plug-and-play! Sign up by following a few quick and easy steps, and
+                        you're ready to set up your own custom Para page.</p>
+                    <p class="faq__answer">You'll only need to share it with your fans now. Get ready to see your
+                        account balance grow.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews section-padding reveal" aria-label="Customer reviews">
+            <div class="container reviews__grid">
+                <article class="review-card review-card_intro">
+                    <div class="review-card__icon" aria-hidden="true"></div>
+                    <h2 class="title-lg">We have excellent reviews on Trustpilot</h2>
+                </article>
+
+                <article class="review-card">
+                    <h3 class="title-sm">Awesome design and the idea itself</h3>
+                    <p class="text-md">Love it! I have got a personal video from my lovely TikTok creator &lt;3</p>
+                    <div class="review-card__meta">
+                        <span>Polly</span>
+                        <span class="stars" aria-label="5 star rating">★★★★★</span>
+                    </div>
+                </article>
+
+                <article class="review-card">
+                    <h3 class="title-sm">My experience is an 11/10</h3>
+                    <p class="text-md">I remember when I first got the email to join the team, and right away, I knew
+                        that this was gonna be an adventure.</p>
+                    <div class="review-card__meta">
+                        <span>Colin Camacho</span>
+                        <span class="stars" aria-label="5 star rating">★★★★★</span>
+                    </div>
+                </article>
+
+                <article class="review-card">
+                    <h3 class="title-sm">Very cool idea</h3>
+                    <p class="text-md">I have used it on behalf of a client of mine and it's been an interesting way to
+                        promote fan engagement while also making money.</p>
+                    <div class="review-card__meta">
+                        <span>Jorge Hernandez</span>
+                        <span class="stars" aria-label="5 star rating">★★★★★</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="focus section-padding" aria-label="Feature collage">
+            <div class="container">
+                <h2 class="title-xl text-center reveal">Para allows you to focus on what you do best, while your fans
+                    support your work.</h2>
+                <div class="focus__grid reveal" aria-hidden="true">
+                    <img src="assets/images/parallax-wish.png" alt="" class="focus__item focus__item_wish" />
+                    <img src="assets/images/parallax-fixprice.png" alt="" class="focus__item focus__item_fix" />
+                    <img src="assets/images/parallax-pass.png" alt="" class="focus__item focus__item_pass" />
+                    <img src="assets/images/parallax-auction.png" alt="" class="focus__item focus__item_auction" />
+                    <img src="assets/images/parallax-subscription.png" alt="" class="focus__item focus__item_sub" />
+                    <img src="assets/images/parallax-fundraising.png" alt="" class="focus__item focus__item_fund" />
+                    <img src="assets/images/parallax-wheel.png" alt="" class="focus__item focus__item_wheel" />
+                    <img src="assets/images/parallax-donation.png" alt="" class="focus__item focus__item_donation" />
+                    <img src="assets/images/parallax-message.png" alt="" class="focus__item focus__item_message" />
+                </div>
+            </div>
+        </section>
+
+        <section class="username section-padding reveal" id="username" aria-label="Username signup">
+            <div class="container username__layout">
+                <h2 class="title-xl">Choose your<br />Para username</h2>
+                <form class="username__form" action="#" method="post" novalidate>
+                    <label class="username__field" for="username-input">
+                        <span class="username__prefix">para.co/</span>
+                        <input id="username-input" class="username__input" type="text" name="username"
+                            placeholder="username" autocomplete="off" />
+                    </label>
+                    <p class="username__message" id="username-feedback" aria-live="polite">&nbsp;</p>
+                    <button class="btn btn_pill btn_primary" id="username-submit" type="submit" disabled>Start
+                        earning</button>
+                </form>
+            </div>
         </section>
     </main>
+
+    <footer class="site-footer section-padding" aria-label="Footer">
+        <div class="container site-footer__stack">
+            <h2 class="title-md">Follow us on
+                <a href="https://x.com/paraducer" target="_blank" rel="noopener noreferrer">X <img
+                        src="assets/icons/x.svg" alt="X" /></a>,
+                <a href="https://www.instagram.com/paraducer/" target="_blank" rel="noopener noreferrer">Instagram <img
+                        src="assets/icons/instagram.svg" alt="Instagram" /></a>,
+                <a href="https://www.tiktok.com/@paraducer" target="_blank" rel="noopener noreferrer">TikTok <img
+                        src="assets/icons/tiktok.svg" alt="TikTok" /></a>
+            </h2>
+
+            <h2 class="title-md">You can always
+                <a href="https://para.co/support" target="_blank" rel="noopener noreferrer">write us <img
+                        src="assets/icons/arrow-small.svg" alt="Arrow" /></a>
+                if you have any questions.
+            </h2>
+
+            <nav class="legal-nav" aria-label="Legal links">
+                <a class="btn btn_pill btn_subtle" href="https://para.co/terms" target="_blank"
+                    rel="noopener noreferrer">Terms</a>
+                <a class="btn btn_pill btn_subtle" href="https://para.co/privacy" target="_blank"
+                    rel="noopener noreferrer">Privacy</a>
+                <a class="btn btn_pill btn_subtle" href="https://para.co/support" target="_blank"
+                    rel="noopener noreferrer">Support</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="scripts/landing.js" defer></script>
 </body>
 
 </html>
