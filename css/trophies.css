@@ -7,10 +7,24 @@
 
 }
 
-.trophies__header-menu-icon {
+.trophies__header-menu-button {
     width: 3rem;
     height: 4rem;
+    border-radius: 1rem;
     cursor: pointer;
+    background-color: #23201f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.trophies__header-menu-button-line {
+    width: 1rem;
+    height: 0.2rem;
+    border-radius: .2rem;
+    background-color: var(--color-accent);
 }
 
 .trophies__header-logo {
@@ -39,13 +53,14 @@
 .trophies__body-text {
     letter-spacing: -0.05rem;
     margin-bottom: 0.5rem;
+    color: var(--color-accent);
 }
 
 .trophies__body-title {
     font-size: 6.96rem;
     line-height: 6.38rem;
     font-family: "Plus Jakarta Sans";
-    color: var(--color-text-primary);
+    color: var(--color-accent);
     letter-spacing: -0.075rem;
     font-weight: 500;
     margin-bottom: 3rem;
@@ -55,7 +70,7 @@
     display: flex;
     align-items: center;
     border-radius: 10rem;
-    background-color: var(--color-surface-soft);
+    background-color: #423733;
     margin-bottom: 3rem;
 }
 
@@ -63,15 +78,15 @@
     font-size: 2rem;
     line-height: 2rem;
     font-family: "Plus Jakarta Sans";
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--color-text-primary);
     cursor: pointer;
     border-radius: 10rem;
     padding: 1.4rem;
 }
 
 .trophies__tab_state_active {
-    color: var(--color-text-secondary);
-    background-color: var(--color-surface-contrast);
+    color: var(--color-accent);
+    background-color: #23201F;
 }
 
 .trophies__trophy-list {
@@ -83,11 +98,15 @@
 .trophies__trophy-item {
     width: 35rem;
     height: 53.4rem;
-    background-color: var(--color-surface-soft);
+    background-color: #423733;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 3rem;
+
+    &:not(.trophies__trophy-item_type_empty) {
+        border: .1rem solid rgb(255, 255, 255, 15%);
+    }
 }
 
 .trophies__trophy-item_type_empty {
@@ -103,7 +122,7 @@
     font-size: 3.24rem;
     line-height: 3.33rem;
     font-family: "Plus Jakarta Sans";
-    color: var(--color-text-primary);
+    color: var(--color-accent);
     letter-spacing: -0.075rem;
     margin-bottom: 1.5rem;
 }
@@ -112,13 +131,15 @@
     font-size: 1.89rem;
     line-height: 2rem;
     font-family: "Plus Jakarta Sans";
-    color: var(--color-accent);
+    color: var(--color-text-primary);
     text-align: center;
     max-width: 29rem;
     height: auto;
 }
 
-.trophies__trophy-empty-text {}
+.trophies__trophy-empty-text {
+    color: var(--color-text-muted);
+}
 
 .trophies__footer {
     display: flex;
@@ -142,8 +163,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
-    background-color: var(--color-overlay-dark);
+    opacity: 0.5;
 }
 
 .trophies__footer-social-icon {
@@ -183,52 +203,5 @@
 .trophies__footer-menu-link {
     cursor: pointer;
     text-decoration: none;
-}
-
-@media screen and (max-width: 1024px) {
-    .trophies__body-title {
-        font-size: 5.4rem;
-        line-height: 5.1rem;
-    }
-
-    .trophies__tab {
-        font-size: 1.7rem;
-        line-height: 1.9rem;
-    }
-
-    .trophies__trophy-item {
-        width: min(35rem, 100%);
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .trophies__header {
-        padding: 1rem 1.5rem;
-    }
-
-    .trophies__body {
-        padding: 1.5rem;
-    }
-
-    .trophies__tabs {
-        width: 100%;
-        overflow-x: auto;
-        padding: 0.3rem;
-        justify-content: flex-start;
-    }
-
-    .trophies__tab {
-        flex: 0 0 auto;
-        white-space: nowrap;
-    }
-
-    .trophies__trophy-list {
-        justify-content: center;
-    }
-
-    .trophies__footer {
-        flex-wrap: wrap;
-        row-gap: 1.2rem;
-        padding: 1.6rem;
-    }
+    color: rgb(255, 255, 255, 50%);
 }

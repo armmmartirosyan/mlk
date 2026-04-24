@@ -90,6 +90,21 @@ textarea {
     }
 }
 
+.small-canvas {
+    width: var(--static-frame-width);
+    min-height: var(--static-frame-height);
+    height: var(--static-frame-height);
+    overflow-x: hidden;
+    position: relative;
+    background-image: url("../images/bg-light.png");
+    background-size: cover;
+    background-position: center;
+
+    &.dark-canvas {
+        background-image: url("../images/bg-dark.png");
+    }
+}
+
 .generic-list-reset {
     list-style: none;
 }
