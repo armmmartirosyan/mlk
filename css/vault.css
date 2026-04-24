@@ -1,8 +1,9 @@
 .vault-page__content {
-    padding: 9.6rem 2rem 0;
+    padding: 9.6rem 2rem;
     display: flex;
     column-gap: 2.2rem;
     justify-content: center;
+    overflow-y: auto;
 }
 
 .vault-page__section {
@@ -11,9 +12,17 @@
 
 .vault-page__section-title {
     margin-bottom: 1.5rem;
+    color: var(--color-accent);
 }
 
-.vault-page__section-description {}
+.vault-page__section-description {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.vault-page__drop-icon {
+    width: 3rem;
+    height: 3rem;
+}
 
 .vault-page__drop-area {
     width: 86.2rem;
@@ -24,6 +33,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .vault-page__drop-figure {
@@ -42,6 +52,6 @@
 }
 
 .vault-page__browse-button {
-    background-color: var(--color-surface-soft);
-    padding: .9rem 1rem;
+    background-color: var(--color-text-muted);
+    padding: 1rem 1.1rem;
 }
