@@ -2,22 +2,17 @@
     position: relative;
     width: var(--static-sidebar-width);
     flex: 0 0 var(--static-sidebar-width);
-    background-image:
-        linear-gradient(180deg, rgba(31, 26, 27, 0.82) 0%, rgba(17, 14, 15, 0.9) 100%),
-        url('../images/sidebar-texture.png');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-blend-mode: multiply;
-    box-shadow: inset -0.1rem 0 0 var(--color-line-soft);
+    backdrop-filter: blur(1rem) opacity(0.9);
 }
 
 .navigation {
-    position: absolute;
-    height: fit-content;
-    top: 0;
-    bottom: 0;
-    margin: auto 2.5rem;
+    padding-inline: 2.5rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: auto;
 }
 
 .navigation__item+.navigation__item {
@@ -34,13 +29,17 @@
     color: var(--color-text-primary);
 }
 
-.navigation__item_group_1 {
+.navigation__item_group_1 .navigation__link {
     color: var(--color-text-primary);
 }
 
-.navigation__item_group_2 {
+.navigation__item_group_2 .navigation__link {
     color: var(--color-text-muted);
-    opacity: 0.75;
+    opacity: 0.4;
+}
+
+.navigation__item_group_2:hover .navigation__link {
+    opacity: 1;
 }
 
 .navigation__link,
@@ -50,6 +49,7 @@
 
 .navigation__link.navigation__link_state_active {
     color: var(--color-accent);
+    opacity: 1;
 }
 
 .navigation__link:hover {
@@ -59,20 +59,11 @@
 .page__workspace {
     position: relative;
     width: calc(var(--static-frame-width) - var(--static-sidebar-width));
-    height: 100dvh;
+    height: 100%;
     flex: 1;
     display: flex;
     flex-direction: column;
-    background-image:
-        linear-gradient(180deg, rgba(15, 13, 14, 0.56) 0%, rgba(15, 13, 14, 0.68) 100%),
-        repeating-radial-gradient(circle at 0 0,
-            transparent 0 7.1rem,
-            rgba(164, 112, 91, 0.2) 7.1rem 7.3rem),
-        repeating-radial-gradient(circle at 7.2rem 7.2rem,
-            transparent 0 7.1rem,
-            rgba(164, 112, 91, 0.18) 7.1rem 7.3rem),
-        linear-gradient(180deg, var(--color-bg-primary) 0%, var(--color-bg-secondary) 100%);
-    background-size: auto, 14.4rem 14.4rem, 14.4rem 14.4rem, auto;
+    padding-top: 6rem;
 }
 
 .navigation__divider {
@@ -89,10 +80,15 @@
 }
 
 .page__header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6rem;
+    z-index: 9999;
     padding: 1.6rem 2.7rem;
     display: flex;
     justify-content: space-between;
-    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.06);
 }
 
 .page__content {
@@ -102,89 +98,7 @@
 .page {
     position: relative;
     width: var(--static-frame-width);
-    height: var(--static-frame-height);
+    height: 100%;
     display: flex;
     overflow: hidden;
-    background: linear-gradient(180deg, var(--color-bg-primary) 0%, var(--color-bg-secondary) 100%);
-}
-
-@media screen and (max-width: 1200px) {
-    :root {
-        --static-sidebar-width: 29rem;
-    }
-
-    .page__content {
-        padding: 4rem 2rem 5rem 6rem;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .page {
-        flex-direction: column;
-    }
-
-    .page__sidebar {
-        width: 100%;
-        flex: 0 0 auto;
-        box-shadow: inset 0 -0.1rem 0 var(--color-line-soft);
-    }
-
-    .navigation {
-        position: relative;
-        margin: 1.2rem 1.6rem;
-    }
-
-    .navigation .generic-list-reset {
-        display: flex;
-        align-items: center;
-        gap: 1.8rem;
-        overflow-x: auto;
-        white-space: nowrap;
-        padding-bottom: 0.6rem;
-    }
-
-    .navigation__item+.navigation__item {
-        margin-top: 0;
-    }
-
-    .navigation__link {
-        font-size: 2.4rem;
-        line-height: 1;
-    }
-
-    .navigation__divider {
-        width: 0.1rem;
-        height: 2.2rem;
-        background: var(--color-line-soft);
-        flex: 0 0 auto;
-    }
-
-    .page__workspace {
-        width: 100%;
-        height: auto;
-        min-height: calc(100dvh - 8.1rem);
-    }
-
-    .page__header {
-        padding: 1.2rem 1.6rem;
-    }
-
-    .page__content {
-        padding: 2.2rem 1.6rem 3rem;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .navigation__link {
-        font-size: 2rem;
-    }
-
-    .page__logo {
-        height: 1.6rem;
-    }
-
-    .page__droplet-icon {
-        width: 1.8rem;
-        height: 2.4rem;
-    }
 }

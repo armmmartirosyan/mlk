@@ -12,6 +12,15 @@
 
 <body class="generic-body">
     <main class="generic-canvas">
+        <header class="page__header">
+            <div></div>
+            <img src="./images/mlk.svg" alt="MLK" class="page__logo" />
+
+            <button class="generic-button-reset" type="button" aria-label="Profile indicator">
+                <img class="page__droplet-icon" src="images/header-droplet.svg" alt="Droplet" />
+            </button>
+        </header>
+
         <section class="page" aria-label="Settings page">
             <aside class="page__sidebar" aria-label="Sidebar navigation">
                 <nav class="navigation" aria-label="Main sections">
@@ -54,15 +63,6 @@
             </aside>
 
             <section class="page__workspace" aria-label="Settings workspace">
-                <header class="page__header">
-                    <div></div>
-                    <img src="./images/mlk.png" alt="MLK" class="page__logo" />
-
-                    <button class="generic-button-reset" type="button" aria-label="Profile indicator">
-                        <img class="page__droplet-icon" src="images/droplet-icon.png" alt="Droplet" />
-                    </button>
-                </header>
-
                 <div class="page__content settings-page__content">
                     <figure class="settings-page__image-figure">
                         <img class="settings-page__image-img" src="images/droplet-big.svg" alt="Settings" />
@@ -77,7 +77,8 @@
                         </div>
                     </div>
                     <div class="settings-page__text-line">
-                        <h1 class="settings-page__email typo typo_size_23 typo_weight_500 typo_color_primary">someverylongemail@example.com</h1>
+                        <h1 class="settings-page__email typo typo_size_23 typo_weight_500 typo_color_primary">
+                            someverylongemail@example.com</h1>
                         <div class="settings-page__pencil-button">
                             <img src="images/pencil.svg" alt="Pencil" class="settings-page__pencil-icon">
                         </div>
@@ -85,14 +86,19 @@
                     <div class="settings-page__resend-line">
                         <img src="images/clock.svg" alt="Clock" class="settings-page__resend-icon">
                         <p class="settings-page__resend-info typo typo_size_15 typo_color_primary">Unverified email</p>
-                        <button class="generic-button-reset settings-page__resend-button typo typo_size_12 typo_color_white_muted" type="button">Resend</button>
+                        <button
+                            class="generic-button-reset settings-page__resend-button typo typo_size_12 typo_color_white_muted"
+                            type="button">Resend</button>
                     </div>
-                    <button class="settings-page__set-password-btn generic-button-reset typo typo_size_12 typo_color_primary" type="button">
+                    <button
+                        class="settings-page__set-password-btn generic-button-reset typo typo_size_12 typo_color_primary"
+                        type="button">
                         Set new password
                     </button>
                     <div class="settings-page__social-line">
                         <img src="images/social-group.svg" alt="Social" class="settings-page__social-icon">
-                        <p class="settings-page__social-info typo typo_size_23 typo_color_secondary">Add social media accounts</p>
+                        <p class="settings-page__social-info typo typo_size_23 typo_color_secondary">Add social media
+                            accounts</p>
                     </div>
                 </div>
             </section>
@@ -112,12 +118,14 @@
                 <div></div>
                 <div class="messages-modal__body-content">
                     <img src="images/messages-quote.svg" alt="Quote" class="messages-modal__body-icon">
-                    <p class="messages-modal__body-info typo typo_size_15 typo_weight_500 typo_color_secondary">No messages</p>
+                    <p class="messages-modal__body-info typo typo_size_15 typo_weight_500 typo_color_secondary">No
+                        messages</p>
                     <p class="messages-modal__body-description typo typo_size_12 typo_color_secondary">
                         Messages from the team will be shown here
                     </p>
                 </div>
-                <button class="generic-button-reset messages-modal__body-button typo typo_size_15 typo_color_secondary" type="button">
+                <button class="generic-button-reset messages-modal__body-button typo typo_size_15 typo_color_secondary"
+                    type="button">
                     Send us a message
                     <img src="images/send-message.svg" alt="Send" class="messages-modal__body-button-icon">
                 </button>

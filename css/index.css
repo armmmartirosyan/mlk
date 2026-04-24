@@ -173,11 +173,6 @@ a {
     color: var(--mlk-text-primary);
 }
 
-.btn:hover {
-    transform: translateY(-0.2rem);
-    filter: brightness(1.04);
-}
-
 .btn:active {
     transform: translateY(0);
     filter: brightness(0.96);

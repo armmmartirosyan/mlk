@@ -8,19 +8,19 @@
     /* Surface Glass: rgba(255, 255, 255, 0.12) | Divider: rgba(255, 255, 255, 0.2) */
     --color-primary: #2C2425;
     --color-secondary: #1F1A1B;
-    --color-accent: #E3B6A5;
+    --color-accent: #E5AE99;
     --color-chat-surface: var(--color-primary);
     --color-bg-primary: var(--color-primary);
     --color-bg-secondary: var(--color-secondary);
     --color-surface-soft: #5D504B;
     --color-surface-contrast: #EFE3D8;
-    --color-text-primary: #F1EBE3;
+    --color-text-primary: #EADFD6;
     --color-text-secondary: #A79A92;
-    --color-text-muted: #6B605D;
+    --color-text-muted: #A39187;
     --color-text-dark: #261F20;
     --color-line-soft: rgba(255, 255, 255, 0.2);
-    --color-glass: rgba(255, 255, 255, 0.12);
-    --color-glass-strong: rgba(255, 255, 255, 0.2);
+    --white-10: rgba(255, 255, 255, 0.1);
+    --white-20: rgba(255, 255, 255, 0.2);
     --color-overlay-dark: rgba(0, 0, 0, 0.18);
     --shadow-soft: 0 1.2rem 3rem rgba(0, 0, 0, 0.25);
 
@@ -74,12 +74,16 @@ textarea {
 .generic-canvas {
     width: var(--static-frame-width);
     min-height: var(--static-frame-height);
+    height: var(--static-frame-height);
     margin-inline: auto;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     overflow-x: hidden;
     position: relative;
+    background-image: url("../images/bg-light.png");
+    background-size: cover;
+    background-position: center;
 }
 
 .generic-list-reset {
@@ -91,10 +95,6 @@ textarea {
     border: 0;
     background: transparent;
     padding: 0;
-}
-
-.generic-button-reset:hover {
-    opacity: 0.9;
 }
 
 .generic-button-reset:active {
@@ -113,7 +113,7 @@ textarea {
 }
 
 .ui-panel_tone_glass {
-    background-color: var(--color-glass);
+    background-color: var(--white-10);
 }
 
 .ui-scrollbar_hidden {

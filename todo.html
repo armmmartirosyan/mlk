@@ -12,6 +12,15 @@
 
 <body class="generic-body">
     <main class="generic-canvas">
+        <header class="page__header">
+            <div></div>
+            <img src="./images/mlk.svg" alt="MLK" class="page__logo" />
+
+            <button class="generic-button-reset" type="button" aria-label="Profile indicator">
+                <img class="page__droplet-icon" src="images/header-droplet.svg" alt="Droplet" />
+            </button>
+        </header>
+
         <section class="page" aria-label="To-Do page">
             <aside class="page__sidebar" aria-label="Sidebar navigation">
                 <nav class="navigation" aria-label="Main sections">
@@ -54,20 +63,13 @@
             </aside>
 
             <section class="page__workspace" aria-label="To-Do workspace">
-                <header class="page__header">
-                    <div></div>
-                    <img src="./images/mlk.png" alt="MLK" class="page__logo" />
-
-                    <button class="generic-button-reset" type="button" aria-label="Profile indicator">
-                        <img class="page__droplet-icon" src="images/droplet-icon.png" alt="Droplet" />
-                    </button>
-                </header>
-
                 <div class="page__content todo-page__content">
                     <div class="todo-page__content-wrapper">
-                        <h1 class="todo-page__title typo typo_size_70 typo_weight_500 typo_color_primary">To-do list</h1>
+                        <h1 class="todo-page__title typo typo_size_70 typo_weight_500 typo_color_primary">To-do list
+                        </h1>
                         <p class="todo-page__description">
-                            On this page you will receive <span class="todo-page__description_accent_true typo typo_color_secondary">tasks for
+                            On this page you will receive <span
+                                class="todo-page__description_accent_true typo typo_color_secondary">tasks for
                                 money</span>
                         </p>
                         <ul class="todo-page__list generic-list-reset">

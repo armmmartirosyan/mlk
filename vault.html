@@ -12,6 +12,15 @@
 
 <body class="generic-body">
     <main class="generic-canvas">
+        <header class="page__header">
+            <div></div>
+            <img src="./images/mlk.svg" alt="MLK" class="page__logo" />
+
+            <button class="generic-button-reset" type="button" aria-label="Profile indicator">
+                <img class="page__droplet-icon" src="images/header-droplet.svg" alt="Droplet" />
+            </button>
+        </header>
+
         <section class="page" aria-label="Vault page">
             <aside class="page__sidebar" aria-label="Sidebar navigation">
                 <nav class="navigation" aria-label="Main sections">
@@ -54,18 +63,10 @@
             </aside>
 
             <section class="page__workspace" aria-label="Vault workspace">
-                <header class="page__header">
-                    <div></div>
-                    <img src="./images/mlk.png" alt="MLK" class="page__logo" />
-
-                    <button class="generic-button-reset" type="button" aria-label="Profile indicator">
-                        <img class="page__droplet-icon" src="images/droplet-icon.png" alt="Droplet" />
-                    </button>
-                </header>
-
                 <div class="page__content vault-page__content">
                     <section class="vault-page__section" aria-label="Vault section">
-                        <h2 class="vault-page__section-title typo typo_size_46 typo_weight_500 typo_color_primary">Vault</h2>
+                        <h2 class="vault-page__section-title typo typo_size_46 typo_weight_500 typo_color_primary">Vault
+                        </h2>
                         <p class="vault-page__section-description typo typo_size_15 typo_color_white_muted">
                             Vault is your media file storage. Vault makes it convenient to reuse your files in different
                             lots, chats, etc. It is currently empty.
@@ -78,7 +79,9 @@
                         <p class="vault-page__drop-description typo typo_size_23 typo_color_primary">
                             Drag your files here
                         </p>
-                        <button class="vault-page__browse-button generic-button-reset ui-pill-button typo typo_size_12 typo_color_white_muted" type="button">
+                        <button
+                            class="vault-page__browse-button generic-button-reset ui-pill-button typo typo_size_12 typo_color_white_muted"
+                            type="button">
                             Browse
                         </button>
                     </div>

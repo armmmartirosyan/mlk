@@ -12,6 +12,16 @@
 
 <body class="generic-body">
     <main class="generic-canvas">
+        <header class="page__header">
+            <div></div>
+            <img src="./images/mlk.svg" alt="MLK" class="page__logo" />
+
+            <button class="generic-button-reset" type="button" aria-label="Profile indicator">
+                <img class="page__droplet-icon" src="images/header-droplet.svg" alt="Droplet" />
+            </button>
+        </header>
+
+
         <section class="page" aria-label="Chat page">
             <aside class="page__sidebar" aria-label="Sidebar navigation">
                 <nav class="navigation" aria-label="Main sections">
@@ -53,16 +63,8 @@
                 </nav>
             </aside>
 
+
             <section class="page__workspace" aria-label="Chat workspace">
-                <header class="page__header">
-                    <div></div>
-                    <img src="./images/mlk.png" alt="MLK" class="page__logo" />
-
-                    <button class="generic-button-reset" type="button" aria-label="Profile indicator">
-                        <img class="page__droplet-icon" src="images/droplet-icon.png" alt="Droplet" />
-                    </button>
-                </header>
-
                 <div class="page__content chat-page__content">
                     <section class="chat-toolbar" aria-label="Search and chat filters">
                         <div class="chat-toolbar__section">
@@ -88,7 +90,7 @@
                         </ul>
 
                         <div class="chat-toolbar__section">
-                            <p class="chat-toolbar__status typo typo_size_12 typo_color_primary">No chats found</p>
+                            <p class="typo typo_size_12 typo_color_primary">No chats found</p>
                         </div>
                     </section>
 

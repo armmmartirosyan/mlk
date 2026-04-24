@@ -143,7 +143,7 @@
     border: none;
     outline: none;
     resize: none;
-    background-color: var(--color-glass-strong);
+    background-color: var(--white-20);
     margin-bottom: 1.6rem;
 }
 

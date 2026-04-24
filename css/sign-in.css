@@ -119,10 +119,6 @@
     color: var(--color-accent);
 }
 
-.signin-form__submit:hover {
-    filter: brightness(0.97);
-}
-
 .signin-form__submit:active {
     filter: brightness(0.93);
 }
