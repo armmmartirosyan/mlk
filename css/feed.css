@@ -1,19 +1,16 @@
 .feed-page__content {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+    overflow-y: auto;
 }
 
 .feed-page__title {
     margin-bottom: 5rem;
+    color: var(--color-accent);
 }
 
 .feed-page__list {
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    height: 100%;
-    overflow-y: auto;
 }
 
 .feed-page__row {
@@ -30,11 +27,13 @@
 
 .feed-page__row-date {
     margin-bottom: 1rem;
+    color: rgb(255, 255, 255, 40%);
 }
 
 .feed-page__row-text {
     padding: 1.7rem 4rem 2.2rem 1.7rem;
-    background-color: var(--color-surface-contrast);
+    background-color: var(--color-accent);
     border-radius: 2rem 2rem 2rem .5rem;
     max-width: 35rem;
+    color: var(--color-text-primary);
 }
