@@ -1,10 +1,12 @@
 .money-page__content {
     width: 100%;
     height: 100%;
+    overflow-y: auto;
 }
 
 .money-page__title {
     margin-bottom: 1.5rem;
+    color: var(--color-accent);
 }
 
 .money-page__earned {
@@ -22,11 +24,14 @@
     margin-bottom: 4rem;
 }
 
-.money-page__balance-amount {}
+.money-page__earned-amount {
+    color: var(--color-text-muted);
+}
 
 .money-page__balance-withdraw {
     padding: 2rem 2.6rem;
-    background-color: var(--color-surface-soft);
+    background-color: #23201F;
+    color: var(--color-accent);
 }
 
 .money-page__table {
@@ -68,6 +73,7 @@
 
 .money-page__withdraw-currency {
     font-weight: 400;
+    color: rgb(255, 255, 255, 0.5);
 }
 
 .money-page__withdraw-plus-figure {
