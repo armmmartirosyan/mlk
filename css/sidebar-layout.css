@@ -7,12 +7,22 @@
 
 .navigation {
     padding-inline: 2.5rem;
+    padding-block: 2rem;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.navigation>.generic-list-reset {
+    width: 100%;
+    margin-block: auto;
 }
 
 .navigation__item+.navigation__item {

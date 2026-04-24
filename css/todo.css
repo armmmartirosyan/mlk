@@ -1,22 +1,12 @@
 .todo-page__content {
     position: relative;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-}
+    padding-top: 11rem;
+    overflow-y: auto;
 
-.todo-page__content-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    width: fit-content;
-    height: fit-content;
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
-
-.todo-page__title {}
 
 .todo-page__description {
     font-size: 2.34rem;
@@ -36,6 +26,7 @@
     width: 24.4rem;
     height: 22.2rem;
     padding: 1.6rem 2.6rem 1.6rem 1.6rem;
+    background-color: #23201F;
 }
 
 .todo-page__list-item-icon {
@@ -43,4 +34,10 @@
     margin-bottom: 1.5rem;
 }
 
-.todo-page__list-item-text {}
+.todo-page__title {
+    color: var(--color-accent);
+}
+
+.todo-page__description_accent_true {
+    color: var(--color-accent);
+}
