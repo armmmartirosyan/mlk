@@ -124,6 +124,7 @@ textarea {
     border: 0;
     background: transparent;
     outline: none;
+    padding: 0;
 }
 
 /* Shared surface helpers */

@@ -4,7 +4,10 @@
     justify-content: space-between;
     padding: 1rem 3rem;
     width: 100%;
-
+    position: fixed;
+    height: 6rem;
+    top: 0;
+    left: 0;
 }
 
 .trophies__header-menu-button {
@@ -38,7 +41,7 @@
 }
 
 .trophies__body {
-    padding: 2rem;
+    padding: 8rem 2rem 6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
