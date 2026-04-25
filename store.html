@@ -14,7 +14,12 @@
 <body class="generic-body">
     <main class="generic-canvas">
         <header class="page__header">
-            <div></div>
+            <button class="generic-button-reset layout-nav-toggle layout-nav-toggle_responsive" data-sidebar-toggle
+                type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="layout-nav-toggle__line"></span>
+                <span class="layout-nav-toggle__line"></span>
+                <span class="layout-nav-toggle__line"></span>
+            </button>
             <img src="./images/mlk.svg" alt="MLK" class="page__logo" />
 
             <button class="generic-button-reset" type="button" aria-label="Profile indicator">
@@ -22,8 +27,8 @@
             </button>
         </header>
 
-        <section class="page" aria-label="Store page">
-            <aside class="page__sidebar" aria-label="Sidebar navigation">
+        <section class="page" data-sidebar-layout="responsive" aria-label="Store page">
+            <aside id="primary-sidebar" class="page__sidebar" data-sidebar-panel aria-label="Sidebar navigation">
                 <nav class="navigation" aria-label="Main sections">
                     <ul class="generic-list-reset">
                         <li class="navigation__item navigation__item_group_1">
@@ -57,7 +62,8 @@
                             <a class="navigation__link" href="settings.html">settings</a>
                         </li>
                         <li class="navigation__item navigation__item_group_2">
-                            <button class="navigation__link navigation__help-trigger generic-button-reset" type="button">help</button>
+                            <button class="navigation__link navigation__help-trigger generic-button-reset"
+                                type="button">help</button>
                         </li>
                     </ul>
                 </nav>
@@ -71,6 +77,7 @@
         </section>
     </main>
     <script src="scripts/help-modal.js" defer></script>
+    <script src="scripts/sidebar-layout.js" defer></script>
 </body>
 
 </html>

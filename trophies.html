@@ -6,18 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/globals.css" />
     <link rel="stylesheet" href="css/sidebar-layout.css" />
+    <link rel="stylesheet" href="css/help-modal.css" />
     <link rel="stylesheet" href="css/trophies.css" />
     <title>Trophies</title>
 </head>
 
 <body class="generic-body">
-    <main class="small-canvas dark-canvas ui-scrollbar_hidden">
+    <main class="small-canvas dark-canvas ui-scrollbar_hidden" data-sidebar-layout="compact">
         <header class="small-canvas__header trophies__header">
-            <button class="generic-button-reset small-canvas__header-menu-button" type="button"
-                aria-label="Profile indicator">
-                <div class="small-canvas__header-menu-button-line"></div>
-                <div class="small-canvas__header-menu-button-line"></div>
-                <div class="small-canvas__header-menu-button-line"></div>
+            <button
+                class="generic-button-reset small-canvas__header-menu-button layout-nav-toggle layout-nav-toggle_always"
+                data-sidebar-toggle type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+                <div class="small-canvas__header-menu-button-line layout-nav-toggle__line"></div>
+                <div class="small-canvas__header-menu-button-line layout-nav-toggle__line"></div>
+                <div class="small-canvas__header-menu-button-line layout-nav-toggle__line"></div>
             </button>
             <img src="./images/mlk.svg" alt="MLK" class="small-canvas__header-logo" />
 
@@ -25,6 +27,48 @@
                 <img class="small-canvas__header-droplet-icon" src="images/header-droplet.svg" alt="Droplet" />
             </button>
         </header>
+
+        <aside id="primary-sidebar" class="page__sidebar" data-sidebar-panel aria-label="Sidebar navigation">
+            <nav class="navigation" aria-label="Main sections">
+                <ul class="generic-list-reset">
+                    <li class="navigation__item navigation__item_group_1">
+                        <a class="navigation__link" href="chat.html">chat</a>
+                    </li>
+                    <li class="navigation__item navigation__item_group_1">
+                        <a class="navigation__link" href="todo.html">to-do</a>
+                    </li>
+                    <li class="navigation__item navigation__item_group_1">
+                        <a class="navigation__link" href="lots.html">lots</a>
+                    </li>
+                    <li class="navigation__item navigation__item_group_1">
+                        <a class="navigation__link" href="store.html">store</a>
+                    </li>
+                    <li class="navigation__item navigation__item_group_1">
+                        <a class="navigation__link" href="vault.html">vault</a>
+                    </li>
+                    <li class="navigation__item navigation__item_group_1">
+                        <a class="navigation__link" href="money.html">money</a>
+                    </li>
+
+                    <div class="navigation__divider"></div>
+
+                    <li class="navigation__item navigation__item_group_2">
+                        <a class="navigation__link" href="feed.html">feed</a>
+                    </li>
+                    <li class="navigation__item navigation__item_group_2">
+                        <a class="navigation__link navigation__link_state_active" href="trophies.html">trophies</a>
+                    </li>
+                    <li class="navigation__item navigation__item_group_2">
+                        <a class="navigation__link" href="settings.html">settings</a>
+                    </li>
+                    <li class="navigation__item navigation__item_group_2">
+                        <button class="navigation__link navigation__help-trigger generic-button-reset"
+                            type="button">help</button>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
         <div class="trophies__body">
             <img src="images/droplet-big.svg" alt="Droplet" class="trophies__body-icon">
             <p class="trophies__body-text type-23">
@@ -135,6 +179,8 @@
             </ul>
         </footer>
     </main>
+    <script src="scripts/help-modal.js" defer></script>
+    <script src="scripts/sidebar-layout.js" defer></script>
 </body>
 
 </html>
