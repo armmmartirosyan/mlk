@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/globals.css" />
     <link rel="stylesheet" href="css/sidebar-layout.css" />
+    <link rel="stylesheet" href="css/help-modal.css" />
     <link rel="stylesheet" href="css/vault.css" />
     <title>Vault</title>
 </head>
@@ -56,7 +57,7 @@
                             <a class="navigation__link" href="settings.html">settings</a>
                         </li>
                         <li class="navigation__item navigation__item_group_2">
-                            <a class="navigation__link" href="help.html">help</a>
+                            <button class="navigation__link navigation__help-trigger generic-button-reset" type="button">help</button>
                         </li>
                     </ul>
                 </nav>
@@ -65,9 +66,9 @@
             <section class="page__workspace" aria-label="Vault workspace">
                 <div class="page__content vault-page__content ui-scrollbar_hidden">
                     <section class="vault-page__section" aria-label="Vault section">
-                        <h2 class="vault-page__section-title typo typo_size_46 typo_weight_500">Vault
+                        <h2 class="vault-page__section-title type-46-500">Vault
                         </h2>
-                        <p class="vault-page__section-description typo typo_size_15">
+                        <p class="vault-page__section-description type-15">
                             Vault is your media file storage. Vault makes it convenient to reuse your files in different
                             lots, chats, etc. It is currently empty.
                         </p>
@@ -76,11 +77,11 @@
                         <figure class="vault-page__drop-figure">
                             <img src="images/arrow.svg" alt="Drop area icon" class="vault-page__drop-icon" />
                         </figure>
-                        <p class="vault-page__drop-description typo typo_size_23 typo_color_primary">
+                        <p class="vault-page__drop-description type-23-primary">
                             Drag your files here
                         </p>
                         <button
-                            class="vault-page__browse-button generic-button-reset ui-pill-button typo typo_size_12 typo_color_white_muted"
+                            class="vault-page__browse-button generic-button-reset ui-pill-button type-12-muted"
                             type="button">
                             Browse
                         </button>
@@ -89,6 +90,7 @@
             </section>
         </section>
     </main>
+    <script src="scripts/help-modal.js" defer></script>
 </body>
 
 </html>

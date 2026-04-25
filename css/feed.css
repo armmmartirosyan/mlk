@@ -27,7 +27,7 @@
 
 .feed-page__row-date {
     margin-bottom: 1rem;
-    color: rgb(255, 255, 255, 40%);
+    color: var(--white-40);
 }
 
 .feed-page__row-text {

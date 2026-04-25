@@ -26,7 +26,7 @@
     width: 24.4rem;
     height: 22.2rem;
     padding: 1.6rem 2.6rem 1.6rem 1.6rem;
-    background-color: #23201F;
+    background-color: var(--color-surface-panel);
 }
 
 .todo-page__list-item-icon {

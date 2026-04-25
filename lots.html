@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/globals.css" />
     <link rel="stylesheet" href="css/sidebar-layout.css" />
+    <link rel="stylesheet" href="css/help-modal.css" />
     <link rel="stylesheet" href="css/lots.css" />
     <title>Lots</title>
 </head>
@@ -56,7 +57,7 @@
                             <a class="navigation__link" href="settings.html">settings</a>
                         </li>
                         <li class="navigation__item navigation__item_group_2">
-                            <a class="navigation__link" href="help.html">help</a>
+                            <button class="navigation__link navigation__help-trigger generic-button-reset" type="button">help</button>
                         </li>
                     </ul>
                 </nav>
@@ -65,10 +66,10 @@
             <section class="page__workspace" aria-label="Lots workspace">
                 <div class="page__content lots-page__content ui-scrollbar_hidden">
                     <div class="lots-page__header">
-                        <h1 class="lots-page__title typo typo_size_74 typo_weight_500">Lots</h1>
+                        <h1 class="lots-page__title type-74-500">Lots</h1>
                         <div class="generic-button-reset lots-page__reorder-button" type="button">
                             <img src="images/reorder.svg" alt="Reorder" class="lots-page__reorder-icon" />
-                            <span class="lots-page__reorder-text typo typo_size_15 typo_weight_500">Reorder</span>
+                            <span class="lots-page__reorder-text type-15-500">Reorder</span>
                         </div>
                     </div>
                     <div class="lots-page__box">
@@ -89,7 +90,7 @@
                                 <p class="lots-page__lot-type background_blue_gradieent">
                                     Tip
                                 </p>
-                                <p class="lots-page__lot-path typo typo_size_12">
+                                <p class="lots-page__lot-path type-12">
                                     para.co/kjhkjhkjhjkhkjh/tip
                                 </p>
                                 <div class="lots-page__lot-price-box">
@@ -110,7 +111,7 @@
                                 <p class="lots-page__lot-type background_yellow_gradieent">
                                     Subscription
                                 </p>
-                                <p class="lots-page__lot-path typo">
+                                <p class="lots-page__lot-path type-15">
                                     para.co/kjhkjhkjhjkhkjh/subscribe
                                 </p>
                                 <div class="lots-page__lot-price-box">
@@ -137,10 +138,10 @@
                                 <p class="lots-page__lot-type">
                                     Tip
                                 </p>
-                                <p class="lots-page__lot-title typo typo_size_15 typo_weight_500 typo_color_dark">
+                                <p class="lots-page__lot-title type-15-500-dark">
                                     Cup of coffee
                                 </p>
-                                <p class="lots-page__lot-description typo typo_size_12 typo_color_secondary">
+                                <p class="lots-page__lot-description type-12-secondary">
                                     I literally can’t start my day without a coffee
                                 </p>
                                 <div class="lots-page__lot-price-box">
@@ -161,10 +162,10 @@
                                 <p class="lots-page__lot-type">
                                     Wish
                                 </p>
-                                <p class="lots-page__lot-title typo typo_size_15 typo_weight_500 typo_color_dark">
+                                <p class="lots-page__lot-title type-15-500-dark">
                                     My favorite flowers🌸
                                 </p>
-                                <p class="lots-page__lot-description typo typo_size_12 typo_color_secondary">
+                                <p class="lots-page__lot-description type-12-secondary">
                                     You know how I love these 🥰😍
                                 </p>
                                 <div class="lots-page__lot-price-box">
@@ -185,10 +186,10 @@
                                 <p class="lots-page__lot-type">
                                     Wish
                                 </p>
-                                <p class="lots-page__lot-title typo typo_size_15 typo_weight_500 typo_color_dark">
+                                <p class="lots-page__lot-title type-15-500-dark">
                                     iPhone 17 Pro
                                 </p>
-                                <p class="lots-page__lot-description typo typo_size_12 typo_color_secondary">
+                                <p class="lots-page__lot-description type-12-secondary">
                                     I really really really want to try the new camera 🥹
                                 </p>
                                 <div class="lots-page__lot-price-box">
@@ -209,10 +210,10 @@
                                 <p class="lots-page__lot-type">
                                     Pass
                                 </p>
-                                <p class="lots-page__lot-title typo typo_size_15 typo_weight_500 typo_color_dark">
+                                <p class="lots-page__lot-title type-15-500-dark">
                                     Custom video
                                 </p>
-                                <p class="lots-page__lot-description typo typo_size_12 typo_color_secondary">
+                                <p class="lots-page__lot-description type-12-secondary">
                                     Purchase this Pass to get a custom video on OF
                                 </p>
                                 <div class="lots-page__lot-price-box">
@@ -233,10 +234,10 @@
                                 <p class="lots-page__lot-type">
                                     Pass
                                 </p>
-                                <p class="lots-page__lot-title typo typo_size_15 typo_weight_500 typo_color_dark">
+                                <p class="lots-page__lot-title type-15-500-dark">
                                     Access to Private Stories
                                 </p>
-                                <p class="lots-page__lot-description typo typo_size_12 typo_color_secondary">
+                                <p class="lots-page__lot-description type-12-secondary">
                                     Get this Pass and I'll add you to my Private Stories on Snap
                                 </p>
                                 <div class="lots-page__lot-price-box">
@@ -257,7 +258,7 @@
                                 <p class="lots-page__lot-type">
                                     Message
                                 </p>
-                                <p class="lots-page__lot-path typo typo_size_12">
+                                <p class="lots-page__lot-path type-12">
                                     para.co/kjhkjhkjhjkhkjh/message
                                 </p>
                                 <div class="lots-page__lot-price-box">
@@ -278,6 +279,7 @@
             </section>
         </section>
     </main>
+    <script src="scripts/help-modal.js" defer></script>
 </body>
 
 </html>

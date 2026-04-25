@@ -44,7 +44,7 @@
 }
 
 .lots-page__create {
-    background-color: #23201F;
+    background-color: var(--color-surface-panel);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,7 +78,7 @@
 }
 
 .lots-page__lot-item {
-    background-color: #23201F;
+    background-color: var(--color-surface-panel);
     padding: 1.5rem 1.7rem 1.5rem 1.5rem;
     display: flex;
     flex-direction: column;
@@ -110,7 +110,7 @@
 .lots-page__lot-type {
     padding: .7rem 1rem;
     background-color: var(--color-accent);
-    color: #423733;
+    color: var(--color-surface-panel-muted);
     border-radius: 2rem;
     font-size: 1.43rem;
     font-family: "Plus Jakarta Sans";
@@ -122,13 +122,13 @@
 }
 
 .background_blue_gradieent {
-    background-image: linear-gradient(to right, #0000FF, #71EB44);
-    color: white;
+    background-image: linear-gradient(to right, var(--color-highlight-blue), var(--color-highlight-green));
+    color: var(--white-100);
 }
 
 .background_yellow_gradieent {
-    background-image: linear-gradient(to right, #FFDD24, #0000FF);
-    color: white;
+    background-image: linear-gradient(to right, var(--color-highlight-yellow), var(--color-highlight-blue));
+    color: var(--white-100);
 }
 
 .lots-page__lot-title {
@@ -170,7 +170,7 @@
     position: absolute;
     height: 100%;
     width: 0.1rem;
-    background: rgba(0, 0, 0, 0.2);
+    background: var(--black-20);
     top: 0;
     left: -0.8rem;
 }

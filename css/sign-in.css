@@ -19,7 +19,7 @@
     width: fit-content;
     height: 4rem;
     border-radius: 3rem;
-    background-color: #23201F;
+    background-color: var(--color-surface-panel);
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -108,7 +108,7 @@
     background-position: center;
 
     &:hover {
-        background-color: rgb(255, 255, 255, 15%);
+        background-color: var(--white-15);
     }
 }
 
@@ -124,7 +124,7 @@
     width: 100%;
     height: 6rem;
     margin-block: 2rem 6.4rem;
-    background-color: #23201F;
+    background-color: var(--color-surface-panel);
     color: var(--color-accent);
     padding: 2.1rem;
     font-family: 'Plus Jakarta Sans', 'AdvancedLevel Inter', sans-serif;

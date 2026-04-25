@@ -103,7 +103,7 @@
 .chat-empty-state__line {
     margin: 0;
     white-space: nowrap;
-    text-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.25);
+    text-shadow: 0 0.2rem 1.2rem var(--black-25);
 }
 
 .chat-page__content {

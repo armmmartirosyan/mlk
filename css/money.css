@@ -30,7 +30,7 @@
 
 .money-page__balance-withdraw {
     padding: 2rem 2.6rem;
-    background-color: #23201F;
+    background-color: var(--color-surface-panel);
     color: var(--color-accent);
 }
 
@@ -73,7 +73,7 @@
 
 .money-page__withdraw-currency {
     font-weight: 400;
-    color: rgb(255, 255, 255, 0.5);
+    color: var(--white-50);
 }
 
 .money-page__withdraw-plus-figure {

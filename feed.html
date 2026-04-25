@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/globals.css" />
     <link rel="stylesheet" href="css/sidebar-layout.css" />
+    <link rel="stylesheet" href="css/help-modal.css" />
     <link rel="stylesheet" href="css/feed.css" />
     <title>Feed</title>
 </head>
@@ -56,7 +57,7 @@
                             <a class="navigation__link" href="settings.html">settings</a>
                         </li>
                         <li class="navigation__item navigation__item_group_2">
-                            <a class="navigation__link" href="help.html">help</a>
+                            <button class="navigation__link navigation__help-trigger generic-button-reset" type="button">help</button>
                         </li>
                     </ul>
                 </nav>
@@ -64,16 +65,16 @@
 
             <section class="page__workspace" aria-label="Feed workspace">
                 <div class="page__content feed-page__content ui-scrollbar_hidden">
-                    <h1 class="feed-page__title typo typo_size_68 typo_weight_500">Hello, Someone!
+                    <h1 class="feed-page__title type-68-500">Hello, Someone!
                     </h1>
                     <div class="feed-page__list ui-scrollbar_hidden">
                         <article class="feed-page__row">
                             <img class="feed-page__row-icon" src="images/mlk.svg" alt="MLK" />
                             <div class="feed-page__row-content">
-                                <p class="feed-page__row-date typo typo_size_15">
+                                <p class="feed-page__row-date type-15">
                                     Apr 4
                                 </p>
-                                <p class="feed-page__row-text typo typo_size_18">
+                                <p class="feed-page__row-text type-18">
                                     What a day! Welcome, dear friend, to Para. You might not be the first to visit our
                                     site, but in our hearts, you’re #1. (Okay, we say that to everyone — but we mean it
                                     just for you!)
@@ -85,6 +86,7 @@
             </section>
         </section>
     </main>
+    <script src="scripts/help-modal.js" defer></script>
 </body>
 
 </html>

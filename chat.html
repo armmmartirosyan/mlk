@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/globals.css" />
     <link rel="stylesheet" href="css/sidebar-layout.css" />
+    <link rel="stylesheet" href="css/help-modal.css" />
     <link rel="stylesheet" href="css/chat.css" />
     <title>Chat</title>
 </head>
@@ -57,7 +58,7 @@
                             <a class="navigation__link" href="settings.html">settings</a>
                         </li>
                         <li class="navigation__item navigation__item_group_2">
-                            <a class="navigation__link" href="help.html">help</a>
+                            <button class="navigation__link navigation__help-trigger generic-button-reset" type="button">help</button>
                         </li>
                     </ul>
                 </nav>
@@ -90,16 +91,16 @@
                         </ul>
 
                         <div class="chat-toolbar__section">
-                            <p class="typo typo_size_12 typo_color_primary">No chats found</p>
+                            <p class="type-12-primary">No chats found</p>
                         </div>
                     </section>
 
                     <section class="chat-content" aria-label="Chat content">
                         <div class="chat-empty-state" aria-live="polite">
-                            <p class="chat-empty-state__line typo typo_size_24 typo_weight_500 typo_color_primary">
+                            <p class="chat-empty-state__line type-24-500-primary">
                                 Hello, Someone!
                             </p>
-                            <p class="chat-empty-state__line typo typo_size_24 typo_weight_500 typo_color_primary">
+                            <p class="chat-empty-state__line type-24-500-primary">
                                 You don't have any chats.
                             </p>
                         </div>
@@ -108,6 +109,7 @@
             </section>
         </section>
     </main>
+    <script src="scripts/help-modal.js" defer></script>
 </body>
 
 </html>

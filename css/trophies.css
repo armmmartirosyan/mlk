@@ -37,7 +37,7 @@
     display: flex;
     align-items: center;
     border-radius: 10rem;
-    background-color: #423733;
+    background-color: var(--color-surface-panel-muted);
     margin-bottom: 3rem;
 }
 
@@ -53,7 +53,7 @@
 
 .trophies__tab_state_active {
     color: var(--color-accent);
-    background-color: #23201F;
+    background-color: var(--color-surface-panel);
 }
 
 .trophies__trophy-list {
@@ -65,14 +65,14 @@
 .trophies__trophy-item {
     width: 35rem;
     height: 53.4rem;
-    background-color: #423733;
+    background-color: var(--color-surface-panel-muted);
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 3rem;
 
     &:not(.trophies__trophy-item_type_empty) {
-        border: .1rem solid rgb(255, 255, 255, 15%);
+        border: .1rem solid var(--white-15);
     }
 }
 
@@ -170,5 +170,5 @@
 .trophies__footer-menu-link {
     cursor: pointer;
     text-decoration: none;
-    color: rgb(255, 255, 255, 50%);
+    color: var(--white-50);
 }

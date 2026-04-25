@@ -139,7 +139,7 @@
     font-size: 2rem;
     line-height: 2.2rem;
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--white-50);
     border: none;
     outline: none;
     resize: none;
@@ -151,7 +151,7 @@
     font-size: 2rem;
     line-height: 2.2rem;
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--white-50);
 }
 
 .extra__body-list-item-tip-footer {

@@ -39,6 +39,11 @@
     color: var(--color-text-primary);
 }
 
+button.navigation__link {
+    appearance: none;
+    text-align: left;
+}
+
 .navigation__item_group_1 .navigation__link {
     color: var(--color-text-primary);
 }
@@ -127,7 +132,7 @@
     height: 4rem;
     border-radius: 1rem;
     cursor: pointer;
-    background-color: #23201f;
+    background-color: var(--color-surface-panel);
     display: flex;
     align-items: center;
     justify-content: center;

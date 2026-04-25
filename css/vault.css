@@ -16,7 +16,7 @@
 }
 
 .vault-page__section-description {
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--white-50);
 }
 
 .vault-page__drop-icon {
@@ -28,7 +28,7 @@
     width: 86.2rem;
     height: 50.5rem;
     border-radius: 2rem;
-    border: .1rem dashed rgba(255, 255, 255, 0.5);
+    border: .1rem dashed var(--white-50);
     display: flex;
     flex-direction: column;
     justify-content: center;
