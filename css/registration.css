@@ -1,0 +1,62 @@
+.registration__body {
+    padding-top: 7.6rem;
+    padding-left: 24.4rem;
+}
+
+.registration__title {
+    font-family: 'Plus Jakarta Sans', 'AdvancedLevel Inter', sans-serif;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: var(--color-accent);
+    font-size: 7.67rem;
+    line-height: 8rem;
+    max-width: 60.8rem;
+    margin-bottom: 5.7rem;
+}
+
+.registration__field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5.7rem;
+}
+
+.registration__field-label {
+    font-family: 'Plus Jakarta Sans', 'AdvancedLevel Inter', sans-serif;
+    letter-spacing: 0;
+    font-weight: 400;
+    font-size: 8rem;
+    line-height: 8rem;
+    color: var(--color-text-muted);
+}
+
+.registration__input {
+    font-family: 'Plus Jakarta Sans', 'AdvancedLevel Inter', sans-serif;
+    letter-spacing: 0;
+    font-weight: 400;
+    font-size: 8rem;
+    line-height: 8rem;
+    color: var(--color-text-primary);
+}
+
+.registration__input::placeholder {
+    opacity: 1;
+    font-family: 'Plus Jakarta Sans', 'AdvancedLevel Inter', sans-serif;
+    letter-spacing: 0;
+    font-weight: 400;
+    font-size: 8rem;
+    line-height: 8rem;
+    color: var(--color-text-primary);
+}
+
+.registration__submit {
+    font-family: 'Plus Jakarta Sans', 'AdvancedLevel Inter', sans-serif;
+    letter-spacing: 0;
+    font-weight: 400;
+    font-size: 3.28rem;
+    line-height: 3.5rem;
+    color: var(--color-accent);
+    padding: 1.2rem 3.5rem 1.6rem;
+    border-radius: 3rem;
+    background-color: #23201F;
+    cursor: pointer;
+}

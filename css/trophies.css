@@ -1,43 +1,7 @@
 .trophies__header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 3rem;
-    width: 100%;
     position: fixed;
-    height: 6rem;
     top: 0;
     left: 0;
-}
-
-.trophies__header-menu-button {
-    width: 3rem;
-    height: 4rem;
-    border-radius: 1rem;
-    cursor: pointer;
-    background-color: #23201f;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: .3rem;
-}
-
-.trophies__header-menu-button-line {
-    width: 1rem;
-    height: 0.2rem;
-    border-radius: .2rem;
-    background-color: var(--color-accent);
-}
-
-.trophies__header-logo {
-    width: 5.5rem;
-    height: 1.9rem;
-}
-
-.trophies__header-droplet-icon {
-    width: 2.1rem;
-    height: 2.8rem;
 }
 
 .trophies__body {
