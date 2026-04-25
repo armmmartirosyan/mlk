@@ -37,7 +37,7 @@
 }
 
 .signin-form {
-    width: 36.8rem;
+    width: min(36.8rem, 100%);
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -69,7 +69,11 @@
     align-items: center;
 }
 
-.money-page__withdraw-name {}
+.money-page__withdraw-name {
+    overflow-wrap: break-word;
+    word-break: break-word;
+    min-width: 0;
+}
 
 .money-page__withdraw-currency {
     font-weight: 400;

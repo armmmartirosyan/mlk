@@ -59,6 +59,7 @@ html {
 body {
   font-family: "AdvancedLevel Inter", "Segoe UI", sans-serif;
   color: var(--color-text-primary);
+  overflow-wrap: break-word;
 }
 
 img {

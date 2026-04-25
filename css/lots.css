@@ -136,6 +136,8 @@
     margin-bottom: .4rem;
     align-self: flex-start;
     color: var(--color-text-primary);
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 .lots-page__lot-description {

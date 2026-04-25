@@ -57,6 +57,9 @@
     display: flex;
     align-items: center;
     gap: .5rem;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    min-width: 0;
 }
 
 .extra__body-primary-fans-icon {
@@ -94,6 +97,9 @@
     color: var(--color-text-primary);
     margin-right: .4rem;
     width: 100%;
+    min-width: 0;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 .extra__body-list-item-gift {
@@ -129,6 +135,9 @@
     line-height: 3.3rem;
     color: var(--color-text-primary);
     margin-bottom: 2rem;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    max-width: 100%;
 }
 
 .extra__body-list-item-tip-textarea {

@@ -36,4 +36,6 @@
     border-radius: 2rem 2rem 2rem .5rem;
     max-width: 35rem;
     color: var(--color-text-primary);
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
