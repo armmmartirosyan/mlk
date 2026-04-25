@@ -12,6 +12,8 @@
     line-height: 8rem;
     max-width: 60.8rem;
     margin-bottom: 5.7rem;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 .registration__field {
