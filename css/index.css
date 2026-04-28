@@ -1,46 +1,91 @@
-.landing__body {
-    padding-top: 7.6rem;
-    padding-left: 24.4rem;
+.main-page {
+    padding: 3.3rem 2rem 2rem 1rem;
 }
 
-.landing__title {
-    font-family: 'Plus Jakarta Sans', 'AdvancedLevel Inter', sans-serif;
-    font-weight: 400;
-    font-size: 7.67rem;
-    line-height: 8rem;
-    letter-spacing: 0;
-    color: var(--color-accent);
-    max-width: 60.8rem;
-    margin-bottom: 5.7rem;
+.home__wrapper {
+    width: 79rem;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
-.landing__actions {
+.home__logo {
+    height: 2.7rem;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto 1.8rem;
+}
+
+
+.home__carousel {
+    position: relative;
     display: flex;
     align-items: center;
-    gap: 2rem;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 7.4rem;
 }
 
-.landing__cta {
-    font-family: 'Plus Jakarta Sans', 'AdvancedLevel Inter', sans-serif;
-    font-weight: 400;
-    font-size: 3.28rem;
-    line-height: 3.5rem;
-    letter-spacing: 0;
+.home__carousel-item {
+    width: 21.1rem;
+    height: 30rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.home__carousel-item-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.5rem;
+}
+
+.home__content-title {
+    font-weight: 500;
+    font-size: 4.38rem;
+    line-height: 4.5rem;
+    color: var(--color-text-primary);
+    font-family: "Plus Jakarta Sans";
+    margin-bottom: 2rem;
+}
+
+.home__content-title-highlight {
     color: var(--color-accent);
-    padding: 1.2rem 3.5rem 1.6rem;
-    border-radius: 3rem;
+}
+
+.home__content-description {
+    display: flex;
+    gap: 6.2rem;
+    margin-bottom: 3rem;
+}
+
+.home__content-description-part {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: var(--color-text-primary);
+    font-family: "Plus Jakarta Sans";
+
+    &:first-child {
+        max-width: 17.9rem;
+    }
+
+    &:last-child {
+        max-width: 46.4rem;
+    }
+}
+
+.home__content-button {
+    width: 30rem;
+    height: 6rem;
+    padding: 2rem;
     background-color: var(--color-surface-panel);
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    transition: opacity 180ms ease;
-}
-
-.landing__cta:hover {
-    opacity: 0.75;
-}
-
-.landing__cta_secondary {
-    background-color: transparent;
-    color: var(--color-text-muted);
+    color: var(--color-accent);
+    font-size: 1.9rem;
+    line-height: 2rem;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 400;
+    box-shadow:
+        inset 0 .3rem .3rem var(--color-accent),
+        0 -.5rem 3rem var(--color-accent);
+    border-radius: 2rem;
 }
