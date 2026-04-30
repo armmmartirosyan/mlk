@@ -1,11 +1,23 @@
 .messages-modal {
     position: fixed;
-    right: 2rem;
-    bottom: 2rem;
+    right: 0;
+    bottom: 0;
+    padding: 2rem;
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 10000;
+    transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.messages-modal__container {
     width: 40rem;
     height: 70.4rem;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 32rem;
+    min-height: 32rem;
     border-radius: 2.4rem;
-    background-color: var(--color-surface-contrast);
+    background-color: var(--color-surface-panel-muted);
     display: flex;
     flex-direction: column;
     z-index: 10000;
@@ -31,6 +43,7 @@
 
 .messages-modal__title {
     letter-spacing: 0;
+    color: #E4AD98;
 }
 
 .messages-modal__close-btn {
@@ -43,7 +56,7 @@
 }
 
 .messages-modal__body {
-    border-block: .1rem solid var(--black-08);
+    border-block: .1rem solid var(--color-accent);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -66,17 +79,21 @@
 
 .messages-modal__body-info {
     letter-spacing: 0;
+    color: var(--color-text-muted);
 }
 
 .messages-modal__body-description {
     line-height: 2rem;
     letter-spacing: 0;
+    color: var(--color-text-muted);
 }
 
 .messages-modal__body-button {
     padding: 1.1rem 1.6rem;
     border-radius: 1rem;
     background-color: var(--color-accent);
+    color: var(--color-surface-panel-muted);
+    font-weight: 500;
     max-width: fit-content;
     display: flex;
     align-items: center;
@@ -114,23 +131,15 @@
 .messages-modal__footer-tab-text {
     line-height: 2rem;
     letter-spacing: 0;
+    color: var(--color-accent);
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 460px) {
     .messages-modal {
-        width: min(40rem, calc(100% - 3.2rem));
-        height: 64rem;
-        right: 1.6rem;
-        bottom: 1.6rem;
+        padding: 0;
     }
-}
 
-@media screen and (max-width: 700px) {
-    .messages-modal {
-        width: calc(100% - 2rem);
-        right: 1rem;
-        left: 1rem;
-        bottom: 1rem;
-        height: 58rem;
+    .messages-modal__container {
+        border-radius: 0;
     }
 }

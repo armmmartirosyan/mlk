@@ -46,6 +46,10 @@
     max-width: 54rem;
 }
 
+.settings-page__text-line+.settings-page__text-line {
+    margin-bottom: 0;
+}
+
 .settings-page__text {
     max-width: 100%;
     width: fit-content;
@@ -136,25 +140,33 @@
     word-break: break-all;
 }
 
-@media screen and (max-width: 1024px) {
-    .settings-page__text {
-        font-size: 5.2rem;
-        line-height: 4.8rem;
+@media screen and (max-width: 1200px) {
+    .settings-page__content {
+        padding: 1rem 1rem 3rem;
     }
-}
 
-@media screen and (max-width: 700px) {
     .settings-page__text {
-        font-size: 4.1rem;
-        line-height: 3.9rem;
+        font-size: 4.61rem;
+        line-height: 4.5rem;
     }
 
     .settings-page__text-line {
-        gap: 1.5rem;
+        max-width: unset;
+        justify-content: space-between;
+        margin-bottom: 1rem;
     }
 
-    .settings-page__social-icon {
-        width: 6rem;
-        height: 6rem;
+    .settings-page__text-line+.settings-page__text-line {
+        margin-bottom: 0;
+    }
+
+    .settings-page__image-figure {
+        width: 10.8rem;
+        height: 13.8rem;
+    }
+
+    .settings-page__image-img {
+        width: 9.4rem;
+        height: 15rem;
     }
 }

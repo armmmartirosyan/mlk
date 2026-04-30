@@ -146,13 +146,20 @@
 }
 
 .trophies__footer-payments {
+    width: fit-content;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .trophies__footer-payments-lock {
     width: 2rem;
     height: 2rem;
+}
+
+.trophies__footer-payments-block {
+    display: flex;
+    align-items: center;
 }
 
 .trophies__footer-payments-text {
@@ -178,4 +185,26 @@
     cursor: pointer;
     text-decoration: none;
     color: var(--white-50);
+}
+
+@media screen and (max-width: 1200px) {
+    .trophies__body-title {
+        font-size: 4.63rem;
+        line-height: 4.5rem;
+    }
+
+    .trophies__footer-menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .trophies__footer-payments {
+        row-gap: 2rem;
+        align-items: flex-end;
+    }
+
+    .trophies__footer-payments-block {
+        width: 100%;
+        padding-left: 3.3rem;
+    }
 }

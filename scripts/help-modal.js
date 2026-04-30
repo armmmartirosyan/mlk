@@ -2,9 +2,10 @@
     function createModalMarkup() {
         return [
             '<div class="messages-modal messages-modal_hidden" role="dialog" aria-modal="true" aria-label="Messages">',
+            '  <div class="messages-modal__container">',
             '  <div class="messages-modal__header">',
             '    <div></div>',
-            '    <h2 class="messages-modal__title type-18-500-secondary">Messages</h2>',
+            '    <h2 class="messages-modal__title type-18-500">Messages</h2>',
             '    <button class="generic-button-reset messages-modal__close-btn" type="button" aria-label="Close messages modal">',
             '      <img src="images/close-icon.svg" alt="Close" class="messages-modal__close-icon" />',
             '    </button>',
@@ -14,7 +15,7 @@
             '    <div class="messages-modal__body-content">',
             '      <img src="images/messages-quote.svg" alt="Quote" class="messages-modal__body-icon" />',
             '      <p class="messages-modal__body-info type-15-500-secondary">No messages</p>',
-            '      <p class="messages-modal__body-description type-12-secondary">Messages from the team will be shown here</p>',
+            '      <p class="messages-modal__body-description type-12-muted">Messages from the team will be shown here</p>',
             '    </div>',
             '    <button class="generic-button-reset messages-modal__body-button type-15-secondary" type="button">',
             '      Send us a message',
@@ -24,12 +25,13 @@
             '  <div class="messages-modal__footer">',
             '    <div class="messages-modal__footer-tab">',
             '      <img src="images/home-icon.svg" alt="Home" class="messages-modal__footer-tab-img" />',
-            '      <p class="messages-modal__footer-tab-text type-12-secondary">Home</p>',
+            '      <p class="messages-modal__footer-tab-text type-12-muted">Home</p>',
             '    </div>',
             '    <div class="messages-modal__footer-tab">',
             '      <img src="images/messages-quote.svg" alt="Messages" class="messages-modal__footer-tab-img" />',
-            '      <p class="messages-modal__footer-tab-text type-12-secondary">Messages</p>',
+            '      <p class="messages-modal__footer-tab-text type-12-muted">Messages</p>',
             '    </div>',
+            '  </div>',
             '  </div>',
             '</div>'
         ].join('');
