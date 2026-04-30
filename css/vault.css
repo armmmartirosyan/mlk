@@ -1,13 +1,18 @@
 .vault-page__content {
     padding: 9.6rem 2rem;
     display: flex;
-    column-gap: 2.2rem;
+    gap: 2.2rem;
     justify-content: center;
     overflow-y: auto;
 }
 
 .vault-page__section {
     width: 23.6rem;
+    min-width: 23.6rem;
+}
+
+.vault-page__drop-description::after {
+    content: "Drag your files here";
 }
 
 .vault-page__section-title {
@@ -17,11 +22,6 @@
 
 .vault-page__section-description {
     color: var(--white-50);
-}
-
-.vault-page__drop-icon {
-    width: 3rem;
-    height: 3rem;
 }
 
 .vault-page__drop-area {
@@ -45,13 +45,55 @@
     border-radius: 50%;
     border: .1rem solid var(--color-text-primary);
     margin-bottom: 1.5rem;
-}
-
-.vault-page__drop-description {
-    margin-bottom: 1.5rem;
+    background-image: url("../images/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 3rem;
 }
 
 .vault-page__browse-button {
+    margin-top: 1.5rem;
     background-color: var(--color-text-muted);
     padding: 1rem 1.1rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .vault-page__content {
+        padding: 1rem 1rem 10rem;
+        display: block;
+    }
+
+    .vault-page__section {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    .vault-page__drop-description::after {
+        content: "Add content";
+    }
+
+    .vault-page__browse-button {
+        display: none;
+    }
+
+    .vault-page__drop-area {
+        width: 100%;
+        height: unset;
+        padding: 4.1rem;
+    }
+
+    .vault-page__drop-figure {
+        width: 3rem;
+        height: 3rem;
+        border: none;
+        background-color: var(--color-accent);
+        background-image: url("../images/plus.svg");
+        background-size: 1.4rem;
+    }
+
+    .vault-page__drop-description {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
 }
