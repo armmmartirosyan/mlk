@@ -18,13 +18,13 @@
 
 .todo-page__list {
     display: flex;
-    align-items: center;
+    align-items: stretch;
+    flex-wrap: wrap;
     gap: .5rem;
 }
 
 .todo-page__list-item {
-    width: 24.4rem;
-    height: 22.2rem;
+    width: calc(25% - (1.5rem / 4));
     padding: 1.6rem 2.6rem 1.6rem 1.6rem;
     background-color: var(--color-surface-panel);
 }
@@ -40,4 +40,19 @@
 
 .todo-page__description_accent_true {
     color: var(--color-accent);
+}
+
+@media screen and (max-width: 1200px) {
+    .todo-page__content {
+        padding: 1rem;
+    }
+
+    .todo-page__title {
+        font-size: 3.29rem;
+        line-height: 3.33rem;
+    }
+
+    .todo-page__list-item {
+        width: calc(50% - .25rem);
+    }
 }

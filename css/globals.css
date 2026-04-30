@@ -53,7 +53,8 @@
 }
 
 html {
-  font-size: calc(100vw / (1920 / 10));
+  /* font-size: calc(100vw / (1920 / 10)); */
+  font-size: 62.5%;
 }
 
 body {
@@ -89,16 +90,12 @@ textarea {
   min-width: var(--static-frame-width);
   min-height: var(--static-frame-height);
   background:
-    radial-gradient(
-      100% 140% at 0% 0%,
+    radial-gradient(100% 140% at 0% 0%,
       var(--color-bg-glow) 0%,
-      transparent 58%
-    ),
-    linear-gradient(
-      180deg,
+      transparent 58%),
+    linear-gradient(180deg,
       var(--color-bg-primary) 0%,
-      var(--color-bg-secondary) 100%
-    );
+      var(--color-bg-secondary) 100%);
 }
 
 .generic-canvas {
@@ -340,7 +337,7 @@ textarea {
   color: var(--white-50);
 }
 
-@media screen and (max-width: 1512px) {
+/* @media screen and (max-width: 1512px) {
   html {
     font-size: calc(100vw / (1512 / 10));
   }
@@ -351,3 +348,9 @@ textarea {
     font-size: calc(100vw / (1440 / 10));
   }
 }
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: calc(100vw / (1200 / 10));
+  }
+} */

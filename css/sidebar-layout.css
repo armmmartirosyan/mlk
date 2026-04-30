@@ -240,7 +240,7 @@ button.navigation__link {
 }
 
 /* TODO: Uncomment this as soon as the responsive layout is implemented */
-/* @media screen and (max-width: 1366px) {
+@media screen and (max-width: 1200px) {
     .layout-nav-toggle_responsive {
         visibility: visible;
         pointer-events: auto;
@@ -283,4 +283,8 @@ button.navigation__link {
         opacity: 1;
         pointer-events: auto;
     }
-} */
+
+    .page__header {
+        padding: 1rem
+    }
+}
