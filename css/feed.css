@@ -5,7 +5,12 @@
 .feed-page__title {
     margin-bottom: 5rem;
     color: var(--color-accent);
+
+    span {
+        color: var(--color-text-primary);
+    }
 }
+
 
 .feed-page__list {
     display: flex;
@@ -38,4 +43,24 @@
     color: var(--color-text-primary);
     overflow-wrap: break-word;
     word-break: break-word;
+}
+
+@media screen and (max-width: 1200px) {
+    .feed-page__content {
+        padding: 1rem 1rem 10rem;
+    }
+
+    .feed-page__row-text {
+        max-width: unset;
+    }
+
+    .feed-page__title {
+        margin-bottom: 4.7rem;
+        font-size: 4.6rem;
+        line-height: 4.25rem;
+    }
+
+    .feed-page__row {
+        gap: 1.5rem;
+    }
 }

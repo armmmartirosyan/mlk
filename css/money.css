@@ -102,6 +102,36 @@
     right: 0;
     top: 0;
     height: 0.1rem;
-    width: 90%;
+    width: calc(100% - 4.6rem);
     background-color: var(--color-line-soft);
+}
+
+@media screen and (max-width: 1200px) {
+    .money-page__content {
+        padding: 1rem;
+    }
+
+    .money-page__title {
+        font-size: 3.25rem;
+        line-height: 3.33rem;
+
+    }
+
+    .money-page__balance-block {
+        justify-content: space-between;
+    }
+
+
+    .money-page__table {
+        flex-direction: column-reverse;
+        gap: 5rem;
+    }
+
+    .money-page__table-part {
+        width: 100%;
+    }
+
+    .money-page__withdraw-method {
+        max-width: unset;
+    }
 }
