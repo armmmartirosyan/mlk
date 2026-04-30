@@ -1,5 +1,5 @@
 .main-page {
-    padding: 3.3rem 2rem 2rem 1rem;
+    padding: 3.3rem 2rem 5rem 1rem;
 }
 
 .home__wrapper {
@@ -90,4 +90,28 @@
         inset 0 .3rem .3rem var(--color-accent),
         0 -.5rem 3rem var(--color-accent);
     border-radius: 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-page {
+        padding: 1rem 1rem 5rem;
+    }
+
+    .home__content-description {
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+
+        .home__content-description-part:first-child {
+            max-width: 100%;
+        }
+
+        .home__content-description-part:last-child {
+            max-width: 100%;
+        }
+    }
+
+    .home__content-button {
+        width: 100%;
+    }
 }
