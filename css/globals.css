@@ -343,12 +343,6 @@ textarea {
   }
 }
 
-@media screen and (max-width: 1440px) {
-  html {
-    font-size: calc(100vw / (1440 / 10));
-  }
-}
-
 @media screen and (max-width: 1200px) {
   html {
     font-size: calc(100vw / (1200 / 10));

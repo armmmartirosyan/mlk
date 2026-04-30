@@ -51,6 +51,7 @@
     font-size: 4.55rem;
     line-height: 4.5rem;
     margin-bottom: 3rem;
+    align-self: flex-start;
 }
 
 .signin-form__field {
