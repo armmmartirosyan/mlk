@@ -47,26 +47,30 @@
     gap: 1.5rem;
     flex-wrap: wrap;
     align-items: stretch;
+    width: 100%;
 }
 
 .model__body-list-item {
+    container-type: inline-size;
     width: calc(25% - (4.5rem / 4));
-    border-radius: 2rem;
+    min-height: 36cqw;
+    border-radius: 1cqw;
 }
 
 .model__body-list-item-card {
+    container-type: inline-size;
     width: calc(25% - (4.5rem / 4));
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-bottom: 1rem;
-    border-radius: 2rem;
+    padding-bottom: 2.93cqw;
+    border-radius: 5.87cqw;
 }
 
 .model__body-list-item-card-image-block {
     width: 100%;
-    min-height: 43.5rem;
-    margin-bottom: 2.7rem;
+    min-height: 127.57cqw;
+    margin-bottom: 7.92cqw;
     background-image: url(../images/model-card-bg.svg);
     background-repeat: no-repeat;
     background-position: top left;
@@ -75,65 +79,65 @@
 }
 
 .model__body-list-item-card-of-icon {
-    width: 9.2rem;
-    height: 9.2rem;
+    width: 26.98cqw;
+    height: 26.98cqw;
     position: absolute;
-    top: 2rem;
-    left: 8.5rem;
+    top: 5.87cqw;
+    left: 24.93cqw;
 }
 
 .model__body-list-item-card-love {
-    font-size: 2.88rem;
-    line-height: 3.28rem;
+    font-size: 8.45cqw;
+    line-height: 9.62cqw;
     font-weight: 400;
     color: white;
     font-family: "Plus Jakarta Sans";
     position: absolute;
-    top: 12.5rem;
-    left: 8.5rem;
+    top: 36.66cqw;
+    left: 24.93cqw;
     font-style: italic;
 }
 
 .model__body-list-item-card-girl-img {
-    width: 7.4rem;
-    height: 7.9rem;
+    width: 21.70cqw;
+    height: 23.17cqw;
     position: absolute;
-    bottom: 6rem;
-    left: 4.8em;
+    bottom: 20cqw;
+    left: 12cqw;
     border-radius: 50%;
     transform: rotate3d(1, 1, 1, 30deg);
 }
 
 .model__body-list-item-card-heart-icon {
-    width: 2rem;
-    height: 1.7rem;
+    width: 5.87cqw;
+    height: 4.99cqw;
     position: absolute;
-    bottom: 7.5rem;
-    left: 12.9rem;
+    bottom: 21.99cqw;
+    left: 37.83cqw;
 }
 
 .model__body-list-item-figure {
     width: 100%;
-    height: 43.5rem;
-    margin-bottom: 2.7rem;
-    border-radius: 2rem;
+    height: 127.57cqw;
+    margin-bottom: 7.92cqw;
+    border-radius: 5.87cqw;
     position: relative;
 }
 
 .model__body-list-item-img {
     width: 100%;
     height: 100%;
-    border-radius: 2rem;
+    border-radius: 5.87cqw;
     object-fit: cover;
 }
 
 .model__body-list-item-caption {
     position: absolute;
-    width: 15.3rem;
-    height: 21.8rem;
-    border-radius: 2rem;
+    width: 44.87cqw;
+    height: 63.93cqw;
+    border-radius: 5.87cqw;
     background-color: var(--color-surface-panel);
-    padding: 1.174rem;
+    padding: 3.44cqw;
 }
 
 .model__body-list-item-caption-top-left {
@@ -157,15 +161,15 @@
 }
 
 .model__body-list-item-caption-img {
-    width: 4.4rem;
-    height: 5.9rem;
-    border-radius: 2.3rem;
-    margin-bottom: 1.43rem;
+    width: 12.90cqw;
+    height: 17.30cqw;
+    border-radius: 6.74cqw;
+    margin-bottom: 4.19cqw;
 }
 
 .model__body-list-item-caption-text {
-    font-size: 2.26rem;
-    line-height: 2.45rem;
+    font-size: 6.63cqw;
+    line-height: 7.18cqw;
     font-weight: 400;
     color: var(--color-text-primary);
     font-family: "Plus Jakarta Sans";
@@ -177,11 +181,11 @@
 }
 
 .model__body-list-item-name {
-    font-size: 2.2rem;
-    line-height: 2.3rem;
+    font-size: 6.45cqw;
+    line-height: 6.74cqw;
     font-weight: 500;
     color: var(--color-accent);
-    margin-right: .8rem;
+    margin-right: 2.35cqw;
     width: 100%;
     min-width: 0;
     overflow-wrap: break-word;
@@ -190,11 +194,11 @@
 }
 
 .model__body-list-item-card-name {
-    font-size: 2.2rem;
-    line-height: 2.3rem;
+    font-size: 6.45cqw;
+    line-height: 6.74cqw;
     font-weight: 400;
     color: var(--color-text-primary);
-    margin-right: .8rem;
+    margin-right: 2.35cqw;
     width: 100%;
     min-width: 0;
     overflow-wrap: break-word;
@@ -203,39 +207,42 @@
 }
 
 .model__body-list-item-gift {
-    font-size: 2.2rem;
+    font-size: 6.45cqw;
     font-family: "Plus Jakarta Sans";
-    line-height: 2.3rem;
+    line-height: 6.74cqw;
     font-weight: 400;
     color: var(--color-text-primary);
 }
 
 .model__body-list-item-amount {
-    font-size: 2.2rem;
-    line-height: 2.3rem;
+    font-size: 6.45cqw;
+    line-height: 6.74cqw;
     font-weight: 400;
     color: var(--color-accent);
-    padding: 0.7rem 1.5rem;
-    border-radius: 3rem;
+    padding: 2.05cqw 4.40cqw;
+    border-radius: 8.80cqw;
     background-color: var(--color-surface-panel);
     font-family: "Plus Jakarta Sans";
 }
 
 .model__body-list-item-tip {
+    container-type: inline-size;
     width: calc(25% - (4.5rem / 4));
-    border-radius: 2rem;
     background-image: linear-gradient(to bottom, rgba(229, 174, 153, 0.5), rgba(130, 101, 89, 0.5));
-    padding: 2.5rem 1.5rem 2rem 1.5rem;
+    /* border-radius: 5.87cqw;
+    padding: 7.33cqw 4.40cqw 5.87cqw 4.40cqw; */
+    padding: 0.9cqw;
+    border-radius: 1.5cqw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .model__body-list-item-tip-name {
-    font-size: 3.2rem;
-    line-height: 3.3rem;
+    font-size: 9.38cqw;
+    line-height: 9.68cqw;
     color: var(--color-accent);
-    margin-bottom: 2rem;
+    margin-bottom: 5.87cqw;
     overflow-wrap: break-word;
     word-break: break-word;
     max-width: 100%;
@@ -244,10 +251,10 @@
 .model__body-list-item-tip-textarea {
     width: 100%;
     height: 100%;
-    border-radius: 1rem;
-    padding: 1.2rem 1.5rem;
-    font-size: 2rem;
-    line-height: 2.2rem;
+    border-radius: 2.93cqw;
+    padding: 3.52cqw 4.40cqw;
+    font-size: 5.87cqw;
+    line-height: 6.45cqw;
     font-weight: 400;
     color: var(--white-50);
     border: none;
@@ -257,79 +264,79 @@
 }
 
 .model__body-list-item-tip-textarea::placeholder {
-    font-size: 2rem;
-    line-height: 2.2rem;
+    font-size: 5.87cqw;
+    line-height: 6.45cqw;
     font-weight: 400;
     color: var(--white-50);
 }
 
 .model__body-list-item-tip-textarea-length {
     position: absolute;
-    bottom: 2.4rem;
-    right: 0.7rem;
-    font-size: 1rem;
-    line-height: 1.2rem;
+    bottom: 7.04cqw;
+    right: 2.05cqw;
+    font-size: 2.93cqw;
+    line-height: 3.52cqw;
     color: var(--white-50);
 }
 
 .model__body-list-item-tip-textarea-wrapper {
     position: relative;
     width: 100%;
-    height: 33.4rem;
-    margin-bottom: 1.6rem;
+    height: 97.95cqw;
+    margin-bottom: 4.69cqw;
 }
 
 .model__body-list-item-tip-footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: .3rem;
+    gap: 0.88cqw;
 }
 
 .model__body-list-item-tip-sum-box {
     display: flex;
     align-items: center;
-    width: 20.3rem;
-    height: 6rem;
+    width: 59.53cqw;
+    height: 17.60cqw;
     justify-content: space-between;
-    padding: .8rem .5rem .5rem 1.5rem;
-    border-radius: 1.5rem;
+    padding: 2.35cqw 1.47cqw 1.47cqw 4.40cqw;
+    border-radius: 4.40cqw;
     background-color: var(--color-text-primary);
 }
 
 .model__body-list-item-tip-sum-name {
-    font-size: 1.2rem;
-    line-height: 1.4rem;
+    font-size: 3.52cqw;
+    line-height: 4.11cqw;
     font-weight: 400;
     color: black;
     opacity: 0.5;
-    margin-bottom: 0.26rem;
+    margin-bottom: 0.76cqw;
 }
 
 .model__body-list-item-tip-sum-amount {
-    font-size: 2.5rem;
+    font-size: 7.33cqw;
     font-weight: 400;
     color: var(--color-surface-panel);
     font-family: "Plus Jakarta Sans";
 }
 
 .model__body-list-item-tip-plus-button {
-    width: 3rem;
-    height: 5rem;
-    border-radius: 1rem;
+    width: 8.80cqw;
+    height: 14.66cqw;
+    border-radius: 2.93cqw;
     background-color: var(--color-overlay-dark);
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     color: var(--color-text-dark);
-    font-size: 1.8rem;
+    font-size: 5.28cqw;
 }
 
 .model__body-list-item-tip-button {
-    width: 11.4rem;
-    height: 6rem;
-    border-radius: 3rem;
+    width: 33.43cqw;
+    height: 17.60cqw;
+    border-radius: 8.80cqw;
     background-color: var(--color-surface-panel);
     display: flex;
     align-items: center;
@@ -337,58 +344,62 @@
     cursor: pointer;
     color: var(--color-accent);
     font-family: "Plus Jakarta Sans";
-    font-size: 1.5rem;
+    font-size: 4.40cqw;
     font-weight: 600;
 }
 
 .model__body-list-item-tip-start {
+    container-type: inline-size;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 0.9cqw;
+    border-radius: 1.5cqw;
     background-color: rgba(38, 34, 33, 50%);
 }
 
 .model__body-list-item-ask {
+    container-type: inline-size;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1rem;
-    border: .1rem solid white;
+    padding: 1cqw;
+    border: 0.08cqw solid white;
+    border-radius: 1.5cqw;
 }
 
 .model__body-list-item-tip-start-img {
-    width: 6rem;
-    height: 7rem;
-    margin-bottom: 1.6rem;
+    width: 40cqw;
+    height: 50cqw;
+    margin-bottom: 4.69cqw;
     object-fit: cover;
-    border-radius: 1.5rem;
+    border-radius: 4.40cqw;
 }
 
 .model__body-list-item-ask-img {
-    width: 6rem;
-    height: 7rem;
-    margin-bottom: 1.6rem;
+    width: 40cqw;
+    height: 50cqw;
+    margin-bottom: 4.69cqw;
     object-fit: cover;
-    border-radius: 1.5rem;
+    border-radius: 4.40cqw;
 }
 
 .model__body-list-item-tip-start-text {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
+    font-size: 12cqw;
+    line-height: 12cqw;
     font-weight: 400;
     color: white;
     font-family: "Plus Jakarta Sans";
-    margin-bottom: 1.6rem;
+    margin-bottom: 4.69cqw;
 }
 
 .model__body-list-item-ask-text {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
+    font-size: 12cqw;
+    line-height: 12cqw;
     font-weight: 400;
     color: white;
     font-family: "Plus Jakarta Sans";
-    margin-bottom: 1.6rem;
+    margin-bottom: 4.69cqw;
 }
 
 .model__body-list-item-ask-text-span {
@@ -397,29 +408,27 @@
 
 .model__body-list-item-tip-start-button {
     width: 100%;
-    height: 5rem;
-    border-radius: 1.5rem;
+    border-radius: 4.40cqw;
     background-color: var(--color-surface-panel);
     cursor: pointer;
     color: var(--color-accent);
     font-family: "Plus Jakarta Sans";
-    font-size: 1.5rem;
-    line-height: 1.8rem;
-    padding: 1.6rem;
+    font-size: 6.45cqw;
+    line-height: 6.74cqw;
+    padding: 4.69cqw;
     font-weight: 600;
 }
 
 .model__body-list-item-ask-button {
     width: 100%;
-    height: 5rem;
-    border-radius: 1.5rem;
+    border-radius: 4.40cqw;
     background-color: var(--color-accent);
     cursor: pointer;
     color: var(--color-surface-panel);
     font-family: "Plus Jakarta Sans";
-    font-size: 1.5rem;
-    line-height: 1.8rem;
-    padding: 1.6rem;
+    font-size: 6.45cqw;
+    line-height: 6.74cqw;
+    padding: 4.69cqw;
     font-weight: 600;
 }
 
@@ -435,6 +444,7 @@
     .model__body-list-item,
     .model__body-list-item-card,
     .model__body-list-item-tip {
+        container-type: inline-size;
         width: calc((100% / 3) - 1rem);
     }
 }
@@ -447,6 +457,23 @@
     .model__body-list-item,
     .model__body-list-item-card,
     .model__body-list-item-tip {
+        container-type: inline-size;
         width: calc(50% - .25rem);
     }
+
+    .model__body-list-item {
+        min-height: 70cqw;
+    }
+
+    .model__body-list-item-tip-start,
+    .model__body-list-item-ask,
+    .model__body-list-item-tip {
+        padding: 2.5cqw;
+        border-radius: 2.5cqw;
+    }
+}
+
+/* Hide initially so it can be toggled by JS */
+.model__body-list-item-tip {
+    display: none;
 }
