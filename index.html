@@ -14,16 +14,53 @@
     <main class="small-canvas main-page ui-scrollbar_hidden">
         <div class="home__wrapper">
             <img src="images/mlk.svg" alt="MLK" class="home__logo">
-            <div class="home__carousel">
-                <div class="home__carousel-item">
-                    <img src="images/bg-dark.png" alt="Carousel item" class="home__carousel-item-image">
+            <div class="home__carousel" data-home-carousel>
+                <div class="home__carousel-track">
+                    <div class="home__carousel-item home__carousel-item_pos_left" data-carousel-item>
+                        <img src="images/cup-of-coffee.png" alt="Carousel item" class="home__carousel-item-image">
+                        <div class="home__carousel-item-overlay">
+                            <div class="home__carousel-item-profile">
+                                <img src="images/girl.png" alt="Avatar" class="home__carousel-item-avatar">
+                                <div class="home__carousel-item-meta">
+                                    <p class="home__carousel-item-name">Sophia.love</p>
+                                    <p class="home__carousel-item-fans">2.4K fans</p>
+                                </div>
+                            </div>
+                            <button class="home__carousel-item-sub generic-button-reset">$9.99 / month</button>
+                        </div>
+                    </div>
+                    <div class="home__carousel-item home__carousel-item_pos_center" data-carousel-item>
+                        <img src="images/king_of_the_wheel.png" alt="Carousel item" class="home__carousel-item-image">
+                        <div class="home__carousel-item-overlay">
+                            <div class="home__carousel-item-profile">
+                                <img src="images/girl.png" alt="Avatar" class="home__carousel-item-avatar">
+                                <div class="home__carousel-item-meta">
+                                    <p class="home__carousel-item-name">Alex.vip</p>
+                                    <p class="home__carousel-item-fans">8.5K fans</p>
+                                </div>
+                            </div>
+                            <button class="home__carousel-item-sub generic-button-reset">$14.99 / month</button>
+                        </div>
+                    </div>
+                    <div class="home__carousel-item home__carousel-item_pos_right" data-carousel-item>
+                        <img src="images/you_are_my_genie.png" alt="Carousel item" class="home__carousel-item-image">
+                        <div class="home__carousel-item-overlay">
+                            <div class="home__carousel-item-profile">
+                                <img src="images/girl.png" alt="Avatar" class="home__carousel-item-avatar">
+                                <div class="home__carousel-item-meta">
+                                    <p class="home__carousel-item-name">Mia.star</p>
+                                    <p class="home__carousel-item-fans">5.1K fans</p>
+                                </div>
+                            </div>
+                            <button class="home__carousel-item-sub generic-button-reset">$12.99 / month</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="home__carousel-item">
-                    <img src="images/bg-dark.png" alt="Carousel item" class="home__carousel-item-image">
-                </div>
-                <div class="home__carousel-item">
-                    <img src="images/bg-dark.png" alt="Carousel item" class="home__carousel-item-image">
-                </div>
+                <nav class="home__carousel-nav" aria-label="Carousel navigation">
+                    <button class="home__carousel-dot" role="tab" aria-selected="false" aria-label="Slide 1" data-carousel-dot="0"></button>
+                    <button class="home__carousel-dot home__carousel-dot_active" role="tab" aria-selected="true" aria-label="Slide 2" data-carousel-dot="1"></button>
+                    <button class="home__carousel-dot" role="tab" aria-selected="false" aria-label="Slide 3" data-carousel-dot="2"></button>
+                </nav>
             </div>
             <div class="home__content">
                 <h1 class="home__content-title">Hello, <span class="home__content-title-highlight">jjghhh!</span></h1>
@@ -40,6 +77,7 @@
             </div>
         </div>
     </main>
+    <script src="scripts/home-carousel.js" defer></script>
 </body>
 
 </html>
