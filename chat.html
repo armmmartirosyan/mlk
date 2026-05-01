@@ -6,14 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/globals.css" />
     <link rel="stylesheet" href="css/sidebar-layout.css" />
+    <link rel="stylesheet" href="css/help-modal.css" />
     <link rel="stylesheet" href="css/chat.css" />
+    <link rel="icon" type="image/png" href="./images/droplet.png" />
     <title>Chat</title>
 </head>
 
 <body class="generic-body">
     <main class="generic-canvas">
-        <section class="page" aria-label="Chat page">
-            <aside class="page__sidebar" aria-label="Sidebar navigation">
+        <header class="page__header">
+            <button class="generic-button-reset layout-nav-toggle layout-nav-toggle_responsive" data-sidebar-toggle
+                type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="layout-nav-toggle__line"></span>
+                <span class="layout-nav-toggle__line"></span>
+                <span class="layout-nav-toggle__line"></span>
+            </button>
+            <img src="./images/mlk.svg" alt="MLK" class="page__logo" />
+
+            <button class="generic-button-reset" type="button" aria-label="Profile indicator">
+                <img class="page__droplet-icon" src="images/header-droplet.svg" alt="Droplet" />
+            </button>
+        </header>
+
+
+        <section class="page" data-sidebar-layout="responsive" aria-label="Chat page">
+            <aside id="primary-sidebar" class="page__sidebar" data-sidebar-panel aria-label="Sidebar navigation">
                 <nav class="navigation" aria-label="Main sections">
                     <ul class="generic-list-reset">
                         <li class="navigation__item navigation__item_group_1">
@@ -47,27 +64,20 @@
                             <a class="navigation__link" href="settings.html">settings</a>
                         </li>
                         <li class="navigation__item navigation__item_group_2">
-                            <a class="navigation__link" href="help.html">help</a>
+                            <button class="navigation__link navigation__help-trigger generic-button-reset"
+                                type="button">help</button>
                         </li>
                     </ul>
                 </nav>
             </aside>
 
+
             <section class="page__workspace" aria-label="Chat workspace">
-                <header class="page__header">
-                    <div></div>
-                    <img src="./images/mlk.png" alt="MLK" class="page__logo" />
-
-                    <button class="generic-button-reset" type="button" aria-label="Profile indicator">
-                        <img class="page__droplet-icon" src="images/droplet-icon.png" alt="Droplet" />
-                    </button>
-                </header>
-
                 <div class="page__content chat-page__content">
                     <section class="chat-toolbar" aria-label="Search and chat filters">
                         <div class="chat-toolbar__section">
                             <label class="chat-search" for="chat-search-input">
-                                <img class="chat-search__icon" src="images/search-icon.png" alt="" />
+                                <img class="chat-search__icon" src="images/search-icon.svg" alt="" />
                                 <input id="chat-search-input" class="generic-input-reset chat-search__input" type="text"
                                     placeholder="Search" />
                             </label>
@@ -88,16 +98,16 @@
                         </ul>
 
                         <div class="chat-toolbar__section">
-                            <p class="chat-toolbar__status typo typo_size_12 typo_color_primary">No chats found</p>
+                            <p class="type-12-primary chat-toolbar__message">No chats found</p>
                         </div>
                     </section>
 
                     <section class="chat-content" aria-label="Chat content">
                         <div class="chat-empty-state" aria-live="polite">
-                            <p class="chat-empty-state__line typo typo_size_24 typo_weight_500 typo_color_primary">
+                            <p class="chat-empty-state__line type-24-500-primary">
                                 Hello, Someone!
                             </p>
-                            <p class="chat-empty-state__line typo typo_size_24 typo_weight_500 typo_color_primary">
+                            <p class="chat-empty-state__line type-24-500-primary">
                                 You don't have any chats.
                             </p>
                         </div>
@@ -106,6 +116,8 @@
             </section>
         </section>
     </main>
+    <script src="scripts/help-modal.js" defer></script>
+    <script src="scripts/sidebar-layout.js" defer></script>
 </body>
 
 </html>

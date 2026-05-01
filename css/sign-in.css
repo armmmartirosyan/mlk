@@ -1,85 +1,92 @@
 .signin-page {
-    justify-content: center;
-    align-items: center;
-    padding: 2.4rem;
+    padding: 1rem;
+}
+
+.signin-page__header {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 3rem;
 }
 
 .signin-page__surface {
-    width: min(151.2rem, 100%);
-    min-height: min(100dvh - 4.8rem, 88.2rem);
-    background: var(--color-chat-surface);
-    position: relative;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .signin-page__brand-pill {
-    position: absolute;
-    top: 1.6rem;
-    left: 1.2rem;
-    width: 12.7rem;
-    height: 4.8rem;
-    border-radius: 9.9rem;
-    background: #EADFD6;
-    display: inline-flex;
-    justify-content: center;
+    width: fit-content;
+    height: 4rem;
+    border-radius: 3rem;
+    background-color: var(--color-surface-panel);
+    display: flex;
     align-items: center;
-    gap: 1.2rem;
+    gap: 1rem;
     text-decoration: none;
+    padding: 1rem 2rem 1rem 1rem;
 }
 
-.signin-page__brand-arrow {
-    width: 0.8rem;
-    height: 0.8rem;
-    border-left: 0.22rem solid #A39187;
-    border-bottom: 0.22rem solid #A39187;
-    transform: rotate(45deg);
-    margin-top: 0.2rem;
+.signin-page__brand-angle {
+    width: 2rem;
+    height: 2rem;
 }
 
-.signin-page__brand-text {
-    line-height: 1;
+.signin-page__brand-icon {
+    height: 1.4rem;
 }
 
 .signin-form {
-    width: 60rem;
+    width: min(36.8rem, 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .signin-form__title {
-    margin-bottom: 3.6rem;
+    font-family: 'Plus Jakarta Sans', 'AdvancedLevel Inter', sans-serif;
+    letter-spacing: 0;
+    font-weight: 500;
+    color: var(--color-accent);
+    font-size: 4.55rem;
+    line-height: 4.5rem;
+    margin-bottom: 3rem;
+    align-self: flex-start;
 }
 
 .signin-form__field {
     width: 100%;
-    min-height: 8.6rem;
-    padding: 0.8rem 1.8rem 1.2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    height: 6rem;
+    padding: 0.8rem 0.5rem 1.2rem 1.5rem;
+    position: relative;
 }
 
 .signin-form__field+.signin-form__field {
-    margin-top: 1rem;
+    margin-top: .5rem;
 }
 
 .signin-form__field-label {
-    line-height: 1;
-    margin-bottom: 0.8rem;
+    font-family: 'Plus Jakarta Sans', 'AdvancedLevel Inter', sans-serif;
+    letter-spacing: 0;
+    color: var(--color-text-muted);
+    font-size: 1.2rem;
+    line-height: 1.44rem;
+    display: block;
+    margin-bottom: 0.56rem;
 }
 
 .signin-form__input {
     width: 100%;
     line-height: 1;
-    color: #EADFD6;
+    color: var(--color-text-primary);
+    font-family: 'Plus Jakarta Sans', 'AdvancedLevel Inter', sans-serif;
+    letter-spacing: 0;
+    font-size: 1.6rem;
 }
 
 .signin-form__input::placeholder {
-    color: #EADFD6;
-    opacity: 0.95;
+    color: var(--color-text-primary);
+    opacity: 0.8;
 }
 
 .signin-form__input_type_password {
@@ -93,53 +100,50 @@
 }
 
 .signin-form__password-toggle {
-    width: 2.4rem;
-    height: 2.4rem;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.45;
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: .8rem;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: 1.5rem 1.5rem;
+    background-position: center;
+
+    &:hover {
+        background-color: var(--white-15);
+    }
 }
 
-.signin-form__password-icon {
-    width: 1.8rem;
-    height: 1.8rem;
-    fill: none;
-    stroke: #A39187;
-    stroke-width: 1.8;
-    stroke-linecap: round;
-    stroke-linejoin: round;
+.signin-form__input[type="password"]~.signin-form__password-toggle {
+    background-image: url("../images/eye.svg");
+}
+
+.signin-form__input[type="text"]~.signin-form__password-toggle {
+    background-image: url("../images/eye.svg");
 }
 
 .signin-form__submit {
     width: 100%;
-    min-height: 9.8rem;
-    margin-top: 3.6rem;
-    background: #EADFD6;
-    color: #DDAA94;
+    height: 6rem;
+    margin-block: 2rem 6.4rem;
+    background-color: var(--color-surface-panel);
+    color: var(--color-accent);
+    padding: 2.1rem;
+    font-family: 'Plus Jakarta Sans', 'AdvancedLevel Inter', sans-serif;
+    letter-spacing: 0;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    border-radius: 3rem;
+    cursor: pointer;
 }
 
 .signin-form__forgot {
-    margin-top: 5.2rem;
     text-decoration: none;
-    opacity: 0.95;
-}
-
-@media screen and (max-width: 900px) {
-    .signin-page {
-        padding: 1.2rem;
-    }
-
-    .signin-page__surface {
-        width: 100%;
-        min-height: calc(100dvh - 2.4rem);
-    }
-
-    .signin-form {
-        width: min(90rem, 86%);
-    }
-
-    .signin-form__forgot {
-        margin-top: 4rem;
-    }
+    font-family: 'Plus Jakarta Sans', 'AdvancedLevel Inter', sans-serif;
+    letter-spacing: 0;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: var(--color-text-primary);
+    align-self: flex-start;
 }

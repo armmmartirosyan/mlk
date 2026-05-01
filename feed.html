@@ -6,14 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/globals.css" />
     <link rel="stylesheet" href="css/sidebar-layout.css" />
+    <link rel="stylesheet" href="css/help-modal.css" />
     <link rel="stylesheet" href="css/feed.css" />
+    <link rel="icon" type="image/png" href="./images/droplet.png" />
     <title>Feed</title>
 </head>
 
 <body class="generic-body">
-    <main class="generic-canvas">
-        <section class="page" aria-label="Feed page">
-            <aside class="page__sidebar" aria-label="Sidebar navigation">
+    <main class="generic-canvas dark-canvas">
+        <header class="page__header">
+            <button class="generic-button-reset layout-nav-toggle layout-nav-toggle_responsive" data-sidebar-toggle
+                type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="layout-nav-toggle__line"></span>
+                <span class="layout-nav-toggle__line"></span>
+                <span class="layout-nav-toggle__line"></span>
+            </button>
+            <img src="./images/mlk.svg" alt="MLK" class="page__logo" />
+
+            <button class="generic-button-reset" type="button" aria-label="Profile indicator">
+                <img class="page__droplet-icon" src="images/header-droplet.svg" alt="Droplet" />
+            </button>
+        </header>
+
+        <section class="page" data-sidebar-layout="responsive" aria-label="Feed page">
+            <aside id="primary-sidebar" class="page__sidebar" data-sidebar-panel aria-label="Sidebar navigation">
                 <nav class="navigation" aria-label="Main sections">
                     <ul class="generic-list-reset">
                         <li class="navigation__item navigation__item_group_1">
@@ -47,97 +63,26 @@
                             <a class="navigation__link" href="settings.html">settings</a>
                         </li>
                         <li class="navigation__item navigation__item_group_2">
-                            <a class="navigation__link" href="help.html">help</a>
+                            <button class="navigation__link navigation__help-trigger generic-button-reset"
+                                type="button">help</button>
                         </li>
                     </ul>
                 </nav>
             </aside>
 
             <section class="page__workspace" aria-label="Feed workspace">
-                <header class="page__header">
-                    <div></div>
-                    <img src="./images/mlk.png" alt="MLK" class="page__logo" />
-
-                    <button class="generic-button-reset" type="button" aria-label="Profile indicator">
-                        <img class="page__droplet-icon" src="images/droplet-icon.png" alt="Droplet" />
-                    </button>
-                </header>
-
-                <div class="page__content feed-page__content">
-                    <h1 class="feed-page__title typo typo_size_68 typo_weight_500 typo_color_primary">Hello, Feed!</h1>
+                <div class="page__content feed-page__content ui-scrollbar_hidden">
+                    <h1 class="feed-page__title type-68-500">Hello,
+                        <span>Someone!</span>
+                    </h1>
                     <div class="feed-page__list ui-scrollbar_hidden">
                         <article class="feed-page__row">
-                            <img class="feed-page__row-icon" src="images/mlk.png" alt="MLK" />
+                            <img class="feed-page__row-icon" src="images/mlk.svg" alt="MLK" />
                             <div class="feed-page__row-content">
-                                <p class="feed-page__row-date typo typo_size_15 typo_color_white_muted">
+                                <p class="feed-page__row-date type-15">
                                     Apr 4
                                 </p>
-                                <p class="feed-page__row-text typo typo_size_18 typo_color_secondary">
-                                    What a day! Welcome, dear friend, to Para. You might not be the first to visit our
-                                    site, but in our hearts, you’re #1. (Okay, we say that to everyone — but we mean it
-                                    just for you!)
-                                </p>
-                            </div>
-                        </article>
-                        <article class="feed-page__row">
-                            <img class="feed-page__row-icon" src="images/mlk.png" alt="MLK" />
-                            <div class="feed-page__row-content">
-                                <p class="feed-page__row-date typo typo_size_15 typo_color_white_muted">
-                                    Apr 4
-                                </p>
-                                <p class="feed-page__row-text typo typo_size_18 typo_color_secondary">
-                                    What a day! Welcome, dear friend, to Para. You might not be the first to visit our
-                                    site, but in our hearts, you’re #1. (Okay, we say that to everyone — but we mean it
-                                    just for you!)
-                                </p>
-                            </div>
-                        </article>
-                        <article class="feed-page__row">
-                            <img class="feed-page__row-icon" src="images/mlk.png" alt="MLK" />
-                            <div class="feed-page__row-content">
-                                <p class="feed-page__row-date typo typo_size_15 typo_color_white_muted">
-                                    Apr 4
-                                </p>
-                                <p class="feed-page__row-text typo typo_size_18 typo_color_secondary">
-                                    What a day! Welcome, dear friend, to Para. You might not be the first to visit our
-                                    site, but in our hearts, you’re #1. (Okay, we say that to everyone — but we mean it
-                                    just for you!)
-                                </p>
-                            </div>
-                        </article>
-                        <article class="feed-page__row">
-                            <img class="feed-page__row-icon" src="images/mlk.png" alt="MLK" />
-                            <div class="feed-page__row-content">
-                                <p class="feed-page__row-date typo typo_size_15 typo_color_white_muted">
-                                    Apr 4
-                                </p>
-                                <p class="feed-page__row-text typo typo_size_18 typo_color_secondary">
-                                    What a day! Welcome, dear friend, to Para. You might not be the first to visit our
-                                    site, but in our hearts, you’re #1. (Okay, we say that to everyone — but we mean it
-                                    just for you!)
-                                </p>
-                            </div>
-                        </article>
-                        <article class="feed-page__row">
-                            <img class="feed-page__row-icon" src="images/mlk.png" alt="MLK" />
-                            <div class="feed-page__row-content">
-                                <p class="feed-page__row-date typo typo_size_15 typo_color_white_muted">
-                                    Apr 4
-                                </p>
-                                <p class="feed-page__row-text typo typo_size_18 typo_color_secondary">
-                                    What a day! Welcome, dear friend, to Para. You might not be the first to visit our
-                                    site, but in our hearts, you’re #1. (Okay, we say that to everyone — but we mean it
-                                    just for you!)
-                                </p>
-                            </div>
-                        </article>
-                        <article class="feed-page__row">
-                            <img class="feed-page__row-icon" src="images/mlk.png" alt="MLK" />
-                            <div class="feed-page__row-content">
-                                <p class="feed-page__row-date typo typo_size_15 typo_color_white_muted">
-                                    Apr 4
-                                </p>
-                                <p class="feed-page__row-text typo typo_size_18 typo_color_secondary">
+                                <p class="feed-page__row-text type-18">
                                     What a day! Welcome, dear friend, to Para. You might not be the first to visit our
                                     site, but in our hearts, you’re #1. (Okay, we say that to everyone — but we mean it
                                     just for you!)
@@ -149,6 +94,8 @@
             </section>
         </section>
     </main>
+    <script src="scripts/help-modal.js" defer></script>
+    <script src="scripts/sidebar-layout.js" defer></script>
 </body>
 
 </html>

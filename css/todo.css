@@ -1,41 +1,32 @@
 .todo-page__content {
     position: relative;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-}
+    padding-top: 11rem;
+    overflow-y: auto;
 
-.todo-page__content-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    width: fit-content;
-    height: fit-content;
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
-
-.todo-page__title {}
 
 .todo-page__description {
     font-size: 2.34rem;
     line-height: 2.5rem;
     font-family: "Plus Jakarta Sans";
-    color: #EADFD6;
+    color: var(--color-text-primary);
     margin-block: 4rem 2.4rem;
 }
 
 .todo-page__list {
     display: flex;
-    align-items: center;
+    align-items: stretch;
+    flex-wrap: wrap;
     gap: .5rem;
 }
 
 .todo-page__list-item {
-    width: 24.4rem;
-    height: 22.2rem;
+    width: calc(25% - (1.5rem / 4));
     padding: 1.6rem 2.6rem 1.6rem 1.6rem;
+    background-color: var(--color-surface-panel);
 }
 
 .todo-page__list-item-icon {
@@ -43,4 +34,25 @@
     margin-bottom: 1.5rem;
 }
 
-.todo-page__list-item-text {}
+.todo-page__title {
+    color: var(--color-accent);
+}
+
+.todo-page__description_accent_true {
+    color: var(--color-accent);
+}
+
+@media screen and (max-width: 1200px) {
+    .todo-page__content {
+        padding: 1rem;
+    }
+
+    .todo-page__title {
+        font-size: 3.29rem;
+        line-height: 3.33rem;
+    }
+
+    .todo-page__list-item {
+        width: calc(50% - .25rem);
+    }
+}

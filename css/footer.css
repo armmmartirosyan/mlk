@@ -1,0 +1,135 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.3rem 3.3rem 2.3rem 1rem;
+    border-top: .1rem solid var(--color-line-soft);
+    /* column-gap: 8rem; */
+}
+
+.footer__payments-icon-block {
+    display: flex;
+    align-items: center;
+}
+
+.footer__social {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.footer__social-link {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+}
+
+.footer__social-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.footer__payments {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.footer__payments-lock {
+    width: 2rem;
+    height: 2rem;
+}
+
+.footer__payments-block {
+    display: flex;
+    align-items: center;
+}
+
+.footer__payments-text {
+    margin-inline: 1.3rem;
+}
+
+.footer__payments-method {
+    width: 2rem;
+    height: 1.6rem;
+}
+
+.footer__payments-method+.footer__payments-method {
+    margin-left: 0.5rem;
+}
+
+.footer__menu {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.footer__menu-link {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--white-50);
+}
+
+@media screen and (max-width: 1200px) {
+    .footer {
+        column-gap: 4rem;
+    }
+
+    .footer__menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer__payments {
+        row-gap: 2rem;
+        flex-direction: column;
+    }
+
+    .footer__social,
+    .footer__payments,
+    .footer__menu {
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .footer__copy-wrapper {
+        width: 28%;
+    }
+}
+
+@media screen and (max-width: 545px) {
+    .footer {
+        flex-wrap: wrap;
+        row-gap: 2rem;
+    }
+
+    .footer__copy-wrapper {
+        width: 100%;
+    }
+
+    .footer__copy {
+        width: 55%;
+    }
+
+    .footer__social {
+        width: 55%;
+    }
+
+    .footer__payments-icon-block {
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    .footer__payments,
+    .footer__payments-icon-block {
+        align-items: flex-start;
+    }
+
+    .footer__payments-text {
+        margin-inline: 0;
+    }
+}

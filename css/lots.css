@@ -1,7 +1,5 @@
 .lots-page__content {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+    overflow-y: auto;
 }
 
 .lots-page__header {
@@ -11,7 +9,9 @@
     margin-bottom: 3rem;
 }
 
-.lots-page__title {}
+.lots-page__title {
+    color: var(--color-accent);
+}
 
 .lots-page__reorder-button {
     display: flex;
@@ -26,25 +26,25 @@
     height: 1.6rem;
 }
 
-.lots-page__reorder-text {}
+.lots-page__reorder-text {
+    color: var(--color-accent);
+}
 
 .lots-page__box {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     gap: .5rem;
     flex-wrap: wrap;
-    height: 100%;
-    overflow-y: auto;
 }
 
 .lots-page__box-item {
     border-radius: 1.5rem;
-    width: 24.4rem;
-    height: 25.5rem;
+    width: calc(25% - (1.5rem / 4));
+    min-height: 27rem;
 }
 
 .lots-page__create {
-    background-color: #A39187;
+    background-color: var(--color-surface-panel);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,11 +56,12 @@
     width: 8rem;
     height: 8rem;
     border-radius: 50%;
-    background-color: var(--color-chat-surface);
+    background-color: var(--color-accent);
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 2rem;
+    box-shadow: 0 0 10rem var(--color-accent);
 }
 
 .lots-page__create-image {
@@ -68,11 +69,17 @@
     height: 4rem;
 }
 
-.lots-page__create-text {}
+.lots-page__create-text {
+    color: var(--color-text-primary);
+    font-size: 1.8rem;
+    line-height: 2rem;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 500;
+}
 
 .lots-page__lot-item {
-    background-color: #EADFD6;
-    padding: 1rem 1rem 1.5rem 1.5rem;
+    background-color: var(--color-surface-panel);
+    padding: 1.5rem 1.7rem 1.5rem 1.5rem;
     display: flex;
     flex-direction: column;
 }
@@ -102,10 +109,10 @@
 
 .lots-page__lot-type {
     padding: .7rem 1rem;
-    background-color: #A39187;
-    color: #EADFD6;
+    background-color: var(--color-accent);
+    color: var(--color-surface-panel-muted);
     border-radius: 2rem;
-    font-size: 1.3rem;
+    font-size: 1.43rem;
     font-family: "Plus Jakarta Sans";
     line-height: 1.5rem;
     letter-spacing: 0;
@@ -114,15 +121,41 @@
     margin-bottom: 1rem;
 }
 
+.background_blue_gradieent {
+    background-image: linear-gradient(to right, var(--color-highlight-blue), var(--color-highlight-green));
+    color: var(--white-100);
+}
+
+.background_yellow_gradieent {
+    background-image: linear-gradient(to right, var(--color-highlight-yellow), var(--color-highlight-blue));
+    color: var(--white-100);
+}
+
 .lots-page__lot-title {
     width: 100%;
     margin-bottom: .4rem;
     align-self: flex-start;
+    color: var(--color-text-primary);
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 .lots-page__lot-description {
     width: 100%;
     align-self: flex-start;
+    color: var(--color-text-primary);
+    white-space: normal;
+    word-break: break-word;
+}
+
+.lots-page__lot-path {
+    width: 100%;
+    align-self: flex-start;
+    color: var(--color-text-primary);
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    white-space: normal;
+    word-break: break-word;
 }
 
 .lots-page__lot-price {
@@ -130,7 +163,7 @@
     line-height: 2rem;
     font-weight: 500;
     letter-spacing: 0;
-    color: var(--color-chat-surface);
+    color: var(--color-accent);
     position: relative;
 }
 
@@ -139,7 +172,7 @@
     position: absolute;
     height: 100%;
     width: 0.1rem;
-    background: rgb(0, 0, 0, 20%);
+    background: var(--black-20);
     top: 0;
     left: -0.8rem;
 }
@@ -149,4 +182,29 @@
     align-items: center;
     align-self: flex-end;
     column-gap: 1.7rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .lots-page__content {
+        padding: 1rem;
+    }
+
+    .lots-page__header {
+        margin-bottom: 1.5rem;
+    }
+
+    .lots-page__title {
+        font-size: 3.45rem;
+        line-height: 3.33rem;
+    }
+
+    .lots-page__box-item {
+        width: calc((100% / 3) - .5rem);
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .lots-page__box-item {
+        width: calc(50% - .25rem);
+    }
 }

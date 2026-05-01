@@ -1,19 +1,21 @@
 .feed-page__content {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+    overflow-y: auto;
 }
 
 .feed-page__title {
     margin-bottom: 5rem;
+    color: var(--color-accent);
+
+    span {
+        color: var(--color-text-primary);
+    }
 }
+
 
 .feed-page__list {
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    height: 100%;
-    overflow-y: auto;
 }
 
 .feed-page__row {
@@ -30,11 +32,35 @@
 
 .feed-page__row-date {
     margin-bottom: 1rem;
+    color: var(--white-40);
 }
 
 .feed-page__row-text {
     padding: 1.7rem 4rem 2.2rem 1.7rem;
-    background-color: #EADFD6;
+    background-color: var(--color-accent);
     border-radius: 2rem 2rem 2rem .5rem;
     max-width: 35rem;
+    color: var(--color-text-primary);
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+@media screen and (max-width: 1200px) {
+    .feed-page__content {
+        padding: 1rem 1rem 10rem;
+    }
+
+    .feed-page__row-text {
+        max-width: unset;
+    }
+
+    .feed-page__title {
+        margin-bottom: 4.7rem;
+        font-size: 4.6rem;
+        line-height: 4.25rem;
+    }
+
+    .feed-page__row {
+        gap: 1.5rem;
+    }
 }

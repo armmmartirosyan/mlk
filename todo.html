@@ -6,14 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/globals.css" />
     <link rel="stylesheet" href="css/sidebar-layout.css" />
+    <link rel="stylesheet" href="css/help-modal.css" />
     <link rel="stylesheet" href="css/todo.css" />
+    <link rel="icon" type="image/png" href="./images/droplet.png" />
     <title>To-Do</title>
 </head>
 
 <body class="generic-body">
     <main class="generic-canvas">
-        <section class="page" aria-label="To-Do page">
-            <aside class="page__sidebar" aria-label="Sidebar navigation">
+        <header class="page__header">
+            <button class="generic-button-reset layout-nav-toggle layout-nav-toggle_responsive" data-sidebar-toggle
+                type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="layout-nav-toggle__line"></span>
+                <span class="layout-nav-toggle__line"></span>
+                <span class="layout-nav-toggle__line"></span>
+            </button>
+            <img src="./images/mlk.svg" alt="MLK" class="page__logo" />
+
+            <button class="generic-button-reset" type="button" aria-label="Profile indicator">
+                <img class="page__droplet-icon" src="images/header-droplet.svg" alt="Droplet" />
+            </button>
+        </header>
+
+        <section class="page" data-sidebar-layout="responsive" aria-label="To-Do page">
+            <aside id="primary-sidebar" class="page__sidebar" data-sidebar-panel aria-label="Sidebar navigation">
                 <nav class="navigation" aria-label="Main sections">
                     <ul class="generic-list-reset">
                         <li class="navigation__item navigation__item_group_1">
@@ -47,61 +63,56 @@
                             <a class="navigation__link" href="settings.html">settings</a>
                         </li>
                         <li class="navigation__item navigation__item_group_2">
-                            <a class="navigation__link" href="help.html">help</a>
+                            <button class="navigation__link navigation__help-trigger generic-button-reset"
+                                type="button">help</button>
                         </li>
                     </ul>
                 </nav>
             </aside>
 
             <section class="page__workspace" aria-label="To-Do workspace">
-                <header class="page__header">
-                    <div></div>
-                    <img src="./images/mlk.png" alt="MLK" class="page__logo" />
-
-                    <button class="generic-button-reset" type="button" aria-label="Profile indicator">
-                        <img class="page__droplet-icon" src="images/droplet-icon.png" alt="Droplet" />
-                    </button>
-                </header>
-
                 <div class="page__content todo-page__content">
-                    <div class="todo-page__content-wrapper">
-                        <h1 class="todo-page__title typo typo_size_70 typo_weight_500 typo_color_primary">To-do list</h1>
-                        <p class="todo-page__description">
-                            On this page you will receive <span class="todo-page__description_accent_true typo typo_color_secondary">tasks for
-                                money</span>
-                        </p>
-                        <ul class="todo-page__list generic-list-reset">
-                            <li class="todo-page__list-item ui-panel ui-panel_tone_glass">
-                                <img src="./images/to-do-1.png" alt="" class="todo-page__list-item-icon" />
-                                <p class="todo-page__list-item-text typo typo_size_15 typo_color_primary">
-                                    For example, your fan grants you a wish and a task “Send thank you” will appear on
-                                    this page.
-                                </p>
-                            </li>
-                            <li class="todo-page__list-item ui-panel ui-panel_tone_glass">
-                                <img src="./images/to-do-2.png" alt="" class="todo-page__list-item-icon" />
-                                <p class="todo-page__list-item-text typo typo_size_15 typo_color_primary">
-                                    You can do it with text or record personal video.
-                                </p>
-                            </li>
-                            <li class="todo-page__list-item ui-panel ui-panel_tone_glass">
-                                <img src="./images/to-do-3.png" alt="" class="todo-page__list-item-icon" />
-                                <p class="todo-page__list-item-text typo typo_size_15 typo_color_primary">
-                                    After that, you will receive money on your account.
-                                </p>
-                            </li>
-                            <li class="todo-page__list-item ui-panel ui-panel_tone_glass">
-                                <img src="./images/to-do-4.png" alt="" class="todo-page__list-item-icon" />
-                                <p class="todo-page__list-item-text typo typo_size_15 typo_color_primary">
-                                    Fan will get your feedback and it will push him to support you frequently.
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
+
+                    <h1 class="todo-page__title type-70-500">To-do list
+                    </h1>
+                    <p class="todo-page__description">
+                        On this page you will receive <span class="todo-page__description_accent_true">tasks for
+                            money</span>
+                    </p>
+                    <ul class="todo-page__list generic-list-reset">
+                        <li class="todo-page__list-item ui-panel ui-panel_tone_glass">
+                            <img src="./images/to-do-1.png" alt="" class="todo-page__list-item-icon" />
+                            <p class="todo-page__list-item-text type-15-primary">
+                                For example, your fan grants you a wish and a task “Send thank you” will appear on
+                                this page.
+                            </p>
+                        </li>
+                        <li class="todo-page__list-item ui-panel ui-panel_tone_glass">
+                            <img src="./images/to-do-2.png" alt="" class="todo-page__list-item-icon" />
+                            <p class="todo-page__list-item-text type-15-primary">
+                                You can do it with text or record personal video.
+                            </p>
+                        </li>
+                        <li class="todo-page__list-item ui-panel ui-panel_tone_glass">
+                            <img src="./images/to-do-3.png" alt="" class="todo-page__list-item-icon" />
+                            <p class="todo-page__list-item-text type-15-primary">
+                                After that, you will receive money on your account.
+                            </p>
+                        </li>
+                        <li class="todo-page__list-item ui-panel ui-panel_tone_glass">
+                            <img src="./images/to-do-4.png" alt="" class="todo-page__list-item-icon" />
+                            <p class="todo-page__list-item-text type-15-primary">
+                                Fan will get your feedback and it will push him to support you frequently.
+                            </p>
+                        </li>
+                    </ul>
+
                 </div>
             </section>
         </section>
     </main>
+    <script src="scripts/help-modal.js" defer></script>
+    <script src="scripts/sidebar-layout.js" defer></script>
 </body>
 
 </html>

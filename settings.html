@@ -6,14 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/globals.css" />
     <link rel="stylesheet" href="css/sidebar-layout.css" />
+    <link rel="stylesheet" href="css/help-modal.css" />
     <link rel="stylesheet" href="css/settings.css" />
+    <link rel="icon" type="image/png" href="./images/droplet.png" />
     <title>Settings</title>
 </head>
 
 <body class="generic-body">
-    <main class="generic-canvas">
-        <section class="page" aria-label="Settings page">
-            <aside class="page__sidebar" aria-label="Sidebar navigation">
+    <main class="generic-canvas dark-canvas">
+        <header class="page__header">
+            <button class="generic-button-reset layout-nav-toggle layout-nav-toggle_responsive" data-sidebar-toggle
+                type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="layout-nav-toggle__line"></span>
+                <span class="layout-nav-toggle__line"></span>
+                <span class="layout-nav-toggle__line"></span>
+            </button>
+            <img src="./images/mlk.svg" alt="MLK" class="page__logo" />
+
+            <button class="generic-button-reset" type="button" aria-label="Profile indicator">
+                <img class="page__droplet-icon" src="images/header-droplet.svg" alt="Droplet" />
+            </button>
+        </header>
+
+        <section class="page" data-sidebar-layout="responsive" aria-label="Settings page">
+            <aside id="primary-sidebar" class="page__sidebar" data-sidebar-panel aria-label="Sidebar navigation">
                 <nav class="navigation" aria-label="Main sections">
                     <ul class="generic-list-reset">
                         <li class="navigation__item navigation__item_group_1">
@@ -47,23 +63,15 @@
                             <a class="navigation__link navigation__link_state_active" href="settings.html">settings</a>
                         </li>
                         <li class="navigation__item navigation__item_group_2">
-                            <a class="navigation__link" href="help.html">help</a>
+                            <button class="navigation__link navigation__help-trigger generic-button-reset"
+                                type="button">help</button>
                         </li>
                     </ul>
                 </nav>
             </aside>
 
             <section class="page__workspace" aria-label="Settings workspace">
-                <header class="page__header">
-                    <div></div>
-                    <img src="./images/mlk.png" alt="MLK" class="page__logo" />
-
-                    <button class="generic-button-reset" type="button" aria-label="Profile indicator">
-                        <img class="page__droplet-icon" src="images/droplet-icon.png" alt="Droplet" />
-                    </button>
-                </header>
-
-                <div class="page__content settings-page__content">
+                <div class="page__content settings-page__content ui-scrollbar_hidden">
                     <figure class="settings-page__image-figure">
                         <img class="settings-page__image-img" src="images/droplet-big.svg" alt="Settings" />
                         <figcaption class="settings-page__image-figcaption">
@@ -77,63 +85,33 @@
                         </div>
                     </div>
                     <div class="settings-page__text-line">
-                        <h1 class="settings-page__email typo typo_size_23 typo_weight_500 typo_color_primary">someverylongemail@example.com</h1>
+                        <h1 class="settings-page__email type-23-500-primary">
+                            someverylongemail@example.com</h1>
                         <div class="settings-page__pencil-button">
                             <img src="images/pencil.svg" alt="Pencil" class="settings-page__pencil-icon">
                         </div>
                     </div>
                     <div class="settings-page__resend-line">
                         <img src="images/clock.svg" alt="Clock" class="settings-page__resend-icon">
-                        <p class="settings-page__resend-info typo typo_size_15 typo_color_primary">Unverified email</p>
-                        <button class="generic-button-reset settings-page__resend-button typo typo_size_12 typo_color_white_muted" type="button">Resend</button>
+                        <p class="settings-page__resend-info type-15-primary">Unverified email</p>
+                        <button class="generic-button-reset settings-page__resend-button type-12-muted"
+                            type="button">Resend</button>
                     </div>
-                    <button class="settings-page__set-password-btn generic-button-reset typo typo_size_12 typo_color_primary" type="button">
+                    <button class="settings-page__set-password-btn generic-button-reset type-12-primary" type="button">
                         Set new password
                     </button>
                     <div class="settings-page__social-line">
                         <img src="images/social-group.svg" alt="Social" class="settings-page__social-icon">
-                        <p class="settings-page__social-info typo typo_size_23 typo_color_secondary">Add social media accounts</p>
+                        <p class="settings-page__social-info type-23-secondary">Add social media
+                            accounts</p>
                     </div>
                 </div>
             </section>
         </section>
 
-        <!-- Messages modal -->
-        <div class="messages-modal">
-            <div class="messages-modal__header">
-                <div></div>
-                <h2 class="messages-modal__title typo typo_size_18 typo_weight_500 typo_color_secondary">Messages</h2>
-                <button class="generic-button-reset messages-modal__close-btn" type="button"
-                    aria-label="Close messages modal">
-                    <img src="images/close-icon.svg" alt="Close" class="messages-modal__close-icon" />
-                </button>
-            </div>
-            <div class="messages-modal__body">
-                <div></div>
-                <div class="messages-modal__body-content">
-                    <img src="images/messages-quote.svg" alt="Quote" class="messages-modal__body-icon">
-                    <p class="messages-modal__body-info typo typo_size_15 typo_weight_500 typo_color_secondary">No messages</p>
-                    <p class="messages-modal__body-description typo typo_size_12 typo_color_secondary">
-                        Messages from the team will be shown here
-                    </p>
-                </div>
-                <button class="generic-button-reset messages-modal__body-button typo typo_size_15 typo_color_secondary" type="button">
-                    Send us a message
-                    <img src="images/send-message.svg" alt="Send" class="messages-modal__body-button-icon">
-                </button>
-            </div>
-            <div class="messages-modal__footer">
-                <div class="messages-modal__footer-tab">
-                    <img src="images/home-icon.svg" alt="Home" class="messages-modal__footer-tab-img">
-                    <p class="messages-modal__footer-tab-text typo typo_size_12 typo_color_secondary">Home</p>
-                </div>
-                <div class="messages-modal__footer-tab">
-                    <img src="images/messages-quote.svg" alt="Messages" class="messages-modal__footer-tab-img">
-                    <p class="messages-modal__footer-tab-text typo typo_size_12 typo_color_secondary">Messages</p>
-                </div>
-            </div>
-        </div>
     </main>
+    <script src="scripts/help-modal.js" defer></script>
+    <script src="scripts/sidebar-layout.js" defer></script>
 </body>
 
 </html>

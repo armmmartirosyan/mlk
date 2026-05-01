@@ -6,14 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/globals.css" />
     <link rel="stylesheet" href="css/sidebar-layout.css" />
+    <link rel="stylesheet" href="css/help-modal.css" />
     <link rel="stylesheet" href="css/lots.css" />
+    <link rel="icon" type="image/png" href="./images/droplet.png" />
     <title>Lots</title>
 </head>
 
 <body class="generic-body">
     <main class="generic-canvas">
-        <section class="page" aria-label="Lots page">
-            <aside class="page__sidebar" aria-label="Sidebar navigation">
+        <header class="page__header">
+            <button class="generic-button-reset layout-nav-toggle layout-nav-toggle_responsive" data-sidebar-toggle
+                type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="layout-nav-toggle__line"></span>
+                <span class="layout-nav-toggle__line"></span>
+                <span class="layout-nav-toggle__line"></span>
+            </button>
+            <img src="./images/mlk.svg" alt="MLK" class="page__logo" />
+
+            <button class="generic-button-reset" type="button" aria-label="Profile indicator">
+                <img class="page__droplet-icon" src="images/header-droplet.svg" alt="Droplet" />
+            </button>
+        </header>
+
+        <section class="page" data-sidebar-layout="responsive" aria-label="Lots page">
+            <aside id="primary-sidebar" class="page__sidebar" data-sidebar-panel aria-label="Sidebar navigation">
                 <nav class="navigation" aria-label="Main sections">
                     <ul class="generic-list-reset">
                         <li class="navigation__item navigation__item_group_1">
@@ -47,360 +63,217 @@
                             <a class="navigation__link" href="settings.html">settings</a>
                         </li>
                         <li class="navigation__item navigation__item_group_2">
-                            <a class="navigation__link" href="help.html">help</a>
+                            <button class="navigation__link navigation__help-trigger generic-button-reset"
+                                type="button">help</button>
                         </li>
                     </ul>
                 </nav>
             </aside>
 
             <section class="page__workspace" aria-label="Lots workspace">
-                <header class="page__header">
-                    <div></div>
-                    <img src="./images/mlk.png" alt="MLK" class="page__logo" />
-
-                    <button class="generic-button-reset" type="button" aria-label="Profile indicator">
-                        <img class="page__droplet-icon" src="images/droplet-icon.png" alt="Droplet" />
-                    </button>
-                </header>
-
-                <div class="page__content lots-page__content">
+                <div class="page__content lots-page__content ui-scrollbar_hidden">
                     <div class="lots-page__header">
-                        <h1 class="lots-page__title typo typo_size_74 typo_weight_500 typo_color_primary">Lots</h1>
+                        <h1 class="lots-page__title type-74-500">Lots</h1>
                         <div class="generic-button-reset lots-page__reorder-button" type="button">
-                            <img src="images/reorder.png" alt="Reorder" class="lots-page__reorder-icon" />
-                            <span class="lots-page__reorder-text typo typo_size_15 typo_weight_500 typo_color_white_muted">Reorder</span>
+                            <img src="images/reorder.svg" alt="Reorder" class="lots-page__reorder-icon" />
+                            <span class="lots-page__reorder-text type-15-500">Reorder</span>
                         </div>
                     </div>
-                    <div class="lots-page__box ui-scrollbar_hidden">
+                    <div class="lots-page__box">
                         <div class="lots-page__create lots-page__box-item">
                             <figure class="lots-page__create-figure">
-                                <img src="images/plus.png" alt="Plus" class="lots-page__create-image" />
+                                <img src="images/plus.svg" alt="Plus" class="lots-page__create-image" />
                             </figure>
-                            <p class="lots-page__create-text typo typo_size_12 typo_color_primary">Create new lot</p>
+                            <p class="lots-page__create-text">Create new lot</p>
                         </div>
                         <div class="lots-page__lot-item lots-page__box-item">
                             <div class="lots-page__lot-top">
-                                <img src="images/lot-item.png" alt="Lot image" class="lots-page__lot-image" />
+                                <img src="images/lot-item.svg" alt="Lot image" class="lots-page__lot-image" />
                                 <a href="#" class="lots-page__lot-link">
-                                    <img src="images/link.png" alt="Link" class="lots-page__lot-link-icon" />
+                                    <img src="images/link.svg" alt="Link" class="lots-page__lot-link-icon" />
                                 </a>
                             </div>
                             <div class="lots-page__lot-bottom">
-                                <p class="lots-page__lot-type">
-                                    Supscribe
+                                <p class="lots-page__lot-type background_blue_gradieent">
+                                    Tip
                                 </p>
-                                <p class="lots-page__lot-title typo typo_size_15 typo_weight_500 typo_color_dark">
-                                    Cup of coffee
-                                </p>
-                                <p class="lots-page__lot-description typo typo_size_12 typo_color_secondary">
-                                    I literally can’t start my day without a coffee
+                                <p class="lots-page__lot-path type-12">
+                                    para.co/kjhkjhkjhjkhkjh/tip
                                 </p>
                                 <div class="lots-page__lot-price-box">
                                     <p class="lots-page__lot-price">
-                                        $10
-                                    </p>
-                                    <p class="lots-page__lot-price">
-                                        $20
-                                    </p>
-                                    <p class="lots-page__lot-price">
-                                        $30
+                                        >$1
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="lots-page__lot-item lots-page__box-item">
                             <div class="lots-page__lot-top">
-                                <img src="images/lot-item.png" alt="Lot image" class="lots-page__lot-image" />
+                                <img src="images/lot-item.svg" alt="Lot image" class="lots-page__lot-image" />
                                 <a href="#" class="lots-page__lot-link">
-                                    <img src="images/link.png" alt="Link" class="lots-page__lot-link-icon" />
+                                    <img src="images/link.svg" alt="Link" class="lots-page__lot-link-icon" />
+                                </a>
+                            </div>
+                            <div class="lots-page__lot-bottom">
+                                <p class="lots-page__lot-type background_yellow_gradieent">
+                                    Subscription
+                                </p>
+                                <p class="lots-page__lot-path type-15">
+                                    para.co/kjhkjhkjhjkhkjh/subscribe
+                                </p>
+                                <div class="lots-page__lot-price-box">
+                                    <p class="lots-page__lot-price">
+                                        $9
+                                    </p>
+                                    <p class="lots-page__lot-price">
+                                        $49
+                                    </p>
+                                    <p class="lots-page__lot-price">
+                                        $199
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lots-page__lot-item lots-page__box-item">
+                            <div class="lots-page__lot-top">
+                                <img src="images/cup-of-coffee.png" alt="Lot image" class="lots-page__lot-image" />
+                                <a href="#" class="lots-page__lot-link">
+                                    <img src="images/link.svg" alt="Link" class="lots-page__lot-link-icon" />
                                 </a>
                             </div>
                             <div class="lots-page__lot-bottom">
                                 <p class="lots-page__lot-type">
                                     Tip
                                 </p>
-                                <p class="lots-page__lot-title typo typo_size_15 typo_weight_500 typo_color_dark">
+                                <p class="lots-page__lot-title type-15-500-dark">
                                     Cup of coffee
                                 </p>
-                                <p class="lots-page__lot-description typo typo_size_12 typo_color_secondary">
+                                <p class="lots-page__lot-description type-12-secondary">
                                     I literally can’t start my day without a coffee
                                 </p>
                                 <div class="lots-page__lot-price-box">
                                     <p class="lots-page__lot-price">
-                                        $10
-                                    </p>
-                                    <p class="lots-page__lot-price">
-                                        $20
-                                    </p>
-                                    <p class="lots-page__lot-price">
-                                        $30
+                                        $8
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="lots-page__lot-item lots-page__box-item">
                             <div class="lots-page__lot-top">
-                                <img src="images/lot-item.png" alt="Lot image" class="lots-page__lot-image" />
+                                <img src="images/cup-of-coffee.png" alt="Lot image" class="lots-page__lot-image" />
                                 <a href="#" class="lots-page__lot-link">
-                                    <img src="images/link.png" alt="Link" class="lots-page__lot-link-icon" />
+                                    <img src="images/link.svg" alt="Link" class="lots-page__lot-link-icon" />
                                 </a>
                             </div>
                             <div class="lots-page__lot-bottom">
                                 <p class="lots-page__lot-type">
-                                    Tip
+                                    Wish
                                 </p>
-                                <p class="lots-page__lot-title typo typo_size_15 typo_weight_500 typo_color_dark">
-                                    Cup of coffee
+                                <p class="lots-page__lot-title type-15-500-dark">
+                                    My favorite flowers🌸
                                 </p>
-                                <p class="lots-page__lot-description typo typo_size_12 typo_color_secondary">
-                                    I literally can’t start my day without a coffee
+                                <p class="lots-page__lot-description type-12-secondary">
+                                    You know how I love these 🥰😍
                                 </p>
                                 <div class="lots-page__lot-price-box">
                                     <p class="lots-page__lot-price">
-                                        $10
-                                    </p>
-                                    <p class="lots-page__lot-price">
-                                        $20
-                                    </p>
-                                    <p class="lots-page__lot-price">
-                                        $30
+                                        $169
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="lots-page__lot-item lots-page__box-item">
                             <div class="lots-page__lot-top">
-                                <img src="images/lot-item.png" alt="Lot image" class="lots-page__lot-image" />
+                                <img src="images/cup-of-coffee.png" alt="Lot image" class="lots-page__lot-image" />
                                 <a href="#" class="lots-page__lot-link">
-                                    <img src="images/link.png" alt="Link" class="lots-page__lot-link-icon" />
+                                    <img src="images/link.svg" alt="Link" class="lots-page__lot-link-icon" />
                                 </a>
                             </div>
                             <div class="lots-page__lot-bottom">
                                 <p class="lots-page__lot-type">
-                                    Some
+                                    Wish
                                 </p>
-                                <p class="lots-page__lot-title typo typo_size_15 typo_weight_500 typo_color_dark">
-                                    Cup of coffee
+                                <p class="lots-page__lot-title type-15-500-dark">
+                                    iPhone 17 Pro
                                 </p>
-                                <p class="lots-page__lot-description typo typo_size_12 typo_color_secondary">
-                                    I literally can’t start my day without a coffee
+                                <p class="lots-page__lot-description type-12-secondary">
+                                    I really really really want to try the new camera 🥹
                                 </p>
                                 <div class="lots-page__lot-price-box">
                                     <p class="lots-page__lot-price">
-                                        $10
-                                    </p>
-                                    <p class="lots-page__lot-price">
-                                        $20
-                                    </p>
-                                    <p class="lots-page__lot-price">
-                                        $30
+                                        $1,299
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="lots-page__lot-item lots-page__box-item">
                             <div class="lots-page__lot-top">
-                                <img src="images/lot-item.png" alt="Lot image" class="lots-page__lot-image" />
+                                <img src="images/cup-of-coffee.png" alt="Lot image" class="lots-page__lot-image" />
                                 <a href="#" class="lots-page__lot-link">
-                                    <img src="images/link.png" alt="Link" class="lots-page__lot-link-icon" />
+                                    <img src="images/link.svg" alt="Link" class="lots-page__lot-link-icon" />
                                 </a>
                             </div>
                             <div class="lots-page__lot-bottom">
                                 <p class="lots-page__lot-type">
-                                    Tip
+                                    Pass
                                 </p>
-                                <p class="lots-page__lot-title typo typo_size_15 typo_weight_500 typo_color_dark">
-                                    Cup of coffee
+                                <p class="lots-page__lot-title type-15-500-dark">
+                                    Custom video
                                 </p>
-                                <p class="lots-page__lot-description typo typo_size_12 typo_color_secondary">
-                                    I literally can’t start my day without a coffee
+                                <p class="lots-page__lot-description type-12-secondary">
+                                    Purchase this Pass to get a custom video on OF
                                 </p>
                                 <div class="lots-page__lot-price-box">
                                     <p class="lots-page__lot-price">
-                                        $10
-                                    </p>
-                                    <p class="lots-page__lot-price">
-                                        $20
-                                    </p>
-                                    <p class="lots-page__lot-price">
-                                        $30
+                                        $499
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="lots-page__lot-item lots-page__box-item">
                             <div class="lots-page__lot-top">
-                                <img src="images/lot-item.png" alt="Lot image" class="lots-page__lot-image" />
+                                <img src="images/cup-of-coffee.png" alt="Lot image" class="lots-page__lot-image" />
                                 <a href="#" class="lots-page__lot-link">
-                                    <img src="images/link.png" alt="Link" class="lots-page__lot-link-icon" />
+                                    <img src="images/link.svg" alt="Link" class="lots-page__lot-link-icon" />
                                 </a>
                             </div>
                             <div class="lots-page__lot-bottom">
                                 <p class="lots-page__lot-type">
-                                    Tip
+                                    Pass
                                 </p>
-                                <p class="lots-page__lot-title typo typo_size_15 typo_weight_500 typo_color_dark">
-                                    Cup of coffee
+                                <p class="lots-page__lot-title type-15-500-dark">
+                                    Access to Private Stories
                                 </p>
-                                <p class="lots-page__lot-description typo typo_size_12 typo_color_secondary">
-                                    I literally can’t start my day without a coffee
+                                <p class="lots-page__lot-description type-12-secondary">
+                                    Get this Pass and I'll add you to my Private Stories on Snap
                                 </p>
                                 <div class="lots-page__lot-price-box">
                                     <p class="lots-page__lot-price">
-                                        $10
-                                    </p>
-                                    <p class="lots-page__lot-price">
-                                        $20
-                                    </p>
-                                    <p class="lots-page__lot-price">
-                                        $30
+                                        $32
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="lots-page__lot-item lots-page__box-item">
                             <div class="lots-page__lot-top">
-                                <img src="images/lot-item.png" alt="Lot image" class="lots-page__lot-image" />
+                                <img src="images/cup-of-coffee.png" alt="Lot image" class="lots-page__lot-image" />
                                 <a href="#" class="lots-page__lot-link">
-                                    <img src="images/link.png" alt="Link" class="lots-page__lot-link-icon" />
+                                    <img src="images/link.svg" alt="Link" class="lots-page__lot-link-icon" />
                                 </a>
                             </div>
                             <div class="lots-page__lot-bottom">
                                 <p class="lots-page__lot-type">
-                                    Tip
+                                    Message
                                 </p>
-                                <p class="lots-page__lot-title typo typo_size_15 typo_weight_500 typo_color_dark">
-                                    Cup of coffee
-                                </p>
-                                <p class="lots-page__lot-description typo typo_size_12 typo_color_secondary">
-                                    I literally can’t start my day without a coffee
+                                <p class="lots-page__lot-path type-12">
+                                    para.co/kjhkjhkjhjkhkjh/message
                                 </p>
                                 <div class="lots-page__lot-price-box">
                                     <p class="lots-page__lot-price">
-                                        $10
+                                        $5
                                     </p>
-                                    <p class="lots-page__lot-price">
-                                        $20
-                                    </p>
-                                    <p class="lots-page__lot-price">
-                                        $30
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="lots-page__lot-item lots-page__box-item">
-                            <div class="lots-page__lot-top">
-                                <img src="images/lot-item.png" alt="Lot image" class="lots-page__lot-image" />
-                                <a href="#" class="lots-page__lot-link">
-                                    <img src="images/link.png" alt="Link" class="lots-page__lot-link-icon" />
-                                </a>
-                            </div>
-                            <div class="lots-page__lot-bottom">
-                                <p class="lots-page__lot-type">
-                                    Tip
-                                </p>
-                                <p class="lots-page__lot-title typo typo_size_15 typo_weight_500 typo_color_dark">
-                                    Cup of coffee
-                                </p>
-                                <p class="lots-page__lot-description typo typo_size_12 typo_color_secondary">
-                                    I literally can’t start my day without a coffee
-                                </p>
-                                <div class="lots-page__lot-price-box">
                                     <p class="lots-page__lot-price">
                                         $10
-                                    </p>
-                                    <p class="lots-page__lot-price">
-                                        $20
-                                    </p>
-                                    <p class="lots-page__lot-price">
-                                        $30
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="lots-page__lot-item lots-page__box-item">
-                            <div class="lots-page__lot-top">
-                                <img src="images/lot-item.png" alt="Lot image" class="lots-page__lot-image" />
-                                <a href="#" class="lots-page__lot-link">
-                                    <img src="images/link.png" alt="Link" class="lots-page__lot-link-icon" />
-                                </a>
-                            </div>
-                            <div class="lots-page__lot-bottom">
-                                <p class="lots-page__lot-type">
-                                    Tip
-                                </p>
-                                <p class="lots-page__lot-title typo typo_size_15 typo_weight_500 typo_color_dark">
-                                    Cup of coffee
-                                </p>
-                                <p class="lots-page__lot-description typo typo_size_12 typo_color_secondary">
-                                    I literally can’t start my day without a coffee
-                                </p>
-                                <div class="lots-page__lot-price-box">
-                                    <p class="lots-page__lot-price">
-                                        $10
-                                    </p>
-                                    <p class="lots-page__lot-price">
-                                        $20
-                                    </p>
-                                    <p class="lots-page__lot-price">
-                                        $30
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="lots-page__lot-item lots-page__box-item">
-                            <div class="lots-page__lot-top">
-                                <img src="images/lot-item.png" alt="Lot image" class="lots-page__lot-image" />
-                                <a href="#" class="lots-page__lot-link">
-                                    <img src="images/link.png" alt="Link" class="lots-page__lot-link-icon" />
-                                </a>
-                            </div>
-                            <div class="lots-page__lot-bottom">
-                                <p class="lots-page__lot-type">
-                                    Tip
-                                </p>
-                                <p class="lots-page__lot-title typo typo_size_15 typo_weight_500 typo_color_dark">
-                                    Cup of coffee
-                                </p>
-                                <p class="lots-page__lot-description typo typo_size_12 typo_color_secondary">
-                                    I literally can’t start my day without a coffee
-                                </p>
-                                <div class="lots-page__lot-price-box">
-                                    <p class="lots-page__lot-price">
-                                        $10
-                                    </p>
-                                    <p class="lots-page__lot-price">
-                                        $20
-                                    </p>
-                                    <p class="lots-page__lot-price">
-                                        $30
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="lots-page__lot-item lots-page__box-item">
-                            <div class="lots-page__lot-top">
-                                <img src="images/lot-item.png" alt="Lot image" class="lots-page__lot-image" />
-                                <a href="#" class="lots-page__lot-link">
-                                    <img src="images/link.png" alt="Link" class="lots-page__lot-link-icon" />
-                                </a>
-                            </div>
-                            <div class="lots-page__lot-bottom">
-                                <p class="lots-page__lot-type">
-                                    Tip
-                                </p>
-                                <p class="lots-page__lot-title typo typo_size_15 typo_weight_500 typo_color_dark">
-                                    Cup of coffee
-                                </p>
-                                <p class="lots-page__lot-description typo typo_size_12 typo_color_secondary">
-                                    I literally can’t start my day without a coffee
-                                </p>
-                                <div class="lots-page__lot-price-box">
-                                    <p class="lots-page__lot-price">
-                                        $10
-                                    </p>
-                                    <p class="lots-page__lot-price">
-                                        $20
                                     </p>
                                     <p class="lots-page__lot-price">
                                         $30
@@ -413,6 +286,8 @@
             </section>
         </section>
     </main>
+    <script src="scripts/help-modal.js" defer></script>
+    <script src="scripts/sidebar-layout.js" defer></script>
 </body>
 
 </html>

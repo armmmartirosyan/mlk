@@ -6,48 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/globals.css" />
     <link rel="stylesheet" href="css/index.css" />
-    <title>Choose Username</title>
+    <link rel="icon" type="image/png" href="./images/droplet.png" />
+    <title>MLK</title>
 </head>
 
 <body class="generic-body">
-    <main class="generic-canvas username-page">
-        <section class="username-page__surface" aria-label="Username setup page">
-            <header class="username-page__header">
-                <button class="username-page__menu-button generic-button-reset" type="button" aria-label="Open menu">
-                    <span class="username-page__menu-icon" aria-hidden="true">
-                        <span class="username-page__menu-line"></span>
-                        <span class="username-page__menu-line"></span>
-                        <span class="username-page__menu-line"></span>
+    <main class="small-canvas main-page ui-scrollbar_hidden">
+        <div class="home__wrapper">
+            <img src="images/mlk.svg" alt="MLK" class="home__logo">
+            <div class="home__carousel">
+                <div class="home__carousel-item">
+                    <img src="images/bg-dark.png" alt="Carousel item" class="home__carousel-item-image">
+                </div>
+                <div class="home__carousel-item">
+                    <img src="images/bg-dark.png" alt="Carousel item" class="home__carousel-item-image">
+                </div>
+                <div class="home__carousel-item">
+                    <img src="images/bg-dark.png" alt="Carousel item" class="home__carousel-item-image">
+                </div>
+            </div>
+            <div class="home__content">
+                <h1 class="home__content-title">Hello, <span class="home__content-title-highlight">jjghhh!</span></h1>
+                <p class="home__content-description">
+                    <span class="home__content-description-part">
+                        Para is your new way to earn way more from your most loyal fans.
                     </span>
-                </button>
-
-                <img src="images/mlk.png" alt="MLK" class="username-page__brand-logo" />
-
-                <button class="username-page__profile-button generic-button-reset" type="button"
-                    aria-label="Profile indicator">
-                    <img src="images/droplet-icon.png" alt="Droplet" class="username-page__profile-icon" />
-                </button>
-            </header>
-
-            <form class="username-form" action="#" method="post" novalidate>
-                <h1 class="username-form__title typo typo_size_74 typo_weight_500 typo_color_primary">Choose your
-                    <br />
-                    MLK username
-                </h1>
-
-                <label class="username-form__line" for="username-input">
-                    <span class="username-form__domain typo typo_weight_500">mlk.com/</span>
-                    <input id="username-input" class="username-form__input generic-input-reset typo" type="text"
-                        name="username" placeholder="username" autocomplete="username" required />
-                </label>
-
-                <button
-                    class="username-form__submit generic-button-reset ui-pill-button typo typo_size_46 typo_weight_500"
-                    type="submit">
-                    Start earning
-                </button>
-            </form>
-        </section>
+                    <span class="home__content-description-part">
+                        We’ve got a full toolbox of features, but for now — just hit the big green button below. In one
+                        second, you’ll get your own ready-to-go page.
+                    </span>
+                </p>
+                <button class="home__content-button generic-button-reset">See my Para</button>
+            </div>
+        </div>
     </main>
 </body>
 

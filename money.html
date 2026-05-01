@@ -6,14 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/globals.css" />
     <link rel="stylesheet" href="css/sidebar-layout.css" />
+    <link rel="stylesheet" href="css/help-modal.css" />
     <link rel="stylesheet" href="css/money.css" />
+    <link rel="icon" type="image/png" href="./images/droplet.png" />
     <title>Money</title>
 </head>
 
 <body class="generic-body">
     <main class="generic-canvas">
-        <section class="page" aria-label="Money page">
-            <aside class="page__sidebar" aria-label="Sidebar navigation">
+        <header class="page__header">
+            <button class="generic-button-reset layout-nav-toggle layout-nav-toggle_responsive" data-sidebar-toggle
+                type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="layout-nav-toggle__line"></span>
+                <span class="layout-nav-toggle__line"></span>
+                <span class="layout-nav-toggle__line"></span>
+            </button>
+            <img src="./images/mlk.svg" alt="MLK" class="page__logo" />
+
+            <button class="generic-button-reset" type="button" aria-label="Profile indicator">
+                <img class="page__droplet-icon" src="images/header-droplet.svg" alt="Droplet" />
+            </button>
+        </header>
+
+        <section class="page" data-sidebar-layout="responsive" aria-label="Money page">
+            <aside id="primary-sidebar" class="page__sidebar" data-sidebar-panel aria-label="Sidebar navigation">
                 <nav class="navigation" aria-label="Main sections">
                     <ul class="generic-list-reset">
                         <li class="navigation__item navigation__item_group_1">
@@ -47,71 +63,64 @@
                             <a class="navigation__link" href="settings.html">settings</a>
                         </li>
                         <li class="navigation__item navigation__item_group_2">
-                            <a class="navigation__link" href="help.html">help</a>
+                            <button class="navigation__link navigation__help-trigger generic-button-reset"
+                                type="button">help</button>
                         </li>
                     </ul>
                 </nav>
             </aside>
 
             <section class="page__workspace" aria-label="Money workspace">
-                <header class="page__header">
-                    <div></div>
-                    <img src="./images/mlk.png" alt="MLK" class="page__logo" />
-
-                    <button class="generic-button-reset" type="button" aria-label="Profile indicator">
-                        <img class="page__droplet-icon" src="images/droplet-icon.png" alt="Droplet" />
-                    </button>
-                </header>
-
-                <div class="page__content money-page__content">
-                    <h1 class="money-page__title typo typo_size_70 typo_weight_500 typo_color_primary">
+                <div class="page__content money-page__content ui-scrollbar_hidden">
+                    <h1 class="money-page__title type-70-500">
                         Money
                     </h1>
-                    <p class="money-page__earned typo typo_size_15 typo_color_primary">
-                        So far, you’ve earned <span class="money-page__earned-amount typo typo_color_secondary">$0</span>
+                    <p class="money-page__earned type-15-primary">
+                        So far, you’ve earned <span class="money-page__earned-amount">$0</span>
                     </p>
-                    <p class="money-page__balance-text typo typo_size_15 typo_color_primary">
+                    <p class="money-page__balance-text type-15-primary">
                         Balance
                     </p>
                     <div class="money-page__balance-block">
-                        <p class="money-page__balance-amount typo typo_size_48 typo_color_primary">
+                        <p class="money-page__balance-amount type-48-primary">
                             $0
                         </p>
-                        <button class="money-page__balance-withdraw generic-button-reset ui-pill-button typo typo_size_15 typo_color_primary" type="button">
+                        <button class="money-page__balance-withdraw generic-button-reset ui-pill-button type-15"
+                            type="button">
                             Withdraw
                         </button>
                     </div>
                     <div class="money-page__table">
                         <div class="money-page__table-part">
-                            <h3 class="money-page__table-title typo typo_size_15 typo_color_white_muted">
+                            <h3 class="money-page__table-title type-15-muted">
                                 Payments history
                             </h3>
                         </div>
                         <div class="money-page__table-part">
-                            <h3 class="money-page__table-title typo typo_size_15 typo_color_white_muted">
+                            <h3 class="money-page__table-title type-15-primary">
                                 Withdrawal methods
                             </h3>
                             <div class="money-page__withdraw-method">
-                                <img src="./images/paypal.png" alt="PayPal" class="money-page__withdraw-icon" />
+                                <img src="./images/paypal.svg" alt="PayPal" class="money-page__withdraw-icon" />
                                 <div class="money-page__withdraw-info">
-                                    <p class="money-page__withdraw-name typo typo_size_15 typo_weight_700 typo_color_primary">
+                                    <p class="money-page__withdraw-name type-15-700-primary">
                                         PayPal
                                     </p>
                                     <figure class="money-page__withdraw-plus-figure">
-                                        <img src="./images/plus.png" alt="Plus"
+                                        <img src="./images/plus.svg" alt="Plus"
                                             class="money-page__withdraw-plus-icon" />
                                     </figure>
 
                                 </div>
                             </div>
                             <div class="money-page__withdraw-method">
-                                <img src="./images/crypto.png" alt="USDC" class="money-page__withdraw-icon" />
+                                <img src="./images/crypto.svg" alt="USDC" class="money-page__withdraw-icon" />
                                 <div class="money-page__withdraw-info">
-                                    <p class="money-page__withdraw-name typo typo_size_15 typo_weight_700 typo_color_primary">
+                                    <p class="money-page__withdraw-name type-15-700-primary">
                                         Crypto <span class="money-page__withdraw-currency">USDC</span>
                                     </p>
                                     <figure class="money-page__withdraw-plus-figure">
-                                        <img src="./images/plus.png" alt="Plus"
+                                        <img src="./images/plus.svg" alt="Plus"
                                             class="money-page__withdraw-plus-icon" />
                                     </figure>
 
@@ -123,6 +132,8 @@
             </section>
         </section>
     </main>
+    <script src="scripts/help-modal.js" defer></script>
+    <script src="scripts/sidebar-layout.js" defer></script>
 </body>
 
 </html>

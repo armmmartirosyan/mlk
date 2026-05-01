@@ -1,0 +1,363 @@
+.model__body {
+    padding: 2rem 2rem 14.3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.model__body-primary-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.model__body-primary-img {
+    width: 7.5rem;
+    height: 10rem;
+    border-radius: 1.5rem;
+}
+
+.model__body-primary-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.model__body-primary-name {
+    font-size: 4.84rem;
+    line-height: 4.5rem;
+    font-weight: 500;
+    color: var(--color-accent);
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    min-width: 0;
+}
+
+.model__body-primary-fans-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+.model__body-list {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.model__body-list-item {
+    width: calc(25% - (4.5rem / 4));
+    height: 51rem;
+    border-radius: 2rem;
+}
+
+.model__body-list-item-card {
+    width: calc(25% - (4.5rem / 4));
+    height: 51rem;
+    border-radius: 2rem;
+}
+
+.model__body-list-item-card-image-block {
+    width: 100%;
+    height: 43.5rem;
+    margin-bottom: 2.7rem;
+    background-image: url(../images/model-card-bg.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 100% calc(100% - 3rem);
+    position: relative;
+}
+
+.model__body-list-item-card-of-icon {
+    width: 9.2rem;
+    height: 9.2rem;
+    position: absolute;
+    top: 2rem;
+    left: 8.5rem;
+}
+
+.model__body-list-item-card-love {
+    font-size: 2.88rem;
+    line-height: 3.28rem;
+    font-weight: 400;
+    color: white;
+    font-family: "Plus Jakarta Sans";
+    position: absolute;
+    top: 12.5rem;
+    left: 8.5rem;
+    font-style: italic;
+}
+
+.model__body-list-item-card-girl-img {
+    width: 7.4rem;
+    height: 7.9rem;
+    position: absolute;
+    bottom: 6rem;
+    left: 4.8em;
+    border-radius: 50%;
+    transform: rotate3d(1, 1, 1, 30deg);
+}
+
+.model__body-list-item-card-heart-icon {
+    width: 2rem;
+    height: 1.7rem;
+    position: absolute;
+    bottom: 7.5rem;
+    left: 12.9rem;
+}
+
+.model__body-list-item-figure {
+    width: 100%;
+    height: 43.5rem;
+    margin-bottom: 2.7rem;
+    border-radius: 2rem;
+    position: relative;
+}
+
+.model__body-list-item-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+}
+
+.model__body-list-item-caption {
+    position: absolute;
+    width: 15.3rem;
+    height: 21.8rem;
+    border-radius: 2rem;
+    background-color: var(--color-surface-panel);
+    padding: 1.174rem;
+}
+
+.model__body-list-item-caption-top-left {
+    top: 0;
+    left: 0;
+}
+
+.model__body-list-item-caption-bottom-left {
+    bottom: 0;
+    left: 0;
+}
+
+.model__body-list-item-caption-top-right {
+    top: 0;
+    right: 0;
+}
+
+.model__body-list-item-caption-bottom-right {
+    bottom: 0;
+    right: 0;
+}
+
+.model__body-list-item-caption-img {
+    width: 4.4rem;
+    height: 5.9rem;
+    border-radius: 2.3rem;
+    margin-bottom: 1.43rem;
+}
+
+.model__body-list-item-caption-text {
+    font-size: 2.26rem;
+    line-height: 2.45rem;
+    font-weight: 400;
+    color: var(--color-text-primary);
+    font-family: "Plus Jakarta Sans";
+}
+
+.model__body-list-item-box {
+    display: flex;
+    align-items: center;
+}
+
+.model__body-list-item-name {
+    font-size: 2.2rem;
+    line-height: 2.3rem;
+    font-weight: 500;
+    color: var(--color-accent);
+    margin-right: .8rem;
+    width: 100%;
+    min-width: 0;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    font-family: "Plus Jakarta Sans";
+}
+
+.model__body-list-item-card-name {
+    font-size: 2.2rem;
+    line-height: 2.3rem;
+    font-weight: 400;
+    color: var(--color-text-primary);
+    margin-right: .8rem;
+    width: 100%;
+    min-width: 0;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    font-family: "Plus Jakarta Sans";
+}
+
+.model__body-list-item-gift {
+    font-size: 2.2rem;
+    font-family: "Plus Jakarta Sans";
+    line-height: 2.3rem;
+    font-weight: 400;
+    color: var(--color-text-primary);
+}
+
+.model__body-list-item-amount {
+    font-size: 2.2rem;
+    line-height: 2.3rem;
+    font-weight: 400;
+    color: var(--color-accent);
+    padding: 0.7rem 1.5rem;
+    border-radius: 3rem;
+    background-color: var(--color-surface-panel);
+    font-family: "Plus Jakarta Sans";
+}
+
+.model__body-list-item-tip {
+    width: calc(25% - (4.5rem / 4));
+    height: 51rem;
+    border-radius: 2rem;
+    background-image: linear-gradient(to bottom, rgba(229, 174, 153, 0.5), rgba(130, 101, 89, 0.5));
+    padding: 2.5rem 1.5rem 2rem 1.5rem;
+}
+
+.model__body-list-item-tip-name {
+    font-size: 3.2rem;
+    line-height: 3.3rem;
+    color: var(--color-accent);
+    margin-bottom: 2rem;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    max-width: 100%;
+}
+
+.model__body-list-item-tip-textarea {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    padding: 1.2rem 1.5rem;
+    font-size: 2rem;
+    line-height: 2.2rem;
+    font-weight: 400;
+    color: var(--white-50);
+    border: none;
+    outline: none;
+    resize: none;
+    background-color: var(--white-20);
+}
+
+.model__body-list-item-tip-textarea::placeholder {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    font-weight: 400;
+    color: var(--white-50);
+}
+
+.model__body-list-item-tip-textarea-length {
+    position: absolute;
+    bottom: 2.4rem;
+    right: 0.7rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color: var(--white-50);
+}
+
+.model__body-list-item-tip-textarea-wrapper {
+    position: relative;
+    width: 100%;
+    height: 33.4rem;
+    margin-bottom: 1.6rem;
+}
+
+.model__body-list-item-tip-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .3rem;
+}
+
+.model__body-list-item-tip-sum-box {
+    display: flex;
+    align-items: center;
+    width: 20.3rem;
+    height: 6rem;
+    justify-content: space-between;
+    padding: .8rem .5rem .5rem 1.5rem;
+    border-radius: 1.5rem;
+    background-color: var(--color-text-primary);
+}
+
+.model__body-list-item-tip-sum-name {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    font-weight: 400;
+    color: black;
+    opacity: 0.5;
+    margin-bottom: 0.26rem;
+}
+
+.model__body-list-item-tip-sum-amount {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--color-surface-panel);
+    font-family: "Plus Jakarta Sans";
+}
+
+.model__body-list-item-tip-plus-button {
+    width: 3rem;
+    height: 5rem;
+    border-radius: 1rem;
+    background-color: var(--color-overlay-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--color-text-dark);
+    font-size: 1.8rem;
+}
+
+.model__body-list-item-tip-button {
+    width: 11.4rem;
+    height: 6rem;
+    border-radius: 3rem;
+    background-color: var(--color-surface-panel);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--color-accent);
+    font-family: "Plus Jakarta Sans";
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .model__body-primary-info {
+        flex-direction: column;
+    }
+
+    .model__body-primary-box {
+        align-items: center;
+    }
+
+    .model__body-list-item,
+    .model__body-list-item-card,
+    .model__body-list-item-tip {
+        width: calc((100% / 3) - 1rem);
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .model__body-list {
+        gap: .5rem;
+    }
+
+    .model__body-list-item,
+    .model__body-list-item-card,
+    .model__body-list-item-tip {
+        width: calc(50% - .25rem);
+    }
+}

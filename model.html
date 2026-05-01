@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/globals.css" />
+    <link rel="stylesheet" href="css/sidebar-layout.css" />
+    <link rel="stylesheet" href="css/help-modal.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/model.css" />
+    <link rel="icon" type="image/png" href="./images/droplet.png" />
+    <title>Model</title>
+</head>
+
+<body class="generic-body">
+    <main class="small-canvas ui-scrollbar_hidden" data-sidebar-layout="compact">
+        <header class="small-canvas__header trophies__header">
+            <button
+                class="generic-button-reset small-canvas__header-menu-button layout-nav-toggle layout-nav-toggle_always"
+                data-sidebar-toggle type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+                <div class="small-canvas__header-menu-button-line layout-nav-toggle__line"></div>
+                <div class="small-canvas__header-menu-button-line layout-nav-toggle__line"></div>
+                <div class="small-canvas__header-menu-button-line layout-nav-toggle__line"></div>
+            </button>
+            <img src="./images/mlk.svg" alt="MLK" class="small-canvas__header-logo" />
+
+            <button class="generic-button-reset" type="button" aria-label="Profile indicator">
+                <img class="small-canvas__header-droplet-icon" src="images/header-droplet.svg" alt="Droplet" />
+            </button>
+        </header>
+
+        <aside id="primary-sidebar" class="page__sidebar" data-sidebar-panel aria-label="Sidebar navigation">
+            <nav class="navigation" aria-label="Main sections">
+                <ul class="generic-list-reset">
+                    <li class="navigation__item navigation__item_group_1">
+                        <a class="navigation__link" href="chat.html">chat</a>
+                    </li>
+                    <li class="navigation__item navigation__item_group_1">
+                        <a class="navigation__link" href="todo.html">to-do</a>
+                    </li>
+                    <li class="navigation__item navigation__item_group_1">
+                        <a class="navigation__link" href="lots.html">lots</a>
+                    </li>
+                    <li class="navigation__item navigation__item_group_1">
+                        <a class="navigation__link" href="store.html">store</a>
+                    </li>
+                    <li class="navigation__item navigation__item_group_1">
+                        <a class="navigation__link" href="vault.html">vault</a>
+                    </li>
+                    <li class="navigation__item navigation__item_group_1">
+                        <a class="navigation__link" href="money.html">money</a>
+                    </li>
+
+                    <div class="navigation__divider"></div>
+
+                    <li class="navigation__item navigation__item_group_2">
+                        <a class="navigation__link" href="feed.html">feed</a>
+                    </li>
+                    <li class="navigation__item navigation__item_group_2">
+                        <a class="navigation__link navigation__link_state_active" href="trophies.html">trophies</a>
+                    </li>
+                    <li class="navigation__item navigation__item_group_2">
+                        <a class="navigation__link" href="settings.html">settings</a>
+                    </li>
+                    <li class="navigation__item navigation__item_group_2">
+                        <button class="navigation__link navigation__help-trigger generic-button-reset"
+                            type="button">help</button>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <div class="model__body">
+            <div class="model__body-primary-info">
+                <img src="images/girl.png" alt="Girl" class="model__body-primary-img">
+                <div class="model__body-primary-box">
+                    <h1 class="model__body-primary-name">
+                        Carol.xxx
+                        <img src="images/verified.svg" alt="Verified" class="model__body-primary-name-verified-icon">
+                    </h1>
+                    <img src="images/of-icon.svg" alt="OF" class="model__body-primary-fans-icon">
+                </div>
+            </div>
+
+            <div class="model__body-list">
+                <div class="model__body-list-item-card">
+                    <div class="model__body-list-item-card-image-block">
+                        <img src="images/of-rotated-icon.svg" alt="Of" class="model__body-list-item-card-of-icon">
+                        <h2 class="model__body-list-item-card-love">LOVE !</h2>
+                        <img src="images/girl.png" alt="Girl" class="model__body-list-item-card-girl-img">
+                        <img src="images/heart-rotated.svg" alt="Heart" class="model__body-list-item-card-heart-icon">
+                    </div>
+                    <div class="model__body-list-item-box">
+                        <h2 class="model__body-list-item-card-name">LOVE !</h2>
+                        <p class="model__body-list-item-amount">$200</p>
+                    </div>
+                </div>
+                <div class="model__body-list-item-tip">
+                    <p class="model__body-list-item-tip-name">Tip Carol.xxx</p>
+                    <div class="model__body-list-item-tip-textarea-wrapper">
+                        <textarea class="model__body-list-item-tip-textarea" placeholder="Say something..."></textarea>
+                        <span class="model__body-list-item-tip-textarea-length">0/120</span>
+                    </div>
+                    <div class="model__body-list-item-tip-footer">
+                        <div class="model__body-list-item-tip-sum-box">
+                            <div>
+                                <p class="model__body-list-item-tip-sum-name">Sum</p>
+                                <p class="model__body-list-item-tip-sum-amount">$99</p>
+                            </div>
+                            <button class="generic-button-reset model__body-list-item-tip-plus-button"
+                                type="button">+</button>
+                        </div>
+                        <button class="generic-button-reset model__body-list-item-tip-button" type="button">Tip</button>
+                    </div>
+                </div>
+
+                <div class="model__body-list-item">
+                    <figure class="model__body-list-item-figure">
+                        <img src="images/dyson.png" alt="Dyson" class="model__body-list-item-img">
+                        <figcaption class="model__body-list-item-caption model__body-list-item-caption-top-right">
+                            <img src="images/girl.png" alt="Dyson" class="model__body-list-item-caption-img">
+                            <p class="model__body-list-item-caption-text">
+                                I want to do a beautiful styling for my hair😍
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <div class="model__body-list-item-box">
+                        <h2 class="model__body-list-item-name">Dyson Airwrap Multi-Styler💙</h2>
+                        <p class="model__body-list-item-gift">GIFT <br> FOR</p>
+                        <p class="model__body-list-item-amount">$390</p>
+                    </div>
+                </div>
+                <div class="model__body-list-item">
+                    <figure class="model__body-list-item-figure">
+                        <img src="images/dress.png" alt="Dress" class="model__body-list-item-img">
+                        <figcaption class="model__body-list-item-caption model__body-list-item-caption-bottom-right">
+                            <img src="images/girl.png" alt="Dress" class="model__body-list-item-caption-img">
+                            <p class="model__body-list-item-caption-text">
+                                Fits all over my hot body 🔥
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <div class="model__body-list-item-box">
+                        <h2 class="model__body-list-item-name">Latex dress🖤</h2>
+                        <p class="model__body-list-item-gift">GIFT <br> FOR</p>
+                        <p class="model__body-list-item-amount">$349</p>
+                    </div>
+                </div>
+                <div class="model__body-list-item">
+                    <figure class="model__body-list-item-figure">
+                        <img src="images/flowers.png" alt="Flowers" class="model__body-list-item-img">
+                        <figcaption class="model__body-list-item-caption model__body-list-item-caption-top-left">
+                            <img src="images/girl.png" alt="Flowers" class="model__body-list-item-caption-img">
+                            <p class="model__body-list-item-caption-text">
+                                Show me your love💋
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <div class="model__body-list-item-box">
+                        <h2 class="model__body-list-item-name">101 roses for your beloved Carol🌹💓</h2>
+                        <p class="model__body-list-item-gift">GIFT <br> FOR</p>
+                        <p class="model__body-list-item-amount">$150</p>
+                    </div>
+                </div>
+                <div class="model__body-list-item">
+                    <figure class="model__body-list-item-figure">
+                        <img src="images/no-dress.png" alt="No Dress" class="model__body-list-item-img">
+                        <figcaption class="model__body-list-item-caption model__body-list-item-caption-bottom-left">
+                            <img src="images/girl.png" alt="No Dress" class="model__body-list-item-caption-img">
+                            <p class="model__body-list-item-caption-text">
+                                Without panties, you know 😈
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <div class="model__body-list-item-box">
+                        <h2 class="model__body-list-item-name">Bandage Long Dress🖤</h2>
+                        <p class="model__body-list-item-gift">GIFT <br> FOR</p>
+                        <p class="model__body-list-item-amount">$155</p>
+                    </div>
+                </div>
+                <div class="model__body-list-item">
+                    <figure class="model__body-list-item-figure">
+                        <img src="images/night-dress.png" alt="Night Dress" class="model__body-list-item-img">
+                    </figure>
+                    <div class="model__body-list-item-box">
+                        <h2 class="model__body-list-item-name">sexe girl💕</h2>
+                        <p class="model__body-list-item-gift">GIFT <br> FOR</p>
+                        <p class="model__body-list-item-amount">$150</p>
+                    </div>
+                </div>
+                <div class="model__body-list-item">
+                    <figure class="model__body-list-item-figure">
+                        <img src="images/dress.png" alt="Dress" class="model__body-list-item-img">
+                        <figcaption class="model__body-list-item-caption model__body-list-item-caption-bottom-right">
+                            <img src="images/girl.png" alt="Dress" class="model__body-list-item-caption-img">
+                            <p class="model__body-list-item-caption-text">
+                                Fits all over my hot body 🔥
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <div class="model__body-list-item-box">
+                        <h2 class="model__body-list-item-name">Latex dress🖤</h2>
+                        <p class="model__body-list-item-gift">GIFT <br> FOR</p>
+                        <p class="model__body-list-item-amount">$349</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer__copy-wrapper">
+                <p class="footer__copy type-12-primary">
+                    Built for content creators and their fans around the world by PARA &copy;
+                </p>
+            </div>
+            <div class="footer__social">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+                    <img src="images/x.svg" alt="X" class="footer__social-icon">
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+                    <img src="images/tiktok.svg" alt="TikTok" class="footer__social-icon">
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+                    <img src="images/instagram.svg" alt="Instagram" class="footer__social-icon">
+                </a>
+            </div>
+            <div class="footer__payments">
+                <div class="footer__payments-icon-block">
+                    <img src="images/lock.svg" alt="Lock" class="footer__payments-lock">
+                    <p class="footer__payments-text type-12-primary">
+                        Secure payments
+                    </p>
+                </div>
+                <div class="footer__payments-block">
+                    <img src="images/visa_card.svg" alt="Visa Card" class="footer__payments-method">
+                    <img src="images/master_card.svg" alt="Master Card" class="footer__payments-method">
+                    <img src="images/amercan_express.svg" alt="American Express" class="footer__payments-method">
+                    <img src="images/union_pay.svg" alt="Union Pay" class="footer__payments-method">
+                </div>
+            </div>
+            <ul class="footer__menu generic-list-reset">
+                <li class="footer__menu-item">
+                    <a href="#" class="footer__menu-link type-12">Privacy
+                        Policy</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a href="#" class="footer__menu-link type-12">Terms of
+                        Service</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a href="#" class="footer__menu-link type-12">Support</a>
+                </li>
+            </ul>
+        </footer>
+    </main>
+    <script src="scripts/help-modal.js" defer></script>
+    <script src="scripts/sidebar-layout.js" defer></script>
+</body>
+
+</html>

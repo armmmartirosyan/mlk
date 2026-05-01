@@ -1,175 +1,117 @@
-.username-page {
-    justify-content: center;
-    align-items: flex-start;
-    padding-block: 0;
+.main-page {
+    padding: 3.3rem 2rem 5rem 1rem;
 }
 
-.username-page__surface {
-    width: min(151.2rem, 100%);
-    min-height: 65.8rem;
-    background: var(--color-chat-surface);
-    display: flex;
-    flex-direction: column;
+.home__wrapper {
+    width: 79rem;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
-.username-page__header {
-    padding: 0.8rem 1.5rem;
+.home__logo {
+    height: 2.7rem;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto 1.8rem;
+}
+
+
+.home__carousel {
+    position: relative;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-}
-
-.username-page__menu-button {
-    width: 2.8rem;
-    height: 4rem;
-    border-radius: 1rem;
-    background: rgb(234, 223, 214, 55%);
-    display: inline-flex;
     justify-content: center;
-    align-items: center;
+    border-radius: 1.5rem;
+    gap: 1.5rem;
+    margin-bottom: 7.4rem;
 }
 
-.username-page__menu-icon {
-    width: 1rem;
-    height: 1.1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.home__carousel-item {
+    width: 21.1rem;
+    height: 30rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    /* transform: rotate3d(1, 1, 1, 45deg); */
 }
 
-.username-page__menu-line {
-    height: 0.1rem;
+.home__carousel-item-image {
     width: 100%;
-    background: #A39187;
-    border-radius: 99rem;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.5rem;
 }
 
-.username-page__brand-logo {
-    width: 6rem;
-    height: auto;
+.home__content-title {
+    font-weight: 500;
+    font-size: 4.38rem;
+    line-height: 4.5rem;
+    color: var(--color-text-primary);
+    font-family: "Plus Jakarta Sans";
+    margin-bottom: 2rem;
 }
 
-.username-page__profile-button {
-    width: 2.8rem;
-    height: 4rem;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+.home__content-title-highlight {
+    color: var(--color-accent);
 }
 
-.username-page__profile-icon {
-    width: 1.8rem;
-    height: 2.4rem;
-}
-
-.username-form {
-    width: 100%;
-    max-width: 95rem;
-    margin: 5.5rem auto 0;
-    padding-inline: 8rem;
+.home__content-description {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    gap: 6.2rem;
+    margin-bottom: 3rem;
 }
 
-.username-form__title {
-    margin-bottom: 4.8rem;
-    line-height: 0.96;
-}
+.home__content-description-part {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: var(--color-text-primary);
+    font-family: "Plus Jakarta Sans";
 
-.username-form__line {
-    width: 100%;
-    display: flex;
-    align-items: baseline;
-    margin-bottom: 4.2rem;
-}
-
-.username-form__domain,
-.username-form__input {
-    font-size: 7.4rem;
-    line-height: 6.4rem;
-    letter-spacing: 0;
-}
-
-.username-form__domain {
-    color: #9C918B;
-}
-
-.username-form__input {
-    flex: 1;
-    min-width: 12rem;
-    color: #EADFD6;
-}
-
-.username-form__input::placeholder {
-    color: #EADFD6;
-    opacity: 1;
-}
-
-.username-form__submit {
-    min-width: 29rem;
-    min-height: 5.6rem;
-    padding: 0.8rem 2.4rem;
-    border-radius: 4rem;
-    background: #EADFD6;
-    color: #DDAA94;
-    line-height: 1;
-}
-
-@media screen and (max-width: 1024px) {
-    .username-page__surface {
-        min-height: calc(100dvh - 0.1rem);
+    &:first-child {
+        max-width: 17.9rem;
     }
 
-    .username-form {
-        margin-top: 6rem;
-        padding-inline: 4rem;
-    }
-
-    .username-form__domain,
-    .username-form__input {
-        font-size: 5.2rem;
-        line-height: 4.8rem;
+    &:last-child {
+        max-width: 46.4rem;
     }
 }
 
-@media screen and (max-width: 700px) {
-    .username-page {
-        align-items: stretch;
+.home__content-button {
+    width: 30rem;
+    height: 6rem;
+    padding: 2rem;
+    background-color: var(--color-surface-panel);
+    color: var(--color-accent);
+    font-size: 1.9rem;
+    line-height: 2rem;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 400;
+    box-shadow:
+        inset 0 .3rem .3rem var(--color-accent),
+        0 -.5rem 3rem var(--color-accent);
+    border-radius: 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-page {
+        padding: 1rem 1rem 5rem;
     }
 
-    .username-page__surface {
+    .home__content-description {
+        flex-direction: column;
+        gap: 2rem;
         width: 100%;
-        min-height: 100dvh;
+
+        .home__content-description-part:first-child {
+            max-width: 100%;
+        }
+
+        .home__content-description-part:last-child {
+            max-width: 100%;
+        }
     }
 
-    .username-form {
-        margin-top: 4.8rem;
-        padding-inline: 2rem;
-    }
-
-    .username-form__title {
-        font-size: 4.8rem;
-        line-height: 4.6rem;
-        margin-bottom: 3.2rem;
-    }
-
-    .username-form__line {
-        flex-wrap: wrap;
-        row-gap: 0.8rem;
-        margin-bottom: 3rem;
-    }
-
-    .username-form__domain,
-    .username-form__input {
-        font-size: 4.2rem;
-        line-height: 4rem;
-    }
-
-    .username-form__submit {
-        min-width: 24rem;
-        min-height: 5rem;
-        font-size: 3.2rem;
-        line-height: 1;
+    .home__content-button {
+        width: 100%;
     }
 }

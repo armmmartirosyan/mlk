@@ -1,8 +1,12 @@
+.settings-page__content {
+    overflow-y: auto;
+}
+
 .settings-page__image-figure {
     width: 14rem;
     height: 18rem;
     border-radius: 3rem;
-    background-color: #A39187;
+    background-color: var(--color-surface-soft);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +26,7 @@
     border-radius: 50%;
     right: 0.7rem;
     bottom: 0.7rem;
-    background-color: #EADFD6;
+    background-color: var(--color-surface-contrast);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,17 +46,21 @@
     max-width: 54rem;
 }
 
+.settings-page__text-line+.settings-page__text-line {
+    margin-bottom: 0;
+}
+
 .settings-page__text {
     max-width: 100%;
     width: fit-content;
     height: auto;
     font-size: 6.94rem;
     line-height: 6.38rem;
-    color: #EADFD6;
+    color: var(--color-text-primary);
     font-family: "Plus Jakarta Sans";
     font-weight: 500;
     letter-spacing: -0.075rem;
-    white-space: wrap;
+    white-space: normal;
     word-break: break-all;
 }
 
@@ -61,7 +69,7 @@
     width: fit-content;
     height: auto;
     letter-spacing: -0.03rem;
-    white-space: wrap;
+    white-space: normal;
     word-break: break-all;
 }
 
@@ -108,7 +116,7 @@
     letter-spacing: 0;
     padding: 1.2rem 1.8rem;
     border-radius: 1.5rem;
-    background-color: #A39187;
+    background-color: var(--color-surface-soft);
     margin-bottom: 5rem;
 }
 
@@ -128,117 +136,37 @@
     letter-spacing: 0;
     max-width: 18.2rem;
     height: auto;
-    white-space: wrap;
+    white-space: normal;
     word-break: break-all;
 }
 
+@media screen and (max-width: 1200px) {
+    .settings-page__content {
+        padding: 1rem 1rem 3rem;
+    }
 
-/* Messages modal */
-.messages-modal {
-    position: absolute;
-    right: 2rem;
-    bottom: 2rem;
-    width: 40rem;
-    height: 70.4rem;
-    border-radius: 2.4rem;
-    background-color: #EADFD6;
-    display: flex;
-    flex-direction: column;
-}
+    .settings-page__text {
+        font-size: 4.61rem;
+        line-height: 4.5rem;
+    }
 
-.messages-modal__header {
-    width: 100%;
-    height: 5.3rem;
-    border-radius: 2.4rem 2.4rem 0 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 2.3rem;
-}
+    .settings-page__text-line {
+        max-width: unset;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
 
-.messages-modal__title {
-    letter-spacing: 0;
-}
+    .settings-page__text-line+.settings-page__text-line {
+        margin-bottom: 0;
+    }
 
-.messages-modal__close-btn {
-    cursor: pointer;
-}
+    .settings-page__image-figure {
+        width: 10.8rem;
+        height: 13.8rem;
+    }
 
-.messages-modal__close-icon {
-    width: 1.6rem;
-    height: 1.6rem;
-}
-
-.messages-modal__body {
-    border-block: .1rem solid #EDEDED;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
-}
-
-.messages-modal__body-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-}
-
-.messages-modal__body-icon {
-    width: 3.2rem;
-    height: 3.2rem;
-}
-
-.messages-modal__body-info {
-    letter-spacing: 0;
-}
-
-.messages-modal__body-description {
-    line-height: 2rem;
-    letter-spacing: 0;
-}
-
-.messages-modal__body-button {
-    padding: 1.1rem 1.6rem;
-    border-radius: 1rem;
-    background-color: #E5AE99;
-    max-width: fit-content;
-    display: flex;
-    align-items: center;
-    gap: 1.6rem;
-    cursor: pointer;
-}
-
-.messages-modal__body-button-icon {
-    width: 1.6rem;
-    height: 1.6rem;
-}
-
-.messages-modal__footer {
-    height: 8rem;
-    display: flex;
-    border-radius: 0 0 2.4rem 2.4rem;
-}
-
-.messages-modal__footer-tab {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.8rem;
-    cursor: pointer;
-}
-
-.messages-modal__footer-tab-img {
-    width: 2.4rem;
-    height: 2.4rem;
-}
-
-.messages-modal__footer-tab-text {
-    line-height: 2rem;
-    letter-spacing: 0;
+    .settings-page__image-img {
+        width: 9.4rem;
+        height: 15rem;
+    }
 }
