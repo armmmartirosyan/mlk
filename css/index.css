@@ -83,14 +83,56 @@
     height: 0;
 }
 
+@keyframes promo-card-1 {
+    from {
+        transform: translateX(-14rem) translateY(1.8rem);
+    }
+
+    to {
+        transform: translateX(-28rem) translateY(3.6rem);
+    }
+}
+
+@keyframes promo-card-2 {
+    from {
+        transform: translateX(-7rem) translateY(0.9rem);
+    }
+
+    to {
+        transform: translateX(-14rem) translateY(1.8rem);
+    }
+}
+
+@keyframes promo-card-4 {
+    from {
+        transform: translateX(7rem) translateY(-0.9rem);
+    }
+
+    to {
+        transform: translateX(14rem) translateY(-1.8rem);
+    }
+}
+
+@keyframes promo-card-5 {
+    from {
+        transform: translateX(14rem) translateY(-1.8rem);
+    }
+
+    to {
+        transform: translateX(28rem) translateY(-3.6rem);
+    }
+}
+
 .home__promo-card_pos_1 {
     z-index: 10;
     transform: translateX(-28rem) translateY(3.6rem);
+    animation: promo-card-1 1.4s ease-in-out backwards;
 }
 
 .home__promo-card_pos_2 {
     z-index: 9;
     transform: translateX(-14rem) translateY(1.8rem);
+    animation: promo-card-2 1.4s ease-in-out backwards;
 }
 
 .home__promo-card_pos_3 {
@@ -101,11 +143,13 @@
 .home__promo-card_pos_4 {
     z-index: 7;
     transform: translateX(14rem) translateY(-1.8rem);
+    animation: promo-card-4 1.4s ease-in-out backwards;
 }
 
 .home__promo-card_pos_5 {
     z-index: 6;
     transform: translateX(28rem) translateY(-3.6rem);
+    animation: promo-card-5 1.4s ease-in-out backwards;
 }
 
 .home__promo-wrapper {
@@ -158,13 +202,13 @@
     font-size: 8cqh;
     line-height: 85%;
     margin: 0;
-    color: var(--mantine-color-white, #fff);
+    color: var(--color-text-primary);
     font-family: Gramatika, "Plus Jakarta Sans", sans-serif;
     font-weight: 700;
 }
 
 .home__promo-price-wrap {
-    background: rgba(255, 255, 255, 0.15);
+    background: var(--color-surface-panel);
     border-radius: 33.33cqw;
     min-width: 40cqw;
     padding: 4cqw 6.66cqw;
@@ -178,12 +222,12 @@
     font-size: 2.66cqh;
     font-weight: 600;
     line-height: 80%;
-    color: rgba(255, 255, 255, 0.5);
+    color: white;
     margin: 0;
 }
 
 .home__promo-price {
-    color: #37cc00;
+    color: var(--color-accent);
     margin-top: 1.33cqh;
     font-family: Gramatika, "Plus Jakarta Sans", sans-serif;
     font-size: 7.77cqh;
@@ -244,12 +288,54 @@
         top: -10rem;
     }
 
+    @keyframes promo-card-sm-1 {
+        from {
+            transform: translateX(-24rem) translateY(2.8rem);
+        }
+
+        to {
+            transform: translateX(-12rem) translateY(1.4rem);
+        }
+    }
+
+    @keyframes promo-card-sm-2 {
+        from {
+            transform: translateX(-12rem) translateY(1.4rem);
+        }
+
+        to {
+            transform: translateX(-6rem) translateY(0.7rem);
+        }
+    }
+
+    @keyframes promo-card-sm-4 {
+        from {
+            transform: translateX(12rem) translateY(-1.4rem);
+        }
+
+        to {
+            transform: translateX(6rem) translateY(-0.7rem);
+        }
+    }
+
+    @keyframes promo-card-sm-5 {
+        from {
+            transform: translateX(24rem) translateY(-2.8rem);
+        }
+
+        to {
+            transform: translateX(12rem) translateY(-1.4rem);
+        }
+    }
+
     .home__promo-card_pos_1 {
         transform: translateX(-12rem) translateY(1.4rem);
+        animation: promo-card-sm-1 1.4s ease-in-out backwards;
     }
 
     .home__promo-card_pos_2 {
         transform: translateX(-6rem) translateY(0.7rem);
+        animation: promo-card-sm-2 1.4s ease-in-out backwards;
     }
 
     .home__promo-card_pos_3 {
@@ -258,9 +344,11 @@
 
     .home__promo-card_pos_4 {
         transform: translateX(6rem) translateY(-0.7rem);
+        animation: promo-card-sm-4 1.4s ease-in-out backwards;
     }
 
     .home__promo-card_pos_5 {
         transform: translateX(12rem) translateY(-1.4rem);
+        animation: promo-card-sm-5 1.4s ease-in-out backwards;
     }
 }
