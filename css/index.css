@@ -16,32 +16,6 @@
     margin: 0 auto 1.8rem;
 }
 
-
-.home__carousel {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 1.5rem;
-    gap: 1.5rem;
-    margin-bottom: 7.4rem;
-}
-
-.home__carousel-item {
-    width: 21.1rem;
-    height: 30rem;
-    border-radius: 1.5rem;
-    overflow: hidden;
-    /* transform: rotate3d(1, 1, 1, 45deg); */
-}
-
-.home__carousel-item-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 1.5rem;
-}
-
 .home__content-title {
     font-weight: 500;
     font-size: 4.38rem;
@@ -92,6 +66,148 @@
     border-radius: 2rem;
 }
 
+/* Promo Cards */
+.home__promo {
+    min-height: 40rem;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 7.4rem;
+}
+
+.home__promo-card {
+    position: relative;
+    width: 0;
+    height: 0;
+}
+
+.home__promo-card_pos_1 {
+    z-index: 10;
+    transform: translateX(-28rem) translateY(3.6rem);
+}
+
+.home__promo-card_pos_2 {
+    z-index: 9;
+    transform: translateX(-14rem) translateY(1.8rem);
+}
+
+.home__promo-card_pos_3 {
+    z-index: 8;
+    transform: none;
+}
+
+.home__promo-card_pos_4 {
+    z-index: 7;
+    transform: translateX(14rem) translateY(-1.8rem);
+}
+
+.home__promo-card_pos_5 {
+    z-index: 6;
+    transform: translateX(28rem) translateY(-3.6rem);
+}
+
+.home__promo-wrapper {
+    aspect-ratio: 2/3;
+    border-radius: .9375rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+    transform: skewY(6deg);
+    container: promo / size;
+    height: 30rem;
+    width: 20rem;
+    left: -10rem;
+    top: -15rem;
+}
+
+.home__promo-image {
+    object-fit: cover;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.home__promo-fill {
+    z-index: 2;
+    background: radial-gradient(82.64% 62.17% at 5.82% 100%, #000 0%, transparent 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: inset -0.2rem 0.2rem 0.4rem rgba(255, 255, 255, 0.3);
+}
+
+.home__promo-lower {
+    z-index: 3;
+    flex-wrap: nowrap;
+    align-self: flex-end;
+    align-items: flex-end;
+    padding: 6.66cqw;
+    display: flex;
+}
+
+.home__promo-title {
+    font-size: 8cqh;
+    line-height: 85%;
+    margin: 0;
+    color: var(--mantine-color-white, #fff);
+    font-family: Gramatika, "Plus Jakarta Sans", sans-serif;
+    font-weight: 700;
+}
+
+.home__promo-price-wrap {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 33.33cqw;
+    min-width: 40cqw;
+    padding: 4cqw 6.66cqw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home__promo-gift-text {
+    font-size: 2.66cqh;
+    font-weight: 600;
+    line-height: 80%;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0;
+}
+
+.home__promo-price {
+    color: #37cc00;
+    margin-top: 1.33cqh;
+    font-family: Gramatika, "Plus Jakarta Sans", sans-serif;
+    font-size: 7.77cqh;
+    font-weight: 700;
+    line-height: 80%;
+    margin-bottom: 0;
+}
+
+.home__promo-price_green {
+    color: #000;
+    background: radial-gradient(88.29% 85.98% at 59.91% 104.69%, #37cc00 0%, #71eb44 100%);
+    border: 0.05rem solid #fff;
+    border-radius: 33.33cqw;
+    min-width: 40cqw;
+    padding: 6.66cqw;
+    font-family: Gramatika, "Plus Jakarta Sans", sans-serif;
+    font-size: 6cqh;
+    font-weight: 700;
+    line-height: 80%;
+    margin: 0;
+    margin-left: 1rem;
+}
+
+
 @media screen and (max-width: 1200px) {
     .main-page {
         padding: 1rem 1rem 5rem;
@@ -113,5 +229,38 @@
 
     .home__content-button {
         width: 100%;
+    }
+
+    .home__promo {
+        min-height: 27rem;
+        margin-bottom: 4rem;
+        justify-content: flex-start;
+    }
+
+    .home__promo-wrapper {
+        height: 20rem;
+        width: 13.333rem;
+        left: 12rem;
+        top: -10rem;
+    }
+
+    .home__promo-card_pos_1 {
+        transform: translateX(-12rem) translateY(1.4rem);
+    }
+
+    .home__promo-card_pos_2 {
+        transform: translateX(-6rem) translateY(0.7rem);
+    }
+
+    .home__promo-card_pos_3 {
+        transform: none;
+    }
+
+    .home__promo-card_pos_4 {
+        transform: translateX(6rem) translateY(-0.7rem);
+    }
+
+    .home__promo-card_pos_5 {
+        transform: translateX(12rem) translateY(-1.4rem);
     }
 }
