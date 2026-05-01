@@ -44,6 +44,9 @@
         dots.forEach((dot, i) => {
             dot.addEventListener('click', () => setActive(i));
         });
+
+        // Sync DOM state with the derived active index on init
+        setActive(activeIndex);
     }
 
     document.addEventListener('DOMContentLoaded', initHomeCarousel);
