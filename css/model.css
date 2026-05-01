@@ -46,23 +46,26 @@
     display: flex;
     gap: 1.5rem;
     flex-wrap: wrap;
+    align-items: stretch;
 }
 
 .model__body-list-item {
     width: calc(25% - (4.5rem / 4));
-    height: 51rem;
     border-radius: 2rem;
 }
 
 .model__body-list-item-card {
     width: calc(25% - (4.5rem / 4));
-    height: 51rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 1rem;
     border-radius: 2rem;
 }
 
 .model__body-list-item-card-image-block {
     width: 100%;
-    height: 43.5rem;
+    min-height: 43.5rem;
     margin-bottom: 2.7rem;
     background-image: url(../images/model-card-bg.svg);
     background-repeat: no-repeat;
@@ -121,6 +124,7 @@
     width: 100%;
     height: 100%;
     border-radius: 2rem;
+    object-fit: cover;
 }
 
 .model__body-list-item-caption {
@@ -219,10 +223,12 @@
 
 .model__body-list-item-tip {
     width: calc(25% - (4.5rem / 4));
-    height: 51rem;
     border-radius: 2rem;
     background-image: linear-gradient(to bottom, rgba(229, 174, 153, 0.5), rgba(130, 101, 89, 0.5));
     padding: 2.5rem 1.5rem 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .model__body-list-item-tip-name {
@@ -332,6 +338,89 @@
     color: var(--color-accent);
     font-family: "Plus Jakarta Sans";
     font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.model__body-list-item-tip-start {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: rgba(38, 34, 33, 50%);
+}
+
+.model__body-list-item-ask {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    border: .1rem solid white;
+}
+
+.model__body-list-item-tip-start-img {
+    width: 6rem;
+    height: 7rem;
+    margin-bottom: 1.6rem;
+    object-fit: cover;
+    border-radius: 1.5rem;
+}
+
+.model__body-list-item-ask-img {
+    width: 6rem;
+    height: 7rem;
+    margin-bottom: 1.6rem;
+    object-fit: cover;
+    border-radius: 1.5rem;
+}
+
+.model__body-list-item-tip-start-text {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    color: white;
+    font-family: "Plus Jakarta Sans";
+    margin-bottom: 1.6rem;
+}
+
+.model__body-list-item-ask-text {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    color: white;
+    font-family: "Plus Jakarta Sans";
+    margin-bottom: 1.6rem;
+}
+
+.model__body-list-item-ask-text-span {
+    color: var(--color-accent);
+}
+
+.model__body-list-item-tip-start-button {
+    width: 100%;
+    height: 5rem;
+    border-radius: 1.5rem;
+    background-color: var(--color-surface-panel);
+    cursor: pointer;
+    color: var(--color-accent);
+    font-family: "Plus Jakarta Sans";
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    padding: 1.6rem;
+    font-weight: 600;
+}
+
+.model__body-list-item-ask-button {
+    width: 100%;
+    height: 5rem;
+    border-radius: 1.5rem;
+    background-color: var(--color-accent);
+    cursor: pointer;
+    color: var(--color-surface-panel);
+    font-family: "Plus Jakarta Sans";
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    padding: 1.6rem;
+    font-weight: 600;
 }
 
 @media screen and (max-width: 1200px) {
