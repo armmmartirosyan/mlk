@@ -41,6 +41,11 @@
     border-radius: 1.5rem;
     width: calc(25% - (1.5rem / 4));
     min-height: 27rem;
+    transition: border-radius var(--transition-timing);
+
+    &:not(:disabled):hover {
+        border-radius: var(--hover-radius);
+    }
 }
 
 .lots-page__create {
@@ -94,6 +99,11 @@
     width: 8rem;
     height: 9rem;
     object-fit: contain;
+}
+
+.lots-page__lot-link {
+    width: fit-content;
+    height: fit-content;
 }
 
 .lots-page__lot-link-icon {
@@ -186,7 +196,7 @@
 
 @media screen and (max-width: 1200px) {
     .lots-page__content {
-        padding: 1rem;
+        padding: 1rem 1rem 3rem;
     }
 
     .lots-page__header {

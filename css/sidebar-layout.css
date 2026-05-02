@@ -185,6 +185,11 @@ button.navigation__link {
     justify-content: center;
     flex-direction: column;
     gap: 0.3rem;
+    transition: border-radius var(--transition-timing);
+
+    &:not(:disabled):hover {
+        border-radius: var(--hover-radius);
+    }
 }
 
 .dark-canvas .small-canvas__header-menu-button {

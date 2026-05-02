@@ -89,6 +89,11 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: border-radius var(--transition-timing);
+
+    &:not(:disabled):hover {
+        border-radius: var(--hover-radius);
+    }
 }
 
 .money-page__withdraw-plus-icon {

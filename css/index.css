@@ -64,6 +64,11 @@
         inset 0 .3rem .3rem var(--color-accent),
         0 -.5rem 3rem var(--color-accent);
     border-radius: 2rem;
+    transition: border-radius var(--transition-timing);
+
+    &:not(:disabled):hover {
+        border-radius: var(--hover-radius);
+    }
 }
 
 /* Promo Cards */

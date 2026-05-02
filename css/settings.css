@@ -12,6 +12,11 @@
     align-items: center;
     position: relative;
     margin-bottom: 1.3rem;
+    transition: border-radius var(--transition-timing);
+
+    &:not(:disabled):hover {
+        border-radius: var(--hover-radius);
+    }
 }
 
 .settings-page__image-img {
@@ -107,6 +112,11 @@
 .settings-page__resend-button {
     line-height: 1.2rem;
     letter-spacing: 0;
+    transition: color var(--transition-timing);
+
+    &:not(:disabled):hover {
+        color: white;
+    }
 }
 
 .settings-page__set-password-btn {
@@ -118,6 +128,11 @@
     border-radius: 1.5rem;
     background-color: var(--color-surface-soft);
     margin-bottom: 5rem;
+    transition: border-radius var(--transition-timing);
+
+    &:not(:disabled):hover {
+        border-radius: var(--hover-radius);
+    }
 }
 
 .settings-page__social-line {

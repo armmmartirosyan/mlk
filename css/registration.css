@@ -1,6 +1,6 @@
 .registration__body {
-    padding-top: 7.6rem;
-    padding-left: 24.4rem;
+    max-width: 100%;
+    padding: 7.6rem 1rem 0 24.4rem;
 }
 
 .registration__title {
@@ -19,6 +19,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 5.7rem;
+    max-width: 100%;
 }
 
 .registration__field-label {
@@ -37,6 +38,7 @@
     font-size: 8rem;
     line-height: 8rem;
     color: var(--color-text-primary);
+    max-width: 57rem;
 }
 
 .registration__input::placeholder {
@@ -61,6 +63,11 @@
     background-color: var(--color-surface-panel);
     cursor: pointer;
     height: 6rem;
+    transition: border-radius var(--transition-timing);
+
+    &:not(:disabled):hover {
+        border-radius: var(--hover-radius);
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -88,6 +95,7 @@
 
     .registration__input {
         width: 100%;
+        max-width: none;
     }
 
     .registration__submit {

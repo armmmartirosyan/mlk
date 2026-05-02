@@ -44,7 +44,7 @@
 
 @media screen and (max-width: 1200px) {
     .todo-page__content {
-        padding: 1rem;
+        padding: 1rem 1rem 3rem;
     }
 
     .todo-page__title {

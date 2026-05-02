@@ -44,6 +44,8 @@
   --static-frame-width: 100%;
   --static-frame-height: 100dvh;
   --static-sidebar-width: 35rem;
+  --hover-radius: .5rem;
+  --transition-timing: .4s;
 }
 
 * {
@@ -336,15 +338,3 @@ textarea {
 .type-15-muted {
   color: var(--white-50);
 }
-
-/* @media screen and (max-width: 1512px) {
-  html {
-    font-size: calc(100vw / (1512 / 10));
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  html {
-    font-size: calc(100vw / (1200 / 10));
-  }
-} */
