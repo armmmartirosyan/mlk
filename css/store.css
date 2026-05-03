@@ -55,6 +55,11 @@
     width: calc(25% - (4.5rem / 4));
     min-height: 36cqw;
     border-radius: 1cqw;
+    transition: scale var(--transition-timing);
+
+    &:hover {
+        scale: 0.99;
+    }
 }
 
 .model__body-list-item-card {
@@ -132,12 +137,19 @@
 }
 
 .model__body-list-item-caption {
+    container-type: inline-size;
     position: absolute;
     width: 44.87cqw;
     height: 63.93cqw;
     border-radius: 5.87cqw;
     background-color: var(--color-surface-panel);
     padding: 3.44cqw;
+    transition: width var(--transition-timing), height var(--transition-timing);
+
+    &:hover {
+        width: 90cqw;
+        height: 100%;
+    }
 }
 
 .model__body-list-item-caption-top-left {
@@ -161,15 +173,15 @@
 }
 
 .model__body-list-item-caption-img {
-    width: 12.90cqw;
-    height: 17.30cqw;
+    width: 39.5cqw;
+    height: 52cqw;
     border-radius: 6.74cqw;
-    margin-bottom: 4.19cqw;
+    margin-bottom: 15cqw;
 }
 
 .model__body-list-item-caption-text {
-    font-size: 6.63cqw;
-    line-height: 7.18cqw;
+    font-size: 18cqw;
+    line-height: 18cqw;
     font-weight: 400;
     color: var(--color-text-primary);
     font-family: "Plus Jakarta Sans";
@@ -212,6 +224,7 @@
     line-height: 6.74cqw;
     font-weight: 400;
     color: var(--color-text-primary);
+    margin-right: 0.5rem;
 }
 
 .model__body-list-item-amount {
@@ -223,6 +236,12 @@
     border-radius: 8.80cqw;
     background-color: var(--color-surface-panel);
     font-family: "Plus Jakarta Sans";
+    transition: border-radius var(--transition-timing);
+    cursor: pointer;
+
+    &:not(:disabled):hover {
+        border-radius: var(--hover-radius);
+    }
 }
 
 .model__body-list-item-tip {
@@ -346,6 +365,11 @@
     font-family: "Plus Jakarta Sans";
     font-size: 4.40cqw;
     font-weight: 600;
+    transition: border-radius var(--transition-timing);
+
+    &:not(:disabled):hover {
+        border-radius: var(--hover-radius);
+    }
 }
 
 .model__body-list-item-tip-start {
@@ -417,6 +441,11 @@
     line-height: 6.74cqw;
     padding: 4.69cqw;
     font-weight: 600;
+    transition: border-radius var(--transition-timing);
+
+    &:not(:disabled):hover {
+        border-radius: var(--hover-radius);
+    }
 }
 
 .model__body-list-item-ask-button {
@@ -430,6 +459,11 @@
     line-height: 6.74cqw;
     padding: 4.69cqw;
     font-weight: 600;
+    transition: border-radius var(--transition-timing);
+
+    &:not(:disabled):hover {
+        border-radius: var(--hover-radius);
+    }
 }
 
 @media screen and (max-width: 1200px) {
