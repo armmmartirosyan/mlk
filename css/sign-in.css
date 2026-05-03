@@ -123,7 +123,7 @@
 }
 
 .signin-form__input[type="text"]~.signin-form__password-toggle {
-    background-image: url("../images/eye.svg");
+    background-image: url("../images/eye-closed.svg");
 }
 
 .signin-form__submit {
