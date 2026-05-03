@@ -25,6 +25,11 @@
     gap: 1rem;
     text-decoration: none;
     padding: 1rem 2rem 1rem 1rem;
+    transition: border-radius var(--transition-timing);
+
+    &:not(:disabled):hover {
+        border-radius: var(--hover-radius);
+    }
 }
 
 .signin-page__brand-angle {
