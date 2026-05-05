@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/globals.css" />
     <link rel="stylesheet" href="css/sidebar-layout.css" />
     <link rel="stylesheet" href="css/help-modal.css" />
+    <link rel="stylesheet" href="css/form-controls.css" />
+    <link rel="stylesheet" href="css/side-modal.css" />
     <link rel="stylesheet" href="css/money.css" />
     <link rel="icon" type="image/png" href="./images/droplet.png" />
     <title>Money</title>
@@ -86,7 +88,7 @@
                             $0
                         </p>
                         <button class="money-page__balance-withdraw generic-button-reset ui-pill-button type-15"
-                            type="button">
+                            type="button" disabled>
                             Withdraw
                         </button>
                     </div>
@@ -106,11 +108,12 @@
                                     <p class="money-page__withdraw-name type-15-700-primary">
                                         PayPal
                                     </p>
-                                    <figure class="money-page__withdraw-plus-figure">
-                                        <img src="./images/plus.svg" alt="Plus"
+                                    <button type="button"
+                                        class="generic-button-reset money-page__withdraw-plus-figure"
+                                        data-modal-target="paypal-modal" aria-label="Add PayPal account">
+                                        <img src="./images/plus.svg" alt=""
                                             class="money-page__withdraw-plus-icon" />
-                                    </figure>
-
+                                    </button>
                                 </div>
                             </div>
                             <div class="money-page__withdraw-method">
@@ -119,11 +122,12 @@
                                     <p class="money-page__withdraw-name type-15-700-primary">
                                         Crypto <span class="money-page__withdraw-currency">USDC</span>
                                     </p>
-                                    <figure class="money-page__withdraw-plus-figure">
-                                        <img src="./images/plus.svg" alt="Plus"
+                                    <button type="button"
+                                        class="generic-button-reset money-page__withdraw-plus-figure"
+                                        data-modal-target="new-wallet-modal" aria-label="Add crypto wallet">
+                                        <img src="./images/plus.svg" alt=""
                                             class="money-page__withdraw-plus-icon" />
-                                    </figure>
-
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -132,8 +136,87 @@
             </section>
         </section>
     </main>
+
+    <div class="side-modal" id="paypal-modal" data-state="closed" role="dialog" aria-modal="true"
+        aria-labelledby="paypal-modal-title">
+        <div class="side-modal__overlay"></div>
+        <div class="side-modal__panel">
+            <button type="button" class="generic-button-reset side-modal__close" data-modal-close
+                aria-label="Close modal">
+                <img src="./images/close-icon.svg" alt="" class="side-modal__close-icon" />
+            </button>
+            <form class="side-modal__body" novalidate>
+                <h2 class="side-modal__title" id="paypal-modal-title">PayPal</h2>
+                <div class="form-field" data-validate>
+                    <div class="form-field__control">
+                        <input type="email" id="paypal-email" class="form-input" placeholder=" " required />
+                        <label class="form-field__label" for="paypal-email">PayPal account email</label>
+                    </div>
+                    <p class="form-field__error">PayPal account email is required</p>
+                </div>
+                <button type="submit" class="form-button">Add account</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="side-modal" id="new-wallet-modal" data-state="closed" role="dialog" aria-modal="true"
+        aria-labelledby="new-wallet-modal-title">
+        <div class="side-modal__overlay"></div>
+        <div class="side-modal__panel">
+            <button type="button" class="generic-button-reset side-modal__close" data-modal-close
+                aria-label="Close modal">
+                <img src="./images/close-icon.svg" alt="" class="side-modal__close-icon" />
+            </button>
+            <form class="side-modal__body" novalidate>
+                <h2 class="side-modal__title" id="new-wallet-modal-title">New wallet</h2>
+                <div class="side-modal__note">
+                    <span class="side-modal__note-icon" aria-hidden="true">!</span>
+                    <p class="side-modal__note-text">
+                        Please enter the data accurately and responsibly. And then check yourself. And only
+                        then press the button.
+                    </p>
+                </div>
+                <div class="form-field" data-validate>
+                    <div class="form-field__control">
+                        <select id="wallet-network" class="form-select" required data-empty="true">
+                            <option value="" disabled selected hidden></option>
+                            <option value="ethereum">Ethereum</option>
+                            <option value="polygon">Polygon</option>
+                            <option value="solana">Solana</option>
+                            <option value="tron">Tron</option>
+                            <option value="bitcoin">Bitcoin</option>
+                        </select>
+                        <label class="form-field__label" for="wallet-network">Network</label>
+                        <span class="form-field__chevrons" aria-hidden="true">
+                            <svg class="form-field__chevron" viewBox="0 0 10 7" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 5L5 1L9 5" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <svg class="form-field__chevron" viewBox="0 0 10 7" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 2L5 6L9 2" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </div>
+                    <p class="form-field__error">Network is required</p>
+                </div>
+                <div class="form-field" data-validate>
+                    <div class="form-field__control">
+                        <input type="text" id="wallet-address" class="form-input" placeholder=" " required />
+                        <label class="form-field__label" for="wallet-address">Wallet address</label>
+                    </div>
+                    <p class="form-field__error">Address is required</p>
+                </div>
+                <button type="submit" class="form-button">Add wallet</button>
+            </form>
+        </div>
+    </div>
+
     <script src="scripts/help-modal.js" defer></script>
     <script src="scripts/sidebar-layout.js" defer></script>
+    <script src="scripts/side-modal.js" defer></script>
 </body>
 
 </html>
