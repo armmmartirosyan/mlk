@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/globals.css" />
     <link rel="stylesheet" href="css/sidebar-layout.css" />
     <link rel="stylesheet" href="css/help-modal.css" />
+    <link rel="stylesheet" href="css/form-controls.css" />
+    <link rel="stylesheet" href="css/side-modal.css" />
     <link rel="stylesheet" href="css/money.css" />
     <link rel="icon" type="image/png" href="./images/droplet.png" />
     <title>Money</title>
@@ -86,7 +88,7 @@
                             $0
                         </p>
                         <button class="money-page__balance-withdraw generic-button-reset ui-pill-button type-15"
-                            type="button">
+                            type="button" disabled>
                             Withdraw
                         </button>
                     </div>
@@ -106,11 +108,12 @@
                                     <p class="money-page__withdraw-name type-15-700-primary">
                                         PayPal
                                     </p>
-                                    <figure class="money-page__withdraw-plus-figure">
-                                        <img src="./images/plus.svg" alt="Plus"
+                                    <button type="button"
+                                        class="generic-button-reset money-page__withdraw-plus-figure"
+                                        data-modal-target="paypal-modal" aria-label="Add PayPal account">
+                                        <img src="./images/plus.svg" alt=""
                                             class="money-page__withdraw-plus-icon" />
-                                    </figure>
-
+                                    </button>
                                 </div>
                             </div>
                             <div class="money-page__withdraw-method">
@@ -119,11 +122,12 @@
                                     <p class="money-page__withdraw-name type-15-700-primary">
                                         Crypto <span class="money-page__withdraw-currency">USDC</span>
                                     </p>
-                                    <figure class="money-page__withdraw-plus-figure">
-                                        <img src="./images/plus.svg" alt="Plus"
+                                    <button type="button"
+                                        class="generic-button-reset money-page__withdraw-plus-figure"
+                                        data-modal-target="new-wallet-modal" aria-label="Add crypto wallet">
+                                        <img src="./images/plus.svg" alt=""
                                             class="money-page__withdraw-plus-icon" />
-                                    </figure>
-
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -132,8 +136,223 @@
             </section>
         </section>
     </main>
+
+    <div class="side-modal" id="paypal-modal" data-state="closed" role="dialog" aria-modal="true"
+        aria-labelledby="paypal-modal-title">
+        <div class="side-modal__overlay"></div>
+        <div class="side-modal__panel">
+            <button type="button" class="generic-button-reset side-modal__close" data-modal-close
+                aria-label="Close modal">
+                <img src="./images/close-icon.svg" alt="" class="side-modal__close-icon" />
+            </button>
+            <form class="side-modal__body" novalidate>
+                <h2 class="side-modal__title" id="paypal-modal-title">PayPal</h2>
+                <div class="form-field" data-validate>
+                    <div class="form-field__control">
+                        <input type="email" id="paypal-email" class="form-input" placeholder=" " required />
+                        <label class="form-field__label" for="paypal-email">PayPal account email</label>
+                    </div>
+                    <p class="form-field__error">PayPal account email is required</p>
+                </div>
+                <button type="submit" class="form-button">Add account</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="side-modal" id="new-wallet-modal" data-state="closed" role="dialog" aria-modal="true"
+        aria-labelledby="new-wallet-modal-title">
+        <div class="side-modal__overlay"></div>
+        <div class="side-modal__panel">
+            <button type="button" class="generic-button-reset side-modal__close" data-modal-close
+                aria-label="Close modal">
+                <img src="./images/close-icon.svg" alt="" class="side-modal__close-icon" />
+            </button>
+            <form class="side-modal__body" novalidate>
+                <h2 class="side-modal__title" id="new-wallet-modal-title">New wallet</h2>
+                <div class="side-modal__note">
+                    <span class="side-modal__note-icon" aria-hidden="true">!</span>
+                    <p class="side-modal__note-text">
+                        Please enter the data accurately and responsibly. And then check yourself. And only
+                        then press the button.
+                    </p>
+                </div>
+                <div class="form-field" data-validate>
+                    <div class="form-field__control">
+                        <button type="button" id="wallet-network" class="form-field__trigger"
+                            data-modal-target="network-modal" data-empty="true"
+                            aria-haspopup="dialog">
+                            <span class="form-field__value"></span>
+                        </button>
+                        <label class="form-field__label" for="wallet-network">Network</label>
+                        <span class="form-field__chevrons" aria-hidden="true">
+                            <svg class="form-field__chevron" viewBox="0 0 10 7" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 5L5 1L9 5" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <svg class="form-field__chevron" viewBox="0 0 10 7" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 2L5 6L9 2" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </div>
+                    <input type="hidden" data-select-for="wallet-network" />
+                    <p class="form-field__error">Network is required</p>
+                </div>
+                <div class="form-field" data-validate>
+                    <div class="form-field__control">
+                        <input type="text" id="wallet-address" class="form-input" placeholder=" " required />
+                        <label class="form-field__label" for="wallet-address">Wallet address</label>
+                    </div>
+                    <p class="form-field__error">Address is required</p>
+                </div>
+                <button type="submit" class="form-button">Add wallet</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="side-modal" id="network-modal" data-state="closed" role="dialog" aria-modal="true"
+        aria-label="Select network">
+        <div class="side-modal__overlay"></div>
+        <div class="side-modal__panel">
+            <button type="button" class="generic-button-reset side-modal__close" data-modal-close
+                aria-label="Close modal">
+                <img src="./images/close-icon.svg" alt="" class="side-modal__close-icon" />
+            </button>
+            <div class="side-modal__body side-modal__body_variant_list">
+                <ul class="side-modal__list generic-list-reset">
+                    <li class="side-modal__list-item">
+                        <button type="button" class="generic-button-reset side-modal__list-button"
+                            data-option-for="wallet-network" data-value="algorand" data-label="Algorand">
+                            <span class="side-modal__list-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 20l5.5-10L12 6l1.5 4 3 10M7 20h3m4 0h3" />
+                                    <path d="M10 15l4-7" />
+                                </svg>
+                            </span>
+                            <span class="side-modal__list-label">Algorand</span>
+                        </button>
+                    </li>
+                    <li class="side-modal__list-item">
+                        <button type="button" class="generic-button-reset side-modal__list-button"
+                            data-option-for="wallet-network" data-value="avalanche" data-label="Avalanche">
+                            <span class="side-modal__list-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 4L3 20h18L12 4z" />
+                                    <path d="M12 11l-3 6h6l-3-6z" />
+                                </svg>
+                            </span>
+                            <span class="side-modal__list-label">Avalanche</span>
+                        </button>
+                    </li>
+                    <li class="side-modal__list-item">
+                        <button type="button" class="generic-button-reset side-modal__list-button"
+                            data-option-for="wallet-network" data-value="ethereum" data-label="Ethereum">
+                            <span class="side-modal__list-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 3L5 13l7 4 7-4-7-10zM5 14.5l7 4 7-4-7 7.5-7-7.5z" />
+                                </svg>
+                            </span>
+                            <span class="side-modal__list-label">Ethereum</span>
+                        </button>
+                    </li>
+                    <li class="side-modal__list-item">
+                        <button type="button" class="generic-button-reset side-modal__list-button"
+                            data-option-for="wallet-network" data-value="flow" data-label="Flow">
+                            <span class="side-modal__list-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="9" />
+                                    <path d="M8 9h8M8 13h5" />
+                                    <circle cx="15" cy="15" r="1.6" />
+                                </svg>
+                            </span>
+                            <span class="side-modal__list-label">Flow</span>
+                        </button>
+                    </li>
+                    <li class="side-modal__list-item">
+                        <button type="button" class="generic-button-reset side-modal__list-button"
+                            data-option-for="wallet-network" data-value="hedera" data-label="Hedera">
+                            <span class="side-modal__list-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="9" />
+                                    <path d="M8 7v10M16 7v10M8 10h8M8 14h8" />
+                                </svg>
+                            </span>
+                            <span class="side-modal__list-label">Hedera</span>
+                        </button>
+                    </li>
+                    <li class="side-modal__list-item">
+                        <button type="button" class="generic-button-reset side-modal__list-button"
+                            data-option-for="wallet-network" data-value="polygon" data-label="Polygon">
+                            <span class="side-modal__list-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 7l-4 2v4l4 2 4-2V9l4-2 4 2v4l-4 2-4-2" />
+                                </svg>
+                            </span>
+                            <span class="side-modal__list-label">Polygon</span>
+                        </button>
+                    </li>
+                    <li class="side-modal__list-item">
+                        <button type="button" class="generic-button-reset side-modal__list-button"
+                            data-option-for="wallet-network" data-value="solana" data-label="Solana">
+                            <span class="side-modal__list-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 8h12l-2 2H4zM4 12h12l2 2H6zM6 16h12l-2 2H4z" />
+                                </svg>
+                            </span>
+                            <span class="side-modal__list-label">Solana</span>
+                        </button>
+                    </li>
+                    <li class="side-modal__list-item">
+                        <button type="button" class="generic-button-reset side-modal__list-button"
+                            data-option-for="wallet-network" data-value="stellar" data-label="Stellar">
+                            <span class="side-modal__list-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="9" />
+                                    <path d="M4 9h14M6 15h14" />
+                                </svg>
+                            </span>
+                            <span class="side-modal__list-label">Stellar</span>
+                        </button>
+                    </li>
+                    <li class="side-modal__list-item">
+                        <button type="button" class="generic-button-reset side-modal__list-button"
+                            data-option-for="wallet-network" data-value="tron" data-label="Tron">
+                            <span class="side-modal__list-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 6l16 2-10 13L7 13l13-5z" />
+                                </svg>
+                            </span>
+                            <span class="side-modal__list-label">Tron</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <script src="scripts/help-modal.js" defer></script>
     <script src="scripts/sidebar-layout.js" defer></script>
+    <script src="scripts/side-modal.js" defer></script>
 </body>
 
 </html>
