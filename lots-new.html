@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/globals.css" />
+    <link rel="stylesheet" href="css/sidebar-layout.css" />
+    <link rel="stylesheet" href="css/help-modal.css" />
+    <link rel="stylesheet" href="css/lots-new.css" />
+    <link rel="icon" type="image/png" href="./images/droplet.png" />
+    <title>New lot</title>
+</head>
+
+<body class="generic-body">
+    <main class="generic-canvas">
+        <header class="page__header">
+            <button class="generic-button-reset layout-nav-toggle layout-nav-toggle_responsive" data-sidebar-toggle
+                type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="layout-nav-toggle__line"></span>
+                <span class="layout-nav-toggle__line"></span>
+                <span class="layout-nav-toggle__line"></span>
+            </button>
+            <img src="./images/mlk.svg" alt="MLK" class="page__logo" />
+
+            <button class="generic-button-reset" type="button" aria-label="Profile indicator">
+                <img class="page__droplet-icon" src="images/header-droplet.svg" alt="Droplet" />
+            </button>
+        </header>
+
+        <section class="page" data-sidebar-layout="responsive" aria-label="New lot page">
+            <aside id="primary-sidebar" class="page__sidebar" data-sidebar-panel aria-label="Sidebar navigation">
+                <nav class="navigation" aria-label="Main sections">
+                    <ul class="generic-list-reset">
+                        <li class="navigation__item navigation__item_group_1">
+                            <a class="navigation__link" href="chat.html">chat</a>
+                        </li>
+                        <li class="navigation__item navigation__item_group_1">
+                            <a class="navigation__link" href="todo.html">to-do</a>
+                        </li>
+                        <li class="navigation__item navigation__item_group_1">
+                            <a class="navigation__link navigation__link_state_active" href="lots.html">lots</a>
+                        </li>
+                        <li class="navigation__item navigation__item_group_1">
+                            <a class="navigation__link" href="store.html">store</a>
+                        </li>
+                        <li class="navigation__item navigation__item_group_1">
+                            <a class="navigation__link" href="vault.html">vault</a>
+                        </li>
+                        <li class="navigation__item navigation__item_group_1">
+                            <a class="navigation__link" href="money.html">money</a>
+                        </li>
+
+                        <div class="navigation__divider"></div>
+
+                        <li class="navigation__item navigation__item_group_2">
+                            <a class="navigation__link" href="feed.html">feed</a>
+                        </li>
+                        <li class="navigation__item navigation__item_group_2">
+                            <a class="navigation__link" href="trophies.html">trophies</a>
+                        </li>
+                        <li class="navigation__item navigation__item_group_2">
+                            <a class="navigation__link" href="settings.html">settings</a>
+                        </li>
+                        <li class="navigation__item navigation__item_group_2">
+                            <button class="navigation__link navigation__help-trigger generic-button-reset"
+                                type="button">help</button>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <section class="page__workspace" aria-label="New lot workspace">
+                <div class="page__content lots-new__content ui-scrollbar_hidden">
+                    <h1 class="lots-new__title type-74-500">New lot</h1>
+
+                    <article class="lots-new__item">
+                        <div class="lots-new__info">
+                            <h2 class="lots-new__item-title type-46-500">Wish</h2>
+                            <p class="lots-new__description">
+                                Share with your audience a list of things or ideas that would help you grow as
+                                a content creator. Each of your followers will have the opportunity to
+                                contribute to your growth.
+                            </p>
+                            <div class="lots-new__stats">
+                                <div class="lots-new__stat ui-panel ui-panel_tone_glass">
+                                    <span class="lots-new__stat-label">Setup time</span>
+                                    <p class="lots-new__stat-value">1 minute</p>
+                                </div>
+                                <div class="lots-new__stat ui-panel ui-panel_tone_glass">
+                                    <span class="lots-new__stat-label">Monthly income</span>
+                                    <p class="lots-new__stat-value">~$1,000</p>
+                                </div>
+                            </div>
+                            <button class="lots-new__create ui-pill-button" type="button"
+                                data-create-lot="wish">Create a Wish</button>
+                            <a class="lots-new__demo" href="#">
+                                <span>Demo Wish</span>
+                                <img src="images/arrow.svg" alt="" class="lots-new__demo-arrow" />
+                            </a>
+                        </div>
+                        <figure class="lots-new__image">
+                            <img src="images/lot-item.svg" alt="Wish preview" />
+                        </figure>
+                    </article>
+
+                    <hr class="lots-new__divider" />
+
+                    <article class="lots-new__item">
+                        <div class="lots-new__info">
+                            <h2 class="lots-new__item-title type-46-500">Pack</h2>
+                            <p class="lots-new__description">
+                                Sell literally anything you want. Your webcomics, videos, photo shoots,
+                                movies, brushes for professional software, tutorials, insights, courses,
+                                books, or even just posts.
+                            </p>
+                            <div class="lots-new__stats">
+                                <div class="lots-new__stat ui-panel ui-panel_tone_glass">
+                                    <span class="lots-new__stat-label">Setup time</span>
+                                    <p class="lots-new__stat-value">2 minutes</p>
+                                </div>
+                                <div class="lots-new__stat ui-panel ui-panel_tone_glass">
+                                    <span class="lots-new__stat-label">Monthly income</span>
+                                    <p class="lots-new__stat-value">~$800</p>
+                                </div>
+                            </div>
+                            <button class="lots-new__create ui-pill-button" type="button"
+                                data-create-lot="pack">Create a Pack</button>
+                            <a class="lots-new__demo" href="#">
+                                <span>Demo Pack</span>
+                                <img src="images/arrow.svg" alt="" class="lots-new__demo-arrow" />
+                            </a>
+                        </div>
+                        <figure class="lots-new__image">
+                            <img src="images/lot-item.svg" alt="Pack preview" />
+                        </figure>
+                    </article>
+
+                    <hr class="lots-new__divider" />
+
+                    <article class="lots-new__item">
+                        <div class="lots-new__info">
+                            <h2 class="lots-new__item-title type-46-500">Pass</h2>
+                            <p class="lots-new__description">
+                                Sell access to your closed chat groups or Discord servers, tickets to your
+                                exclusive courses or lessons, or offer temporary services. We'll notify you
+                                when they end, so you'll never forget anything.
+                            </p>
+                            <div class="lots-new__stats">
+                                <div class="lots-new__stat ui-panel ui-panel_tone_glass">
+                                    <span class="lots-new__stat-label">Setup time</span>
+                                    <p class="lots-new__stat-value">5 minutes</p>
+                                </div>
+                                <div class="lots-new__stat ui-panel ui-panel_tone_glass">
+                                    <span class="lots-new__stat-label">Monthly income</span>
+                                    <p class="lots-new__stat-value">~$1,800</p>
+                                </div>
+                            </div>
+                            <button class="lots-new__create ui-pill-button" type="button"
+                                data-create-lot="pass">Create a Pass</button>
+                            <a class="lots-new__demo" href="#">
+                                <span>Demo Pass</span>
+                                <img src="images/arrow.svg" alt="" class="lots-new__demo-arrow" />
+                            </a>
+                        </div>
+                        <figure class="lots-new__image">
+                            <img src="images/onlyfans-pass.png" alt="Pass preview" />
+                        </figure>
+                    </article>
+
+                    <hr class="lots-new__divider" />
+
+                    <article class="lots-new__item">
+                        <div class="lots-new__info">
+                            <h2 class="lots-new__item-title type-46-500">Wheel</h2>
+                            <p class="lots-new__description">
+                                Drop your new content and merch using the wheel of fortune. It's an
+                                entertaining experience for your fans, often effective for a week or two,
+                                and typically generates more income than traditional drops.
+                            </p>
+                            <div class="lots-new__stats">
+                                <div class="lots-new__stat ui-panel ui-panel_tone_glass">
+                                    <span class="lots-new__stat-label">Setup time</span>
+                                    <p class="lots-new__stat-value">10 minutes</p>
+                                </div>
+                                <div class="lots-new__stat ui-panel ui-panel_tone_glass">
+                                    <span class="lots-new__stat-label">Monthly income</span>
+                                    <p class="lots-new__stat-value">~$1,800</p>
+                                </div>
+                            </div>
+                            <button class="lots-new__create ui-pill-button" type="button"
+                                data-create-lot="wheel">Create a Wheel</button>
+                            <a class="lots-new__demo" href="#">
+                                <span>Demo Wheel</span>
+                                <img src="images/arrow.svg" alt="" class="lots-new__demo-arrow" />
+                            </a>
+                        </div>
+                        <figure class="lots-new__image">
+                            <img src="images/lot-item.svg" alt="Wheel preview" />
+                        </figure>
+                    </article>
+
+                    <hr class="lots-new__divider" />
+
+                    <article class="lots-new__item">
+                        <div class="lots-new__info">
+                            <h2 class="lots-new__item-title type-46-500">Lootbox</h2>
+                            <p class="lots-new__description">
+                                Upload all your photos and videos into these loot boxes, then offer them
+                                as a preview to new fans when they subscribe. It's an ideal way for them to
+                                become familiar with your content.
+                            </p>
+                            <div class="lots-new__stats">
+                                <div class="lots-new__stat ui-panel ui-panel_tone_glass">
+                                    <span class="lots-new__stat-label">Setup time</span>
+                                    <p class="lots-new__stat-value">10 minutes</p>
+                                </div>
+                                <div class="lots-new__stat ui-panel ui-panel_tone_glass">
+                                    <span class="lots-new__stat-label">Monthly income</span>
+                                    <p class="lots-new__stat-value">~$1,200</p>
+                                </div>
+                            </div>
+                            <button class="lots-new__create ui-pill-button" type="button"
+                                data-create-lot="lootbox">Create a Lootbox</button>
+                            <a class="lots-new__demo" href="#">
+                                <span>Demo Lootbox</span>
+                                <img src="images/arrow.svg" alt="" class="lots-new__demo-arrow" />
+                            </a>
+                        </div>
+                        <figure class="lots-new__image">
+                            <img src="images/lot-item.svg" alt="Lootbox preview" />
+                        </figure>
+                    </article>
+
+                    <hr class="lots-new__divider" />
+
+                    <article class="lots-new__item">
+                        <div class="lots-new__info">
+                            <h2 class="lots-new__item-title type-46-500">Fundraising</h2>
+                            <p class="lots-new__description">
+                                Big goals, big dreams. Raise funds and reward the top donor.
+                            </p>
+                            <div class="lots-new__stats">
+                                <div class="lots-new__stat ui-panel ui-panel_tone_glass">
+                                    <span class="lots-new__stat-label">Setup time</span>
+                                    <p class="lots-new__stat-value">5 minutes</p>
+                                </div>
+                                <div class="lots-new__stat ui-panel ui-panel_tone_glass">
+                                    <span class="lots-new__stat-label">Monthly income</span>
+                                    <p class="lots-new__stat-value">~$3,000</p>
+                                </div>
+                            </div>
+                            <button class="lots-new__create ui-pill-button" type="button"
+                                data-create-lot="fundraising">Create a Fundraising</button>
+                            <a class="lots-new__demo" href="#">
+                                <span>Demo Fundraising</span>
+                                <img src="images/arrow.svg" alt="" class="lots-new__demo-arrow" />
+                            </a>
+                        </div>
+                        <figure class="lots-new__image">
+                            <img src="images/lot-item.svg" alt="Fundraising preview" />
+                        </figure>
+                    </article>
+
+                    <hr class="lots-new__divider" />
+
+                    <article class="lots-new__item">
+                        <div class="lots-new__info">
+                            <h2 class="lots-new__item-title type-46-500">Subscription</h2>
+                            <p class="lots-new__description">
+                                Offer your fans the option to support you on a regular basis. There are
+                                three subscription levels, and fans will receive an exclusive 'Timeline'
+                                feature in their personal account for subscribing.
+                            </p>
+                            <div class="lots-new__stats">
+                                <div class="lots-new__stat ui-panel ui-panel_tone_glass lots-new__stat_state_disabled">
+                                    <span class="lots-new__stat-label">Setup time</span>
+                                    <p class="lots-new__stat-value">2 minutes</p>
+                                </div>
+                                <div class="lots-new__stat ui-panel ui-panel_tone_glass lots-new__stat_state_disabled">
+                                    <span class="lots-new__stat-label">Monthly income</span>
+                                    <p class="lots-new__stat-value">~$600</p>
+                                </div>
+                            </div>
+                            <p class="lots-new__limit">
+                                <img src="images/heart-rotated.svg" alt="" class="lots-new__limit-icon" />
+                                <span>
+                                    There can only be one Subscription lot.<br />
+                                    And you already have it.
+                                </span>
+                            </p>
+                            <a class="lots-new__demo" href="#">
+                                <span>Demo Subscription</span>
+                                <img src="images/arrow.svg" alt="" class="lots-new__demo-arrow" />
+                            </a>
+                        </div>
+                        <figure class="lots-new__image">
+                            <img src="images/subscription.png" alt="Subscription preview" />
+                        </figure>
+                    </article>
+
+                    <hr class="lots-new__divider" />
+
+                    <article class="lots-new__item">
+                        <div class="lots-new__info">
+                            <h2 class="lots-new__item-title type-46-500">Message</h2>
+                            <p class="lots-new__description">
+                                Your fans can submit questions directly to you. It's a great way to engage
+                                with your audience.
+                            </p>
+                            <div class="lots-new__stats">
+                                <div class="lots-new__stat ui-panel ui-panel_tone_glass lots-new__stat_state_disabled">
+                                    <span class="lots-new__stat-label">Setup time</span>
+                                    <p class="lots-new__stat-value">1 minute</p>
+                                </div>
+                                <div class="lots-new__stat ui-panel ui-panel_tone_glass lots-new__stat_state_disabled">
+                                    <span class="lots-new__stat-label">Monthly income</span>
+                                    <p class="lots-new__stat-value">~$200</p>
+                                </div>
+                            </div>
+                            <p class="lots-new__limit">
+                                <img src="images/heart-rotated.svg" alt="" class="lots-new__limit-icon" />
+                                <span>
+                                    There can only be one Message lot.<br />
+                                    And you already have it.
+                                </span>
+                            </p>
+                            <a class="lots-new__demo" href="#">
+                                <span>Demo Message</span>
+                                <img src="images/arrow.svg" alt="" class="lots-new__demo-arrow" />
+                            </a>
+                        </div>
+                        <figure class="lots-new__image">
+                            <img src="images/messages-quote.svg" alt="Message preview" />
+                        </figure>
+                    </article>
+
+                    <hr class="lots-new__divider" />
+
+                    <article class="lots-new__item">
+                        <div class="lots-new__info">
+                            <h2 class="lots-new__item-title type-46-500">Tip</h2>
+                            <p class="lots-new__description">
+                                Your fans have the ability to donate to you directly, showing their support
+                                and appreciation for your work
+                            </p>
+                            <div class="lots-new__stats">
+                                <div class="lots-new__stat ui-panel ui-panel_tone_glass lots-new__stat_state_disabled">
+                                    <span class="lots-new__stat-label">Setup time</span>
+                                    <p class="lots-new__stat-value">1 minute</p>
+                                </div>
+                                <div class="lots-new__stat ui-panel ui-panel_tone_glass lots-new__stat_state_disabled">
+                                    <span class="lots-new__stat-label">Monthly income</span>
+                                    <p class="lots-new__stat-value">~$900</p>
+                                </div>
+                            </div>
+                            <p class="lots-new__limit">
+                                <img src="images/heart-rotated.svg" alt="" class="lots-new__limit-icon" />
+                                <span>
+                                    There can only be one Tip lot.<br />
+                                    And you already have it.
+                                </span>
+                            </p>
+                            <a class="lots-new__demo" href="#">
+                                <span>Demo Tip</span>
+                                <img src="images/arrow.svg" alt="" class="lots-new__demo-arrow" />
+                            </a>
+                        </div>
+                        <figure class="lots-new__image">
+                            <img src="images/tip-bg.png" alt="Tip preview" />
+                        </figure>
+                    </article>
+                </div>
+            </section>
+        </section>
+    </main>
+    <script src="scripts/help-modal.js" defer></script>
+    <script src="scripts/sidebar-layout.js" defer></script>
+    <script src="scripts/lots-new.js" defer></script>
+</body>
+
+</html>
