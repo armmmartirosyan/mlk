@@ -137,6 +137,77 @@ body.side-modal-open {
     overflow: hidden;
 }
 
+/* List variant: full-bleed scrollable list, no title */
+.side-modal__body_variant_list {
+    padding: 6.4rem 0 1rem;
+    gap: 0;
+}
+
+.side-modal__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.side-modal__list-item {
+    position: relative;
+}
+
+.side-modal__list-item + .side-modal__list-item::before {
+    content: "";
+    position: absolute;
+    left: 3.4rem;
+    right: 3.4rem;
+    top: 0;
+    height: 1px;
+    background-color: var(--white-15);
+}
+
+.side-modal__list-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    padding: 1.8rem 3.4rem;
+    text-align: left;
+    color: var(--white-100);
+    font-family: "Plus Jakarta Sans", "AdvancedLevel Inter", sans-serif;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: 700;
+    transition: background-color 180ms ease;
+}
+
+.side-modal__list-button:hover {
+    background-color: var(--white-10);
+}
+
+.side-modal__list-icon {
+    width: 2.6rem;
+    height: 2.6rem;
+    flex-shrink: 0;
+    color: var(--white-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-modal__list-icon svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .side-modal__list-item + .side-modal__list-item::before {
+        left: 2rem;
+        right: 2rem;
+    }
+
+    .side-modal__list-button {
+        padding: 1.6rem 2rem;
+    }
+}
+
 @media screen and (max-width: 768px) {
     :root {
         --side-modal-width: 100%;

@@ -7,7 +7,9 @@
         document.body.classList.add("side-modal-open");
         openModals.add(modal);
 
-        const firstField = modal.querySelector("input, select, textarea, button");
+        const firstField = modal.querySelector(
+            "input:not([type='hidden']), select, textarea, .form-field__trigger, .side-modal__list-button, button:not([data-modal-close])"
+        );
         if (firstField) firstField.focus({ preventScroll: true });
     }
 
@@ -29,30 +31,87 @@
             field.removeAttribute("data-state");
         });
         form.querySelectorAll(".form-select").forEach(syncSelectEmpty);
+        form.querySelectorAll(".form-field__trigger").forEach(resetTrigger);
+        form.querySelectorAll("[data-select-for]").forEach((hidden) => {
+            hidden.value = "";
+        });
+    }
+
+    function resetTrigger(trigger) {
+        trigger.dataset.empty = "true";
+        trigger.removeAttribute("data-value");
+        const valueEl = trigger.querySelector(".form-field__value");
+        if (valueEl) valueEl.textContent = "";
     }
 
     function syncSelectEmpty(select) {
         select.dataset.empty = select.value === "" ? "true" : "false";
     }
 
+    function getFieldControl(field) {
+        const trigger = field.querySelector(".form-field__trigger");
+        if (trigger) {
+            return { el: trigger, isEmpty: trigger.dataset.empty === "true" };
+        }
+        const control = field.querySelector("input:not([type='hidden']), select, textarea");
+        if (control) {
+            return { el: control, isEmpty: (control.value || "").trim() === "" };
+        }
+        const hidden = field.querySelector("input[type='hidden']");
+        if (hidden) {
+            return { el: hidden, isEmpty: (hidden.value || "").trim() === "" };
+        }
+        return null;
+    }
+
     function validateForm(form) {
         let firstInvalid = null;
         form.querySelectorAll("[data-validate]").forEach((field) => {
-            const control = field.querySelector("input, select, textarea");
-            if (!control) return;
-            const value = (control.value || "").trim();
-            if (value === "") {
+            const found = getFieldControl(field);
+            if (!found) return;
+            if (found.isEmpty) {
                 field.dataset.state = "error";
-                if (!firstInvalid) firstInvalid = control;
+                if (!firstInvalid) firstInvalid = found.el;
             } else {
                 field.removeAttribute("data-state");
             }
         });
-        if (firstInvalid) firstInvalid.focus();
+        if (firstInvalid && typeof firstInvalid.focus === "function") {
+            firstInvalid.focus();
+        }
         return !firstInvalid;
     }
 
+    function applyOption(option) {
+        const triggerId = option.dataset.optionFor;
+        const trigger = document.getElementById(triggerId);
+        if (!trigger) return;
+
+        const value = option.dataset.value || "";
+        const label = option.dataset.label || option.textContent.trim();
+
+        trigger.dataset.empty = value === "" ? "true" : "false";
+        trigger.dataset.value = value;
+        const valueEl = trigger.querySelector(".form-field__value");
+        if (valueEl) valueEl.textContent = label;
+
+        const hidden = document.querySelector(`[data-select-for="${triggerId}"]`);
+        if (hidden) hidden.value = value;
+
+        const field = trigger.closest(".form-field");
+        if (field) field.removeAttribute("data-state");
+
+        const modal = option.closest(".side-modal");
+        closeModal(modal);
+    }
+
     document.addEventListener("click", (event) => {
+        const option = event.target.closest("[data-option-for]");
+        if (option) {
+            applyOption(option);
+            return;
+        }
+
         const trigger = event.target.closest("[data-modal-target]");
         if (trigger) {
             const modal = document.getElementById(trigger.dataset.modalTarget);
